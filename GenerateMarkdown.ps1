@@ -1,1 +1,0 @@
-pandoc -s --extract-media ./images/OverviewOfFabricCiCd "Chapter01 – Overview of Fabric CICD.docx" -t gfm -o "Part1 - Overview of Fabric CICD.md"
