@@ -73,7 +73,7 @@ high quality code reaches production. The release process in a CI/CD
 workflow is often built using a standard set of environments such as
 **dev**, **test** and **prod**.
 
-<img src="./images/Part1/media/image2.png"  style="width:45%" />
+<img src="./images/Part1/media/image2.png"  style="width:38%" />
 
 ## Fabric CI/CD Capabilities
 
