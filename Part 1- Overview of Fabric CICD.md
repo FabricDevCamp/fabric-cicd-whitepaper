@@ -1503,7 +1503,7 @@ synchronization. For example, the workspace summary page displays the
 **Status** column with values such as **Synced** or **Update required**
 which you might prefer to hide from users in a production workspace.
 
-<img src="./images/Part1/media/image44.png" style="width:55%" />
+<img src="./images/Part1/media/image44.png" style="width:48%" />
 
 The third option for building a release process is use Fabric REST APIs
 to automate pushing changes from GIT to a target workspace. Implementing
