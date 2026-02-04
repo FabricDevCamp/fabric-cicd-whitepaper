@@ -592,25 +592,23 @@ database_server = 'devcamp.database.windows.net'
 database_name = 'ProductSalesDev'
 ```
 
-The obvious problem is that these hardcoded values are specific to a
+The obvious problem is that these hardcoded settings are specific to a
 single environment. As an alternative, you can leverage a variable
 library to enable support for parameterization. You start by creating a
 new variable library with a display name such as
 **environment_settings**. Next, you can add two string variables named
 **database_server** and **database_name**.
 
-<img src="./images/Part1/media/image28.png"
-style="width:4.88895in;height:1.59072in" />
+<img src="./images/Part1/media/image28.png" style="width:50%" />
 
 Once you have created the variable library with the two variables, you
 can remove the hardcoded configuration values from the notebook and
 replace them with code to read the variable values at run time.
 
-database_server =
-notebookutils.variableLibrary.get("\$(/\*\*/environment_settings/database_server)")
-
-database_name =
-notebookutils.variableLibrary.get("\$(/\*\*/environment_settings/database_server)")
+``` python
+database_server = notebookutils.variableLibrary.get("\$(/\*\*/environment_settings/database_server)")
+database_name = notebookutils.variableLibrary.get("\$(/\*\*/environment_settings/database_server)")
+```
 
 You have learned that a variable library allows you to add variables.
 That's probably not too surprising. However, variable libraries have
