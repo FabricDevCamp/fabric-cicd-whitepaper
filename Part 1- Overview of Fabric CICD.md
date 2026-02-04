@@ -751,7 +751,7 @@ workspace item type. Every item definition requires a file named
 **.platform** which is known as the **platform file**. The platform file
 contains metadata such as the item type and display name.
 
-<img src="./images/Part1/media/image35.png" style="width:50%" />
+<img src="./images/Part1/media/image35.png" style="width:70%" />
 
 The platform file contains a **logicalId** value which is used by Fabric
 internally to track logical instances of workspace items as they are
