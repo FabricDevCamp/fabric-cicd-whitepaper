@@ -1417,7 +1417,9 @@ experiment, let's compare the results of calling **Get Item** versus
 **Get Lakehouse**. A call to **Get Item** results in an HTTP GET request
 to a URL which targets the **items** endpoint for a specific workspace.
 
+```
 https://api.fabric.microsoft.com/v1/workspaces/{workspaceId}/items/{itemId}
+```
 
 The response from **Get Item** returns a JSON element which contains
 properties common to all types of workspace items.
