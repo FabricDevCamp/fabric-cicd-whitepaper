@@ -1055,17 +1055,12 @@ size value and run the **apply** command. That's it. Now your problem is
 figuring out what to with the all free time you're afforded since
 adopting Terraform.
 
-The walkthrough in **Part 2 - Deploying a Fabric CI/CD Project** will
+> The walkthrough in **Part 2 - Deploying a Fabric CI/CD Project** will
 demonstrate the technique of creating a Terraform module as an
 environment template for use across three configurations to create
 environments for **dev**, **test** and **prod**.
 
-**Resources for Terraform**
-> - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
-> - [Terraform on Azure documentation](https://learn.microsoft.com/en-us/azure/developer/terraform/)
-> - [Microsoft Fabric Provider](https://registry.terraform.io/providers/microsoft/fabric/latest/docs)
-
-> Terraform and the Fabric provider also provide capability to create
+Terraform and the Fabric provider also provide capability to create
 workspace items such as lakehouses and notebooks. However, you will find
 that working with item definitions in a Terraform configuration is
 tricky because making dynamic updates to item definition files requires
@@ -1074,6 +1069,11 @@ practitioners prefer using Terraform exclusively for creating and
 managing tenant-level items in Fabric while using either Fabric CLI or
 programming the Fabric REST APIs methods for creating and managing
 workspace items.
+
+**Resources for Terraform:**
+> - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+> - [Terraform on Azure documentation](https://learn.microsoft.com/en-us/azure/developer/terraform/)
+> - [Microsoft Fabric Provider](https://registry.terraform.io/providers/microsoft/fabric/latest/docs)
 
 ### Automation using the Fabric CLI
 
