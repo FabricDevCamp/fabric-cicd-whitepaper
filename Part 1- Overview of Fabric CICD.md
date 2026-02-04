@@ -567,7 +567,7 @@ read variable values from a variable library. This makes it possible to
 avoid hardcoding configuration settings into your code that change
 across environments.
 
-<img src="./images/Part1/media/image26.png" style="width:50%" />
+<img src="./images/Part1/media/image26.png" style="width:42%" />
 
 Consider the classic scenario in which you need to build a release
 process that moves changes through a sequence of workspaces each of
