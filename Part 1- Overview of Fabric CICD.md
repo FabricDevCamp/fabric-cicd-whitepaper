@@ -484,14 +484,12 @@ Commit** panel by default. If you click the **Branches** tab in this
 navigation menu, the **Source control** pane displays the **Branches**
 panel.
 
-<img src="./images/Part1/media/image22.png"
-style="width:2.7394in;height:1.24636in" />
+<img src="./images/Part1/media/image22.png" style="width:50%" />
 
 After navigating to the **Branches** panel, the **Source control** pane
 displays a dropdown menu with branching commands.
 
-<img src="./images/Part1/media/image23.png"
-style="width:3.06143in;height:2.81477in" />
+<img src="./images/Part1/media/image23.png" style="width:50%" />
 
 When you run the **Branch out to workspace** command, Fabric prompts you
 with a dialog with options for creating a new feature branch and
