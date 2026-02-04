@@ -1369,23 +1369,12 @@ like to update the metadata for an existing notebook to switch its
 default lakehouse from one lakehouse to another. You can accomplish this
 using the following steps.
 
-- Call **Get Item Definition** to retrieve JSON response with the
-  current item definition
-
-- Extract the **notebook-content.py** file content and convert it from
-  base64 to plain text
-
-- Perform a find-and-replace operation on **notebook-content.py** to
-  update the workspace id and lakehouse id
-
-- Convert the updated file contents for **notebook-content.py** back
-  into the base64 encoded format
-
-- Update the JSON element for the item definition with the base64
-  encoded content for **notebook-content.py**.
-
-- Call **Update Item Definition** passing the JSON with the updated item
-  definition.
+- Call **Get Item Definition** to retrieve JSON response with the current item definition
+- Extract the **notebook-content.py** file content and convert it from base64 to plain text
+- Perform a find-and-replace operation on **notebook-content.py** to update the workspace id and lakehouse id
+- Convert the updated file contents for **notebook-content.py** back into the base64 encoded format
+- Update the JSON element for the item definition with the base64 encoded content for **notebook-content.py**
+- Call **Update Item Definition** passing the JSON with the updated item definition
 
 This section examined programming the Fabric REST APIs using item
 definitions to create and update workspace items. When you compare this
@@ -1395,19 +1384,11 @@ approach is best for you. If you have seen the movie *The Matix*, you
 can make the analogy that the Fabric CLI represent the blue pill while
 Fabric REST API programming represents the red pill.
 
-Resources for working with item definitions
-
-- [Fabric item definitions
-  overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
-
-- [Create Item
-  API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/create-item?tabs=HTTP)
-
-- [Get Item Definition
-  API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/get-item-definition?tabs=HTTP)
-
-- [Update Item Definition
-  API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/update-item-definition?tabs=HTTP)
+**Resources for working with item definitions:**
+> - [Fabric item definitions overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
+> - [Create Item API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/create-item?tabs=HTTP)
+> - [Get Item Definition API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/get-item-definition?tabs=HTTP)
+> - [Update Item Definition API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/update-item-definition?tabs=HTTP)
 
 When you begin to program the Fabric REST APIs, you might notice that it
 provides item-generic APIs as well as item-specific APIs. You've already
@@ -1435,62 +1416,44 @@ https://api.fabric.microsoft.com/v1/workspaces/{workspaceId}/items/{itemId}
 The response from **Get Item** returns a JSON element which contains
 properties common to all types of workspace items.
 
+``` json
 {
-
-"displayName": "sales",
-
-"description": "Contain for sales data",
-
-"type": "Lakehouse",
-
-"workspaceId": "{LAKEHOUSE_ID}",
-
-"id": "{WORKSPACE_ID}"
-
+  "displayName": "sales",
+  "description": "Contain for sales data",
+  "type": "Lakehouse",
+  "workspaceId": "{LAKEHOUSE_ID}",
+  "id": "{WORKSPACE_ID}"
 }
+```
 
 Now let's compare this to a call to **Get Lakehouse** which uses an URL
 targeting the **lakehouses** endpoint for a workspace.
 
+```
 https://api.fabric.microsoft.com/v1/workspaces/{workspaceId}/lakehouses/{lakehouseId}
+```
 
 The response from **Get Lakehouse** includes a **properties** element
 with additional properties that are specific to lakehouses.
 
+``` josn
 {
-
-"displayName": "sales",
-
-"description": "Contain for sales data",
-
-"type": "Lakehouse",
-
-"workspaceId": "{LAKEHOUSE_ID}",
-
-"id": "{WORKSPACE_ID}"
-
-"properties": {
-
-"oneLakeTablesPath":
-"https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Tables",
-
-"oneLakeFilesPath":
-"https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Files",
-
-"sqlEndpointProperties": {
-
-"connectionString":
-"{SQL_ENDPOINT_UNIQUE_PATH}.datawarehouse.fabric.microsoft.com",
-
-"id": "{SQL_ENDPOINT_ID}",
-
-"provisioningStatus": "Success"
-
+  "displayName": "sales",
+  "description": "Contain for sales data",
+  "type": "Lakehouse",
+  "workspaceId": "{LAKEHOUSE_ID}",
+  "id": "{WORKSPACE_ID}"
+  "properties": {
+    "oneLakeTablesPath": "https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Tables",
+    "oneLakeFilesPath": "https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Files",
+    "sqlEndpointProperties": {
+      "connectionString": "{SQL_ENDPOINT_UNIQUE_PATH}.datawarehouse.fabric.microsoft.com",
+      "id": "{SQL_ENDPOINT_ID}",
+      "provisioningStatus": "Success"
+    }
+  }
 }
-
-}
-
-}
+```
 
 There is a common scenario in which you need to create a lakehouse along
 with a semantic model which connects to that lakehouse using the OneLake
@@ -1522,8 +1485,7 @@ GIT** completes. For example, you might be required to write code for a
 post-sync job to update workspace items to reestablish item relations or
 to replace environment-specific settings.
 
-<img src="./images/Part1/media/image43.png"
-style="width:4.00224in;height:0.90786in" />
+<img src="./images/Part1/media/image43.png" style="width:50%" />
 
 A second issue with using GIT synchronization is that requires a
 connection between the target workspace and a GIT branch. When a
@@ -1533,8 +1495,7 @@ synchronization. For example, the workspace summary page displays the
 **Status** column with values such as **Synced** or **Update required**
 which you might prefer to hide from users in a production workspace.
 
-<img src="./images/Part1/media/image44.png"
-style="width:3.13963in;height:1.13625in" />
+<img src="./images/Part1/media/image44.png" style="width:50%" />
 
 The third option for building a release process is use Fabric REST APIs
 to automate pushing changes from GIT to a target workspace. Implementing
@@ -1551,8 +1512,7 @@ ability to update item definitions on the fly to replace
 environment-specific settings and to reestablish relationships between
 workspace items
 
-<img src="./images/Part1/media/image45.png"
-style="width:3.24856in;height:1.07443in" />
+<img src="./images/Part1/media/image45.png" style="width:50%" />
 
 In theory, you could spend the time and energy required to implement a
 release process using the Fabric REST APIs. However, this approach would
@@ -1587,7 +1547,9 @@ workspace item types add to the platform.
 The **fabric-cicd** library is available in the **Python Package Index
 (PyPI)** which enables you to install it using **pip install**.
 
+``` powershell
 pip install fabric-cicd
+```
 
 The **fabric-cicd** library is commonly used to build release processes
 that run in Azure DevOps or in GitHub. The ability to install on demand
@@ -1596,41 +1558,29 @@ Azure pipelines or GitHub Custom Actions.
 
 To get started with **fabric-cicd**, you first need to create a
 **FabricWorkspace** object initialized with the three properties.
-
-- **repository_directory:** path to top-level folder which contains item
-  definitions
-
+- **repository_directory:** path to top-level folder which contains item definitions
 - **workspace_id:** target workspace id
-
-- **item_type_in_scope**: string array containing workspace item types
-  to include in deployment processing
+- **item_type_in_scope**: string array containing workspace item types to include in deployment processing
 
 After initializing a **FabricWorkspace** object, you can pass it as a
 parameter in a call to a function named **publish_all_items.** The call
 to **publish_all_items** starts the **fabric-cicd** deployment process
 and blocks synchronously until the job completes.
 
-from fabric_cicd import FabricWorkspace, publish_all_items,
-unpublish_all_orphan_items
+``` python
+from fabric_cicd import FabricWorkspace, publish_all_items
 
 # Initialize the FabricWorkspace object with the required properties
-
 target_workspace = FabricWorkspace(
-
-repository_directory = "{PATH_TO_ FOLDER_WITH_ITEM_DEFINITIONS}",
-
-workspace_id = "{TARGET_WORKSPACE_ID}",
-
-environment = "PROD",
-
-item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel",
-"Report", "VariableLibrary"],
-
+  repository_directory = "{PATH_TO_ FOLDER_WITH_ITEM_DEFINITIONS}",
+  workspace_id = "{TARGET_WORKSPACE_ID}",
+  environment = "PROD",
+  item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel", "Report", "VariableLibrary"]
 )
 
 # run the deployment process
-
 publish_all_items(target_workspace)
+```
 
 When you call **publish_all_items**, **fabric-cicd** runs a deployment
 process which enumerates through each item definition and calls either
@@ -1639,8 +1589,7 @@ target item already exists. Keep in mind that **fabric-cicd** will
 ignore any workspace items whose type is not explicitly included in the
 **item_type_in_scope** property.
 
-<img src="./images/Part1/media/image46.png"
-style="width:4.81712in;height:1.41257in" />
+<img src="./images/Part1/media/image46.png" style="width:50%" />
 
 You've just learned how to use **fabric-cicd** to push changes from a
 source folder of item definitions to a target workspace. The next thing
@@ -1656,8 +1605,7 @@ model connects to the lakehouse as its datasource using a DirectLake on
 OneLake connection. You are currently at a phase where you have this
 Fabric solution up and running in the **dev** workspace.
 
-<img src="./images/Part1/media/image47.png"
-style="width:0.66676in;height:1.06034in" />
+<img src="./images/Part1/media/image47.png" style="width:50%" />
 
 Your next step is to set up GIT integration between the **dev**
 workspace and a **release** branch. You connect the **dev** workspace to
@@ -1668,8 +1616,7 @@ points to the lakehouse in **dev**. The problem you need to avoid is
 propagating these types of environment-specific settings from **dev** to
 **prod**.
 
-<img src="./images/Part1/media/image48.png"
-style="width:1.74715in;height:1.10325in" />
+<img src="./images/Part1/media/image48.png" style="width:50%" />
 
 Think about what happens when you deploy the lakehouse and semantic
 model from the **release** branch to the **prod** workspace. Without
@@ -1681,8 +1628,7 @@ used to create or update the target semantic model item in **prod**. By
 using parameterization, you can deploy a semantic model with datasource
 settings to successfully reference the lakehouse in **prod**.
 
-<img src="./images/Part1/media/image49.png"
-style="width:3.14847in;height:1.22207in" />
+<img src="./images/Part1/media/image49.png" style="width:50%" />
 
 In general, parameterization is required whenever you need to deal with
 environment-specific settings committed to GIT.
@@ -1694,8 +1640,7 @@ object the **environment** property. Let's start by adding a parameter
 file named **parameter.yml** which is located in the root folder
 containing the item definitions.
 
-<img src="./images/Part1/media/image50.png"
-style="width:2.40532in;height:1.48583in" />
+<img src="./images/Part1/media/image50.png"  style="width:50%" />
 
 To address the deployment problem with the semantic model, you must
 configure **parameter.yml** to run a find-and-replace operation to
@@ -1711,21 +1656,13 @@ replace. The **replace_value** key contains a nested key-value pair for
 each target environment. In this example, the configuration defines two
 target environments named **TEST** and **PROD**.
 
+``` yaml
 find_replace:
-
-- find_value:
-"https://onelake.dfs.fabric.microsoft.com/{dev-workspace-id}-{dev-lakehouse-id}"
-# [dev]
-
-replace_value:
-
-TEST:
-"https://onelake.dfs.fabric.microsoft.com/{test-workspace-id}-{test-lakehouse-id}"
-# [test]
-
-PROD:
-"https://onelake.dfs.fabric.microsoft.com/{prod-workspace-id}-{prod-lakehouse-id}
-# [prod]
+- find_value: "https://onelake.dfs.fabric.microsoft.com/{dev-workspace-id}-{dev-lakehouse-id}" # [dev]
+  replace_value:
+    TEST: "https://onelake.dfs.fabric.microsoft.com/{test-workspace-id}-{test-lakehouse-id}"   # [test]
+    PROD: "https://onelake.dfs.fabric.microsoft.com/{prod-workspace-id}-{prod-lakehouse-id}"   # [prod]
+```
 
 By default, **fabric-cicd** processes a find-and-replace operation by
 inspecting every file in each item definition who type is include in the
@@ -1742,27 +1679,16 @@ find-and-replace operation to restrict processing so it only inspects
 the **expressions.tmdl** file found in the item definitions for semantic
 models.
 
+``` yaml
 find_replace:
-
-- find_value:
-"https://onelake.dfs.fabric.microsoft.com/{dev-workspace-id}-{dev-lakehouse-id}"
-# [dev]
-
-replace_value:
-
-TEST:
-"https://onelake.dfs.fabric.microsoft.com/{test-workspace-id}-{test-lakehouse-id}"
-# [test]
-
-PROD:
-"https://onelake.dfs.fabric.microsoft.com/{prod-workspace-id}-{prod-lakehouse-id}
-# [prod]
-
-Item_type: "SemanticModel"
-
-file_path:
-
-- "/definition/expressions.tmdl"
+- find_value: "https://onelake.dfs.fabric.microsoft.com/{dev-workspace-id}-{dev-lakehouse-id}" # [dev]
+  replace_value:
+    TEST: "https://onelake.dfs.fabric.microsoft.com/{test-workspace-id}-{test-lakehouse-id}"   # [test]
+    PROD: "https://onelake.dfs.fabric.microsoft.com/{prod-workspace-id}-{prod-lakehouse-id}"   # [prod]
+  Item_type: "SemanticModel"
+  file_path:
+    - "/definition/expressions.tmdl"
+```
 
 The second step required to get parameterization working is to
 initialize the **FabricWorkspace** object with one additional property
@@ -1773,35 +1699,25 @@ with target environments such as **TEST** and **PROD**, it's trivial to
 write the code to deploy to either the **test** workspace or the
 **prod** workspace
 
+``` python
 test_workspace = FabricWorkspace(
-
-environment = "TEST",
-
-repository_directory = "{PATH_TO_FOLDER_WITH_ITEM_DEFINITION}",
-
-workspace_id = "{TEST_WORKSPACE_ID}",
-
-item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel",
-"Report", "VariableLibrary"],
-
+  environment = "TEST",
+  repository_directory = "{PATH_TO_FOLDER_WITH_ITEM_DEFINITION}",
+  workspace_id = "{TEST_WORKSPACE_ID}",
+  item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel", "Report", "VariableLibrary"]
 )
 
 publish_all_items(test_workspace)
 
 prod_workspace = FabricWorkspace(
-
-environment = "PROD",
-
-repository_directory = "{PATH_TO_FOLDER_WITH_ITEM_DEFINITION}",
-
-workspace_id = "{PROD_WORKSPACE_ID}",
-
-item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel",
-"Report", "VariableLibrary"],
-
+  environment = "PROD",
+  repository_directory = "{PATH_TO_FOLDER_WITH_ITEM_DEFINITION}",
+  workspace_id = "{PROD_WORKSPACE_ID}",
+  item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel", "Report", "VariableLibrary"]
 )
 
 publish_all_items(prod_workspace)
+```
 
 The parameterization support in **fabric-cicd** is powerful because it
 allows you to build a release process with a one-to-many mapping between
@@ -1810,8 +1726,7 @@ provides another reason why you might select **fabric-cicd** over
 Deployment Pipelines and GIT synchronization as the best choice for
 building a release process.
 
-<img src="./images/Part1/media/image51.png"
-style="width:1.78234in;height:1.4671in" />
+<img src="./images/Part1/media/image51.png"  style="width:50%" />
 
 The rich parameterization support available with **fabric-cicd** goes
 far beyond what you saw in this simple example. There is support for
@@ -1821,17 +1736,11 @@ YAML files. There is also parameterization support for setting the Spark
 settings in the target workspace and for binding a semantic model to a
 pre-existing connection.
 
-Resource for learning more about fabric-cicd
-
-- [Home page](https://microsoft.github.io/fabric-cicd/0.1.7/)
-
-- [Code
-  Samples](https://microsoft.github.io/fabric-cicd/0.1.7/code_sample/)
-
-- [Code
-  Reference](https://microsoft.github.io/fabric-cicd/0.1.7/code_reference/)
-
-- [Parameterization](https://microsoft.github.io/fabric-cicd/0.1.33/how_to/parameterization/)
+**Learning more about fabric-cicd:**
+> - [Home page](https://microsoft.github.io/fabric-cicd/0.1.7/)
+> - [Code Samples](https://microsoft.github.io/fabric-cicd/0.1.7/code_sample/)
+> - [Code Reference](https://microsoft.github.io/fabric-cicd/0.1.7/code_reference/)
+> - [Parameterization](https://microsoft.github.io/fabric-cicd/0.1.33/how_to/parameterization/)
 
 ## Developing Workflows for a Fabric CI/CD Project
 
@@ -1855,8 +1764,7 @@ the GIT repository that's created along with the project is all you
 need. However, you can always add other repositories to a project if
 it's needed.
 
-<img src="./images/Part1/media/image52.png"
-style="width:3.3222in;height:0.87792in" />
+<img src="./images/Part1/media/image52.png" style="width:50%" />
 
 Azure Pipelines is the CI/CD workflow service that's built into Azure
 DevOps which provides features to integrate, test and deploy code using
@@ -1873,8 +1781,7 @@ Azure DevOps CLI or the Azure REST APIs. Once a pipeline has been
 registered, you should be able to see it in the **Pipelines** page in an
 Azure DevOps project.
 
-<img src="./images/Part1/media/image53.png"
-style="width:2.53555in;height:1.10719in" />
+<img src="./images/Part1/media/image53.png" style="width:50%" />
 
 You can write the code for an Azure pipeline in a programming language
 such as PowerShell or Python. This is accomplished by referencing the
@@ -1885,8 +1792,7 @@ scripts in the **src** folder. Below these two folders you can also see
 the **workspace** folder which contains the item definitions for a
 specific workspace.
 
-<img src="./images/Part1/media/image54.png"
-style="width:1.79409in;height:1.75842in" />
+<img src="./images/Part1/media/image54.png" style="width:50%" />
 
 As you begin to develop Azure pipelines for a Fabric CI/CD project, you
 will find there's a need to track environment settings such as the ids
@@ -1901,8 +1807,7 @@ then add a set of named variables along with their values. The following
 screenshot shows the typical set of variables created for Azure
 pipelines in a Fabric CI/CD project.
 
-<img src="./images/Part1/media/image55.png"
-style="width:3.39496in;height:1.1021in" />
+<img src="./images/Part1/media/image55.png" style="width:50%" />
 
 When you create a variable that contains sensitive data, you can mark
 that variable as a secret. For example, your pipeline might need to
@@ -1928,8 +1833,7 @@ variables and secrets. These permissions can be configured using the
 **Pipeline permissions** dialog in the Azure Devops user interface or by
 using the Azure DevOps CLI or the Azure REST APIs.
 
-<img src="./images/Part1/media/image56.png"
-style="width:3.58499in;height:1.71429in" />
+<img src="./images/Part1/media/image56.png" style="width:50%" />
 
 As you begin to develop with Azure pipelines, you should become familiar
 with monitoring pipeline runs in order to test and debug your code. It's
@@ -1938,25 +1842,14 @@ and to provide diagnostic information about any errors that occur. The
 following screenshot shows how an Azure pipeline can be written to log
 its progress in a Fabric CI/CD workflow.
 
-<img src="./images/Part1/media/image57.png"
-style="width:4.21993in;height:1.65711in" />
+<img src="./images/Part1/media/image57.png" style="width:50%" />
 
-Azure DevOps Pipeline Resources
-
-- [Azure Pipelines
-  documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
-
-- [Key
-  concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
-
-- [YAML pipeline
-  editor](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/yaml-pipeline-editor?view=azure-devops)
-
-- [Manage variable
-  groups](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml)
-
-- [Use Azure Key Vault secrets in Azure
-  Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=managedidentity%2Cyaml)
+**Azure DevOps Pipeline Resources:**
+> - [Azure Pipelines documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
+> - [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+> - [YAML pipeline editor](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/yaml-pipeline-editor?view=azure-devops)
+> - [Manage variable groups](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml)
+> - [Use Azure Key Vault secrets in Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=managedidentity%2Cyaml)
 
 ### Developing GitHub Workflow Actions
 
@@ -1967,8 +1860,7 @@ projects to assist with organizing repositories, the use of projects in
 GitHub is optional. When using GitHub as the GIT provider for a Fabric
 CI/CD project, you just need to create a repository to get started.
 
-<img src="./images/Part1/media/image58.png"
-style="width:2.34809in;height:1.03316in" />
+<img src="./images/Part1/media/image58.png" style="width:50%" />
 
 GitHub Actions is the workflow platform in GitHub that allows you to
 automate CI/CD tasks. You can create GitHub Actions workflows that can
@@ -1985,8 +1877,7 @@ in a language such as PowerShell or Python. The following screenshot
 shows a typical example of the file structure of a Fabric CI/CD project
 in a GitHub repository.
 
-<img src="./images/Part1/media/image59.png"
-style="width:2.06807in;height:1.67883in" />
+<img src="./images/Part1/media/image59.png" style="width:50%" />
 
 As you begin to develop Git Actions workflows for a Fabric CI/CD
 project, you need a way to track environment settings such as the ids
@@ -2002,16 +1893,14 @@ from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
 memory when the workflow completes.
 
-<img src="./images/Part1/media/image60.png"
-style="width:3.90423in;height:1.02703in" />
+<img src="./images/Part1/media/image60.png" style="width:50%" />
 
 You can also add variables to a GitHub repository for environment
 settings that are not sensitive. The following screenshot shows an
 example of variables created for Azure pipelines in a Fabric CI/CD
 project.
 
-<img src="./images/Part1/media/image61.png"
-style="width:2.55979in;height:1.49392in" />
+<img src="./images/Part1/media/image61.png" style="width:50%" />
 
 Unlike Azure pipelines, there is no need to configure permissions
 because GitHub Actions workflows automatically have access to secrets
@@ -2031,22 +1920,19 @@ authentication credentials for each Entra Id tenant. You can start by
 creating three different environments in your GitHub repository named
 **dev**, **test** and **prod**.
 
-<img src="./images/Part1/media/image62.png"
-style="width:3.56465in;height:1.23178in" />
+<img src="./images/Part1/media/image62.png" style="width:50%" />
 
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/Part1/media/image63.png"
-style="width:2.21279in;height:1.4922in" />
+<img src="./images/Part1/media/image63.png" style="width:50%" />
 
 Once you have added the YAML file for a GitHub Actions workflow into the
 **.github/workflows** folder, you can view that workflow in the left
 navigation of the **Actions** page. You can also select a workflow see
 its run history.
 
-<img src="./images/Part1/media/image64.png"
-style="width:3.74109in;height:1.44447in" />
+<img src="./images/Part1/media/image64.png" style="width:50%" />
 
 After selecting a workflow in the left navigation, you can drill into a
 specific workflow run and view its logs. You can also run a workflow on
@@ -2057,8 +1943,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/Part1/media/image65.png"
-style="width:1.65368in;height:1.55828in" />
+<img src="./images/Part1/media/image65.png" style="width:50%" />
 
 As you begin to develop GitHub Actions workflows, you should become
 familiar with monitoring workflow runs in order to test and debug your
@@ -2067,20 +1952,13 @@ operations and to display diagnostic information about any errors that
 occur. The following screenshot shows an example of an Azure pipeline
 written to log its progress in a Fabric CI/CD workflow.
 
-<img src="./images/Part1/media/image66.png"
-style="width:3.26471in;height:1.89776in" />
+<img src="./images/Part1/media/image66.png" style="width:50%" />
 
-Resources for GitHub Actions Workflows
-
-- [Understanding GitHub
-  Actions](https://docs.github.com/en/actions/get-started/understand-github-actions)
-
-- [Workflows](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows)
-
-- [Variables](https://docs.github.com/en/actions/concepts/workflows-and-actions/variables)
-
-- [Deployment
-  environments](https://docs.github.com/en/actions/concepts/workflows-and-actions/deployment-environments)
+****GitHub Actions Workflows:**
+> - [Understanding GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions)
+> - [Workflows](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows)
+> - [Variables](https://docs.github.com/en/actions/concepts/workflows-and-actions/variables)
+> - [Deployment environments](https://docs.github.com/en/actions/concepts/workflows-and-actions/deployment-environments)
 
 ## Summary
 
