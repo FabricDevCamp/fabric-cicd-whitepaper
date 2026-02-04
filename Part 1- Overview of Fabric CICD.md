@@ -1518,9 +1518,9 @@ ability to update item definitions on the fly to replace
 environment-specific settings and to reestablish relationships between
 workspace items
 
-<img src="./images/Part1/media/image45.png" style="width:72%" />
+<img src="./images/Part1/media/image45.png" style="width:78%" />
 
-In theory, you could spend the time and energy required to implement a
+> In theory, you could spend the time and energy required to implement a
 release process using the Fabric REST APIs. However, this approach would
 require a non-trivial coding effort because it requires custom logic
 that differs across workspace item types. Fortunately, there's a much
