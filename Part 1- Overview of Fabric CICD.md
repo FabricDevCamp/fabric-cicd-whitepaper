@@ -726,7 +726,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the **prod** workspace were
 both able to self-manage their relations.
 
-<img src="./images/Part1/media/image34.png" style="width:60%" />
+<img src="./images/Part1/media/image34.png" style="width:72%" />
 
 This example demonstrates how notebooks and pipelines support
 auto-binding behavior. Keep in mind that not all workspace item support
