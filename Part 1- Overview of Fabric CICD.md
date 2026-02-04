@@ -599,7 +599,7 @@ new variable library with a display name such as
 **environment_settings**. Next, you can add two string variables named
 **database_server** and **database_name**.
 
-<img src="./images/Part1/media/image28.png" style="width:70%" />
+<img src="./images/Part1/media/image28.png" style="width:60%" />
 
 Once you have created the variable library with the two variables, you
 can remove the hardcoded configuration values from the notebook and
