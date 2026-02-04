@@ -1866,7 +1866,7 @@ projects to assist with organizing repositories, the use of projects in
 GitHub is optional. When using GitHub as the GIT provider for a Fabric
 CI/CD project, you just need to create a repository to get started.
 
-<img src="./images/Part1/media/image58.png" style="width:70%" />
+<img src="./images/Part1/media/image58.png" style="width:64%" />
 
 GitHub Actions is the workflow platform in GitHub that allows you to
 automate CI/CD tasks. You can create GitHub Actions workflows that can
@@ -1931,7 +1931,7 @@ creating three different environments in your GitHub repository named
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/Part1/media/image63.png" style="width:70%" />
+<img src="./images/Part1/media/image63.png" style="width:60%" />
 
 Once you have added the YAML file for a GitHub Actions workflow into the
 **.github/workflows** folder, you can view that workflow in the left
