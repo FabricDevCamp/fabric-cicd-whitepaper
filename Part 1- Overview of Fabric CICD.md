@@ -160,7 +160,7 @@ workspace item. The Fabric workspace UI provides a **GIT status** column
 that displays **Synced** indicating all workspace items are in sync with
 the item definitions stored in the GIT repository.
 
-<img src="./images/Part1/media/image6.png" style="width:94%" />
+<img src="./images/Part1/media/image6.png" style="width:88%" />
 
 Fabric uses a naming convention for workspace item folders which includes item
 display name, a period and the item type in the format of **[Item
