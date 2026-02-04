@@ -1278,7 +1278,7 @@ substitute the workspace id, lakehouse id and lakehouse display name
 into the contents of **notebook-content.py**.
 
 ``` python
-# Fabric notebook source#
+# Fabric notebook source
 
 # METADATA ********************
 
@@ -1298,7 +1298,7 @@ into the contents of **notebook-content.py**.
 # META }
 ```
 
-Directly manipulating item definition files is a powerful technique that
+> Directly manipulating item definition files is a powerful technique that
 assumes you know what you are doing. If you update an item definition
 file with invalid syntax, you will experience errors when calling
 **Create Item** and **Update Item Definition**.
