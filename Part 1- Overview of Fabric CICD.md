@@ -133,7 +133,7 @@ control connection to the target Azure DevOps repository, you can then
 select an **Organization**, **Project**, **Git repository** and
 **Branch**. Optionally, you can include a **Git folder** setting.
 
-<img src="./images/Part1/media/image5.png" style="width:60%" />
+<img src="./images/Part1/media/image5.png" style="width:50%" />
 
 Specifying a **Git folder** setting allows you to avoid storing the
 folders containing workspace item definitions in the root folder of the
