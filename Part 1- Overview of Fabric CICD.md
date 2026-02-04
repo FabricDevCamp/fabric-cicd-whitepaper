@@ -175,7 +175,7 @@ solution is spread out across two workspaces with a staging workspace
 and a presentation workspace. The staging workspace can be connected to
 a branch with the **Git folder** setting of **workspace/staging** while
 the presentation workspace can be connected to the same branch with a
-**Git folder** setting of **workspace/presentation**. Event though this
+**Git folder** setting of **workspace/presentation**. Even though this
 type of solution is spread out across multiple workspaces, the source
 code for the entire solution is tracked in a single branch.
 
