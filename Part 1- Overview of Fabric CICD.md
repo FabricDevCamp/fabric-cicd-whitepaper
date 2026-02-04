@@ -162,7 +162,7 @@ the item definitions stored in the GIT repository.
 
 <img src="./images/Part1/media/image6.png" style="width:94%" />
 
-Fabric uses a naming convention for workspace items which includes item
+Fabric uses a naming convention for workspace item folders which includes item
 display name, a period and the item type in the format of **\[Item
 Display Name\].\[Item Type\].** You can see from the previous screenshot
 that GIT synchronization creates folders using this naming convention
