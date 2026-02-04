@@ -1906,7 +1906,7 @@ settings that are not sensitive. The following screenshot shows an
 example of variables created for Azure pipelines in a Fabric CI/CD
 project.
 
-<img src="./images/Part1/media/image61.png" style="width:56%" />
+<img src="./images/Part1/media/image61.png" style="width:60%" />
 
 > Unlike Azure pipelines, there is no need to configure permissions
 because GitHub Actions workflows automatically have access to secrets
