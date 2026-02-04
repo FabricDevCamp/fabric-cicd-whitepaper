@@ -338,7 +338,7 @@ corrective action to resolve them before you can commit your changes.
 
 <img src="./images/Part1/media/image17.png" style="width:65%" />
 
-**Resolving merge conflicts in Fabric:**
+> **Learn more about resolving merge conflicts:**
 > - [Resolve conflict in a Fabric workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution)
 
 When you have multiple workspaces connected to a single GIT branch,
