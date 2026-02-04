@@ -1250,7 +1250,7 @@ Item Definition** API allows you to pass an item definition when
 updating a workspace item. Third, the **Get Item Definition** API allows
 you to retrieve the item definition for an existing workspace item.
 
-<img src="./images/Part1/media/image41.png" style="width:50%" />
+<img src="./images/Part1/media/image41.png" style="width:75%" />
 
 Let's walk through a scenario in which creating a workspace item
 requires dynamically updating an item definition file. Imagine you have
