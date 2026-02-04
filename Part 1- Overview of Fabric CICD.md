@@ -338,7 +338,7 @@ corrective action to resolve them before you can commit your changes.
 
 <img src="./images/Part1/media/image17.png" style="width:65%" />
 
-> **<ins>Learn more about resolving merge conflicts:</ins>**
+> **<ins>Learn more about resolving merge conflicts</ins>**
 > - [Resolve conflict in a Fabric workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution)
 >
 
@@ -404,7 +404,7 @@ its contents represent the single source of truth that is always ready
 for deployment to test and production environments. Remember the release branch is a 
 concept not a name. A release branch is typically given a name such as **main** or **dev**.
 
-**Creating and managing pull requests:**
+> **<ins>Learn more about creating and merging pull request</ins>**
 > - [Create pull requests in Azure Dev Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
 > - [Creating a pull request in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
