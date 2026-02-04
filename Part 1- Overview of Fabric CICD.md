@@ -621,8 +621,7 @@ important. You've learned that a variable library is a collection of
 variables where each variable is defined with a name, a type and a
 default value.
 
-<img src="./images/Part1/media/image29.png"
-style="width:4.30636in;height:0.89744in" />
+<img src="./images/Part1/media/image29.png" style="width:45%" />
 
 The purpose of a value set is to provide an alternate set of values for
 each of the variables in the variable library. Consider an example of a
@@ -631,8 +630,7 @@ the **dev** environment. You can extend the variable library by adding a
 value set for the **test** workspace and a second value set for the
 **prod** workspace.
 
-<img src="./images/Part1/media/image30.png"
-style="width:4.41862in;height:1.17912in" />
+<img src="./images/Part1/media/image30.png" style="width:60%" />
 
 The item definition for a variable library includes variables and values
 sets. However the item definition does not contain anything to indicate
@@ -642,8 +640,7 @@ context of that workspace. That means three different workspaces could
 each contain a variable library with an identical item definition, yet
 each workspace can be configured to use a different value set.
 
-<img src="./images/Part1/media/image31.png"
-style="width:5.53186in;height:1.13147in" />
+<img src="./images/Part1/media/image31.png" style="width:60%" />
 
 ### Workspace Item Types
 
