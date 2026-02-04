@@ -726,7 +726,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the **prod** workspace were
 both able to self-manage their relations.
 
-<img src="./images/Part1/media/image34.png" style="width:80%" />
+<img src="./images/Part1/media/image34.png" style="width:70%" />
 
 This example demonstrates how notebooks and pipelines support
 auto-binding behavior. Keep in mind that not all workspace item support
@@ -735,7 +735,7 @@ types that lack support for auto-binding, you might be required to write
 a script for post-sync job to correctly reestablish workspace item
 relations.
 
-Notebooks did not support auto-binding throughout 2025. However,
+> Notebooks did not support auto-binding throughout 2025. However,
 Microsoft updated the **Notebook** workspace item type in Q1 of 2026
 with support for auto-binding. If you encounter a workspace item type
 that lacks auto-binding support, it is likely that adding auto-binding
