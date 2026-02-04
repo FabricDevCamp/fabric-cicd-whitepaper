@@ -1958,7 +1958,7 @@ operations and to display diagnostic information about any errors that
 occur. The following screenshot shows an example of an Azure pipeline
 written to log its progress in a Fabric CI/CD workflow.
 
-<img src="./images/Part1/media/image66.png" style="width:50%" />
+<img src="./images/Part1/media/image66.png" style="width:80%" />
 
 **GitHub Actions Workflows:**
 > - [Understanding GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions)
