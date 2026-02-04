@@ -525,7 +525,7 @@ The key concept behind Deployment Pipelines is that changes to workspace
 items can be deployed through a set of stages where each stage
 represents a specific environment implemented using a Fabric workspace.
 
-<img src="./images/Part1/media/image24.png" style="width:40%" />
+<img src="./images/Part1/media/image24.png" style="width:65%" />
 
 Deployment pipelines are designed to assist with continuous deployment
 in building a release process. You must keep in mind that release
@@ -542,7 +542,7 @@ process have been propagated to the **dev** workspace, the Deployment
 Pipeline is used to implement a release process to deploy changes to the
 **test** workspace and then on to the **prod** workspace.
 
-<img src="./images/Part1/media/image25.png" style="width:40%" />
+<img src="./images/Part1/media/image25.png" style="width:65%" />
 
 Deployment pipelines were designed to enhance productivity by hiding
 many of the low-level details of pushing workspace item changes across
