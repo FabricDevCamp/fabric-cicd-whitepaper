@@ -1931,7 +1931,7 @@ creating three different environments in your GitHub repository named
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/Part1/media/image63.png" style="width:60%" />
+<img src="./images/Part1/media/image63.png" style="width:54%" />
 
 Once you have added the YAML file for a GitHub Actions workflow into the
 **.github/workflows** folder, you can view that workflow in the left
