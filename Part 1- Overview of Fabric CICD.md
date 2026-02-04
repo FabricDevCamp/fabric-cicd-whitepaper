@@ -751,7 +751,7 @@ workspace item type. Every item definition requires a file named
 **.platform** which is known as the **platform file**. The platform file
 contains metadata such as the item type and display name.
 
-<img src="./images/Part1/media/image35.png" style="width:70%" />
+<img src="./images/Part1/media/image35.png" style="width:80%" />
 
 > The platform file contains a **logicalId** value which is used by Fabric
 internally to track logical instances of workspace items as they are
@@ -766,7 +766,7 @@ definition. For example, the file structure for a notebook item
 definition is simple. It just requires one additional definition file
 named **notebook-contents.py**.
 
-<img src="./images/Part1/media/image36.png" style="width:50%" />
+<img src="./images/Part1/media/image36.png" style="width:35%" />
 
 Note that Fabric supports working with **Notebook** item definitions
 using either the **.py** format or the **.ipynb** format.
@@ -774,7 +774,7 @@ using either the **.py** format or the **.ipynb** format.
 The item definition for a lakehouse will contain a different set of item
 definition files.
 
-<img src="./images/Part1/media/image37.png" style="width:50%" />
+<img src="./images/Part1/media/image37.png" style="width:35%" />
 
 Other workspace item types can have item definitions that are far more
 complex. For example, the item definition for a semantic model can
