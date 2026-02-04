@@ -214,7 +214,7 @@ pane has two tabs named **Changes** and **Updates**. The **Changes** tab
 shows the workspace items which have changes that have not yet been
 committed to GIT.
 
-<img src="./images/Part1/media/image9.png" style="width:75%" />
+<img src="./images/Part1/media/image9.png" style="width:82%" />
 
 > What happens if you made a mistake while editing the report and
 accidently saved your changes? You can click the **Undo** button to
