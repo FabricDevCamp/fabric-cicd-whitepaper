@@ -400,10 +400,8 @@ The **release branch** is an essential concept in continuous
 integration. The release branch is the shared branch where everyone's
 changes are merged together. It's called the *release branch* because
 its contents represent the single source of truth that is always ready
-for deployment to test and production environments.
-
-> The release branch is a concept not a name. A release branch is
-typically given a name such as **main** or **dev**.
+for deployment to test and production environments. Remember the release branch is a 
+concept not a name. A release branch is typically given a name such as **main** or **dev**.
 
 **Creating and managing pull requests:**
 > - [Create pull requests in Azure Dev Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
