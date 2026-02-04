@@ -525,8 +525,7 @@ The key concept behind Deployment Pipelines is that changes to workspace
 items can be deployed through a set of stages where each stage
 represents a specific environment implemented using a Fabric workspace.
 
-<img src="./images/Part1/media/image24.png"
-style="width:3.01381in;height:1.03502in" />
+<img src="./images/Part1/media/image24.png" style="width:40%" />
 
 Deployment pipelines are designed to assist with continuous deployment
 in building a release process. You must keep in mind that release
@@ -543,8 +542,7 @@ process have been propagated to the **dev** workspace, the Deployment
 Pipeline is used to implement a release process to deploy changes to the
 **test** workspace and then on to the **prod** workspace.
 
-<img src="./images/Part1/media/image25.png"
-style="width:2.72919in;height:1.59607in" />
+<img src="./images/Part1/media/image25.png" style="width:40%" />
 
 Deployment pipelines were designed to enhance productivity by hiding
 many of the low-level details of pushing workspace item changes across
@@ -554,7 +552,6 @@ be revisited after you learn a little more about Fabric CI/CD
 fundamentals.
 
 ### Variable Libraries
-
 An essential aspect of the CI/CD lifecycle involves promoting changes
 through a sequence of environments. The canonical example is a release
 workflow which moves changes through environments such as **dev**,
