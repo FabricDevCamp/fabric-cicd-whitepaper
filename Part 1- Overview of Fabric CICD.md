@@ -1486,9 +1486,7 @@ synchronization. When using this approach, you can call the **Update
 from GIT** API to push changes from a release branch to workspace items
 in a target workspace. However, there are issues to consider when
 deciding whether to build a release process based on Fabric GIT
-synchronization.
-
-First, there is typically extra work required after a call **Update from
+synchronization. First, there is typically extra work required after a call **Update from
 GIT** completes. For example, you might be required to write code for a
 post-sync job to update workspace items to reestablish item relations or
 to replace environment-specific settings.
