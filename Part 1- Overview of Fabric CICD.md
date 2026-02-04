@@ -297,8 +297,7 @@ will react by automatically creating a set of workspace items in the
 **dev1** workspace to match the set of workspace items in the **prod**
 workspace.
 
-<img src="./images/Part1/media/image15.png"
-style="width:1.57964in;height:1.21651in" />
+<img src="./images/Part1/media/image15.png"  style="width:35%" />
 
 When you initialize an empty workspace using a **Update from GIT**
 operation, the workspace usually requires additional configuration
@@ -313,8 +312,7 @@ you can save your work. After that, you can run a **Commit to GIT**
 operation to commit the changes from the report item in the **dev1**
 workspace to the report definition in the **main** branch.
 
-<img src="./images/Part1/media/image16.png"
-style="width:1.63767in;height:1.28741in" />
+<img src="./images/Part1/media/image16.png"  style="width:35%" />
 
 Once changes are committed to the **main** branch, the report item in
 **prod** workspace will show a **GIT status** of **Update required**.
@@ -338,11 +336,9 @@ item has a merge conflict, the **Git status** column displays
 item. When you experience merge conflicts, you must take some type of
 corrective action to resolve them before you can commit your changes.
 
-<img src="./images/Part1/media/image17.png"
-style="width:2.74766in;height:1.11988in" />
+<img src="./images/Part1/media/image17.png" style="width:35%" />
 
-Resolving merge conflicts in Fabric
-
+#### Resolving merge conflicts in Fabric
 - [Resolve conflict in a Fabric
   workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution)
 
