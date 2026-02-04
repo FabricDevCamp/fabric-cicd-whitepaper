@@ -57,7 +57,7 @@ everybody’s changes together in a structured process that maintains code
 quality while also getting updates and new features into production as
 quickly as possible.
 
-<img src="./images/Part1/media/image1.png" style="width:45%" />
+<img src="./images/Part1/media/image1.png" style="width:35%" />
 
 **Continuous deployment (CD)** is the practice of automating the
 deployment of code. Deployment is often preceded by some type of
@@ -73,8 +73,7 @@ high quality code reaches production. The release process in a CI/CD
 workflow is often built using a standard set of environments such as
 **dev**, **test** and **prod**.
 
-<img src="./images/Part1/media/image2.png"
-style="width:2.71903in;height:0.82084in" />
+<img src="./images/Part1/media/image2.png"  style="width:35%" />
 
 ## Fabric CI/CD Capabilities
 
