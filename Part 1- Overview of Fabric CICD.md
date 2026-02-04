@@ -440,9 +440,9 @@ connect it to the **feature1** branch. This triggers Fabric to run an
 **Update from GIT** operation which automatically populates the feature
 workspace with a matching set of workspace items.
 
-<img src="./images/Part1/media/image20.png" style="width:32%" />
+<img src="./images/Part1/media/image20.png" style="width:30%" />
 
-When you initialize a feature workspace with an **Update from GIT**
+> When you initialize a feature workspace with an **Update from GIT**
 operation, you're often required to complete additional configuration
 steps before it's ready for development purposes. This topic will be
 revisited in the discussion of automation.
@@ -454,8 +454,7 @@ workspace are first committed to the underlying feature branch. After
 that, you need to create a pull request to merge the changes into the
 release branch.
 
-<img src="./images/Part1/media/image21.png"
-style="width:4.5633in;height:1.66901in" />
+<img src="./images/Part1/media/image21.png"  style="width:30%" />
 
 Keep in mind that feature branches should be short-lived. You don't want
 a feature branch hanging around too long because that increases the risk
