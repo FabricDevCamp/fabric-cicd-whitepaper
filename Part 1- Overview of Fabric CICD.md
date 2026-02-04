@@ -202,7 +202,7 @@ status** column for the report displays **Uncommitted**.
 
 <img src="./images/Part1/media/image8.png" style="width:50%" />
 
-If you update a report in the browser, the **Git status** for that item
+> If you update a report in the browser, the **Git status** for that item
 will continue to display **Synced** until you first save your changes by
 invoking the **Save** command. Other types of workspace items exhibit
 auto-save behavior and don't require an explicit save operation before
@@ -216,7 +216,7 @@ committed to GIT.
 
 <img src="./images/Part1/media/image9.png" style="width:70%" />
 
-What happens if you made a mistake while editing the report and
+> What happens if you made a mistake while editing the report and
 accidently saved your changes? You can click the **Undo** button to
 return the report to its previous state before you started editing.
 Clicking the **Undo** button will discard any changes made to the
@@ -234,8 +234,7 @@ discipline to enter a useful and descriptive message about what is being
 committed. If you leave the textbox empty, Fabric generates a generic
 commit message which doesn’t really indicate what was updated or why.
 
-<img src="./images/Part1/media/image10.png"
-style="width:2.73774in;height:1.86998in" />
+<img src="./images/Part1/media/image10.png" style="width:70%" />
 
 You have seen that you can run a **Commit to GIT operation** to push
 workspace item changes to a GIT branch. However, you can also
