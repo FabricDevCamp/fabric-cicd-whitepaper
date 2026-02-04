@@ -1611,7 +1611,7 @@ model connects to the lakehouse as its datasource using a DirectLake on
 OneLake connection. You are currently at a phase where you have this
 Fabric solution up and running in the **dev** workspace.
 
-<img src="./images/Part1/media/image47.png" style="width:50%" />
+<img src="./images/Part1/media/image47.png" style="width:25%" />
 
 Your next step is to set up GIT integration between the **dev**
 workspace and a **release** branch. You connect the **dev** workspace to
