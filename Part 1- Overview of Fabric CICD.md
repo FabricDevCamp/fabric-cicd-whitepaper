@@ -899,7 +899,7 @@ the following diagram. Changes to items in the feature workspace are
 first committed to a feature branch and then merged into the **main**
 branch using a pull request.
 
-<img src="./images/Part1/media/image39.png" style="width:36%" />
+<img src="./images/Part1/media/image39.png" style="width:32%" />
 
 Now it's time to think about the release process. How should you
 automate synchronizing changes from the **main** branch to the **prod**
