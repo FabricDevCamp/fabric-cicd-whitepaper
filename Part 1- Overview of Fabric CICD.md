@@ -1732,7 +1732,7 @@ provides another reason why you might select **fabric-cicd** over
 Deployment Pipelines and GIT synchronization as the best choice for
 building a release process.
 
-<img src="./images/Part1/media/image51.png"  style="width:50%" />
+<img src="./images/Part1/media/image51.png"  style="width:36%" />
 
 The rich parameterization support available with **fabric-cicd** goes
 far beyond what you saw in this simple example. There is support for
