@@ -257,8 +257,7 @@ Fabric detects new changes in the underlying GIT branch, it determines
 that the report is no longer in sync and the **Git status** column
 displays **Update Required**.
 
-<img src="./images/Part1/media/image12.png"
-style="width:2.77917in;height:1.571in" />
+<img src="./images/Part1/media/image12.png" style="width:50%" />
 
 You can update the report by navigating to the **Updates** tab of the
 **Source control** pane and clicking the **Update all** button. Clicking
