@@ -257,7 +257,7 @@ Fabric detects new changes in the underlying GIT branch, it determines
 that the report is no longer in sync and the **Git status** column
 displays **Update Required**.
 
-<img src="./images/Part1/media/image12.png" style="width:50%" />
+<img src="./images/Part1/media/image12.png" style="width:60%" />
 
 You can update the report by navigating to the **Updates** tab of the
 **Source control** pane and clicking the **Update all** button. Clicking
@@ -266,7 +266,7 @@ the report by applying the changes merged into the branch. This will
 effectively roll back the changes to the report that were previously
 commit to GIT.
 
-<img src="./images/Part1/media/image13.png" style="width:25%" />
+<img src="./images/Part1/media/image13.png" style="width:35%" />
 
 You have now seen that GIT integration allows you to synchronize updates
 in two different directions. After you've updated a workspace item, you
