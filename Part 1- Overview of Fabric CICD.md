@@ -83,7 +83,7 @@ assist with CI/CD.
 - Workspace Item Types
 - Item Definitions
 
-This section will drill into each of these capabilities to build your
+> This section will drill into each of these capabilities to build your
 understanding of how they fit together into the big picture.
 
 ### GIT Integration
