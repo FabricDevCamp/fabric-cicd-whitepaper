@@ -109,9 +109,7 @@ tab of the **Workspace settings** dialog, you can work through the steps
 to connect a workspace to a branch in a GIT repository. The first step
 is to select a GIT provider such as Azure DevOps or GitHub.
 
-<img src="./images/Part1/media/image3.png"
-style="width:2.94143in;height:1.63549in"
-alt="A screenshot of a computer AI-generated content may be incorrect." />
+<img src="./images/Part1/media/image3.png"  style="width:65%" />
 
 Before connecting a workspace to a branch, you need to create a Fabric
 connection to the target GIT repository. Fabric provides one connector
