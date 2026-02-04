@@ -1463,7 +1463,7 @@ with additional properties that are specific to lakehouses.
 }
 ```
 
-There is a common scenario in which you need to create a lakehouse along
+> There is a common scenario in which you need to create a lakehouse along
 with a semantic model which connects to that lakehouse using the OneLake
 URL or the SQL endpoint. After creating the lakehouse, you need to call
 the **Get Lakehouse** API to discover its properties so that you can
