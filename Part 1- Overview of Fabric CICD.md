@@ -266,8 +266,7 @@ the report by applying the changes merged into the branch. This will
 effectively roll back the changes to the report that were previously
 commit to GIT.
 
-<img src="./images/Part1/media/image13.png"
-style="width:2.0192in;height:1.8925in" />
+<img src="./images/Part1/media/image13.png" style="width:50%" />
 
 You have now seen that GIT integration allows you to synchronize updates
 in two different directions. After you've updated a workspace item, you
