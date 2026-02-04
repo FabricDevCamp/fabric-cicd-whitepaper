@@ -1813,7 +1813,7 @@ then add a set of named variables along with their values. The following
 screenshot shows the typical set of variables created for Azure
 pipelines in a Fabric CI/CD project.
 
-<img src="./images/Part1/media/image55.png" style="width:72%" />
+<img src="./images/Part1/media/image55.png" style="width:85%" />
 
 When you create a variable that contains sensitive data, you can mark
 that variable as a secret. For example, your pipeline might need to
