@@ -277,7 +277,7 @@ further. You can create an empty workspace and initialize it using an
 **Update from GIT** operation which uses the items definitions in a GIT
 branch to create a matching set of workspace items.
 
-<img src="./images/Part1/media/image14.png"  style="width:35%" />
+<img src="./images/Part1/media/image14.png" style="width:35%" />
 
 Consider a scenario in which the **prod** workspace is connected through
 GIT integration to a repository with a single branch named **main**. You
@@ -394,8 +394,7 @@ required for a given scenario. When the approval process completes
 successfully, the changes are automatically merged to the shared branch
 which is known as the release branch.
 
-<img src="./images/Part1/media/image19.png"
-style="width:3.31429in;height:0.84732in" />
+<img src="./images/Part1/media/image19.png"style="width:35%" />
 
 The **release branch** is an essential concept in continuous
 integration. The release branch is the shared branch where everyone's
@@ -403,16 +402,12 @@ changes are merged together. It's called the *release branch* because
 its contents represent the single source of truth that is always ready
 for deployment to test and production environments.
 
-The release branch is a concept not a name. A release branch is
+> The release branch is a concept not a name. A release branch is
 typically given a name such as **main** or **dev**.
 
-Creating and managing pull requests
-
-- [Create pull requests in Azure Dev
-  Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
-
-- [Creating a pull request in
-  GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+**Creating and managing pull requests:**
+> - [Create pull requests in Azure Dev Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
+> - [Creating a pull request in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 For developers migrating to Fabric with experienced in traditional
 CI/CD, some aspects of Fabric CI/CD will be familiar while other aspects
