@@ -338,7 +338,7 @@ corrective action to resolve them before you can commit your changes.
 
 <img src="./images/Part1/media/image17.png" style="width:55%" />
 
-> <u>Resolving merge conflicts in Fabric</u>
+> <ins>Resolving merge conflicts in Fabric</ins>
 > - [Resolve conflict in a Fabric workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution)
 > ---
 
