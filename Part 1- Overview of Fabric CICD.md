@@ -1866,7 +1866,7 @@ projects to assist with organizing repositories, the use of projects in
 GitHub is optional. When using GitHub as the GIT provider for a Fabric
 CI/CD project, you just need to create a repository to get started.
 
-<img src="./images/Part1/media/image58.png" style="width:50%" />
+<img src="./images/Part1/media/image58.png" style="width:70%" />
 
 GitHub Actions is the workflow platform in GitHub that allows you to
 automate CI/CD tasks. You can create GitHub Actions workflows that can
