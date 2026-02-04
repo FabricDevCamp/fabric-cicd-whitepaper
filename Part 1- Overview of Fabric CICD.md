@@ -1622,7 +1622,7 @@ points to the lakehouse in **dev**. The problem you need to avoid is
 propagating these types of environment-specific settings from **dev** to
 **prod**.
 
-<img src="./images/Part1/media/image48.png" style="width:32%" />
+<img src="./images/Part1/media/image48.png" style="width:36%" />
 
 Think about what happens when you deploy the lakehouse and semantic
 model from the **release** branch to the **prod** workspace. Without
