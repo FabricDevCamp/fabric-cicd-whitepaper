@@ -179,8 +179,7 @@ the presentation workspace can be connected to the same branch with a
 type of solution is spread out across multiple workspaces, the source
 code for the entire solution is tracked in a single branch.
 
-<img src="./images/Part1/media/image7.png"
-style="width:1.99509in;height:1.24162in" />
+<img src="./images/Part1/media/image7.png" style="width:80%" />
 
 ### GIT Synchronization
 
