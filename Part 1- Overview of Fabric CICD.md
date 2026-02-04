@@ -351,7 +351,7 @@ changes to the **main** branch? This will create a merge conflict which
 restricts you from being able to commit the changes you've made in the
 **dev1** workspace.
 
-<img src="./images/Part1/media/image18.png"  style="width:35%" />
+<img src="./images/Part1/media/image18.png"  style="width:25%" />
 
 > A development model which involves merging all changes into a single GIT
 branch is known as **trunk-based development**.
