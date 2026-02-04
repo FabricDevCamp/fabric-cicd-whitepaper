@@ -513,19 +513,12 @@ branch to a new branch without having to discard any changes in the
 current branch. This command is used to resolve merge conflict
 scenarios.
 
-More info on branching in the Fabric UI
-
-- [Branch out to
-  workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/manage-branches?tabs=azure-devops#scenario-2---develop-using-another-workspace)
-
-- [Switch
-  branch](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/manage-branches?tabs=azure-devops#switch-branches)
-
-- [Resolve conflict in git using Checkout new
-  branch](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution#resolve-conflict-in-git)
+**Branching commands in the Fabric Service UI:**
+> - [Branch out to workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/manage-branches?tabs=azure-devops#scenario-2---develop-using-another-workspace)
+> - [Switch branch](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/manage-branches?tabs=azure-devops#switch-branches)
+> - [Resolve conflict in git using Checkout new branch](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution#resolve-conflict-in-git)
 
 ### Deployment Pipelines
-
 The Fabric platform provides Deployment Pipelines as a continuous
 deployment mechanism to help manage the lifecycle of workspace items.
 The key concept behind Deployment Pipelines is that changes to workspace
