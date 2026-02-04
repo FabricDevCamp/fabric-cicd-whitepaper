@@ -1848,7 +1848,7 @@ and to provide diagnostic information about any errors that occur. The
 following screenshot shows how an Azure pipeline can be written to log
 its progress in a Fabric CI/CD workflow.
 
-<img src="./images/Part1/media/image57.png" style="width:50%" />
+<img src="./images/Part1/media/image57.png" style="width:72%" />
 
 **Azure DevOps Pipeline Resources:**
 > - [Azure Pipelines documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
