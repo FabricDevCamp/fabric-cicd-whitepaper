@@ -299,7 +299,7 @@ workspace.
 
 <img src="./images/Part1/media/image15.png"  style="width:32%" />
 
-When you initialize an empty workspace using a **Update from GIT**
+> When you initialize an empty workspace using a **Update from GIT**
 operation, the workspace usually requires additional configuration
 before it's ready for development purposes. This is an important topic
 that will be revisited shortly.
