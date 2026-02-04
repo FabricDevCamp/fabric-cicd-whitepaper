@@ -440,7 +440,7 @@ connect it to the **feature1** branch. This triggers Fabric to run an
 **Update from GIT** operation which automatically populates the feature
 workspace with a matching set of workspace items.
 
-<img src="./images/Part1/media/image20.png" style="width:35%" />
+<img src="./images/Part1/media/image20.png" style="width:32%" />
 
 When you initialize a feature workspace with an **Update from GIT**
 operation, you're often required to complete additional configuration
