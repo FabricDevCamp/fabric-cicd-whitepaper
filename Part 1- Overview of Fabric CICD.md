@@ -1611,7 +1611,7 @@ model connects to the lakehouse as its datasource using a DirectLake on
 OneLake connection. You are currently at a phase where you have this
 Fabric solution up and running in the **dev** workspace.
 
-<img src="./images/Part1/media/image47.png" style="width:25%" />
+<img src="./images/Part1/media/image47.png" style="width:20%" />
 
 Your next step is to set up GIT integration between the **dev**
 workspace and a **release** branch. You connect the **dev** workspace to
@@ -1622,7 +1622,7 @@ points to the lakehouse in **dev**. The problem you need to avoid is
 propagating these types of environment-specific settings from **dev** to
 **prod**.
 
-<img src="./images/Part1/media/image48.png" style="width:50%" />
+<img src="./images/Part1/media/image48.png" style="width:32%" />
 
 Think about what happens when you deploy the lakehouse and semantic
 model from the **release** branch to the **prod** workspace. Without
@@ -1634,9 +1634,9 @@ used to create or update the target semantic model item in **prod**. By
 using parameterization, you can deploy a semantic model with datasource
 settings to successfully reference the lakehouse in **prod**.
 
-<img src="./images/Part1/media/image49.png" style="width:50%" />
+<img src="./images/Part1/media/image49.png" style="width:70%" />
 
-In general, parameterization is required whenever you need to deal with
+> In general, parameterization is required whenever you need to deal with
 environment-specific settings committed to GIT.
 
 Now it's time to discuss how to enable parametrization with
@@ -1646,7 +1646,7 @@ object the **environment** property. Let's start by adding a parameter
 file named **parameter.yml** which is located in the root folder
 containing the item definitions.
 
-<img src="./images/Part1/media/image50.png"  style="width:50%" />
+<img src="./images/Part1/media/image50.png"  style="width:35%" />
 
 To address the deployment problem with the semantic model, you must
 configure **parameter.yml** to run a find-and-replace operation to
