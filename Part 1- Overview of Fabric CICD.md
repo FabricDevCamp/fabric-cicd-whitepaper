@@ -542,7 +542,7 @@ process have been propagated to the **dev** workspace, the Deployment
 Pipeline is used to implement a release process to deploy changes to the
 **test** workspace and then on to the **prod** workspace.
 
-<img src="./images/Part1/media/image25.png" style="width:45%" />
+<img src="./images/Part1/media/image25.png" style="width:38%" />
 
 Deployment pipelines were designed to enhance productivity by hiding
 many of the low-level details of pushing workspace item changes across
