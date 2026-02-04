@@ -95,7 +95,7 @@ source code for all four workspace items as a single source of truth in
 a GIT repository. Any updates made to workspace items can be versioned,
 tracked and compared to other versions.
 
-Fabric's list of supported GIT providers includes **Azure DevOps**,
+> Fabric's list of supported GIT providers includes **Azure DevOps**,
 **GitHub** and **GitHub Enterprise**. Microsoft is currently planning to
 add other popular GIT providers in the future. You can find the most
 up-to-date information about Fabric's support for GIT providers and
