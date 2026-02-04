@@ -394,7 +394,7 @@ required for a given scenario. When the approval process completes
 successfully, the changes are automatically merged to the shared branch
 which is known as the release branch.
 
-<img src="./images/Part1/media/image19.png"style="width:35%" />
+<img src="./images/Part1/media/image19.png" style="width:35%" />
 
 The **release branch** is an essential concept in continuous
 integration. The release branch is the shared branch where everyone's
