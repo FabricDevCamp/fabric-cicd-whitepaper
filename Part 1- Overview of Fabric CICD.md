@@ -423,7 +423,7 @@ to assign that workspace to a Fabric capacity. There's also a
 requirement to create or reuse a GIT source control connection which is
 required to connect the feature workspace to the target feature branch.
 
-When you create a GIT source control connection to connect a workspace
+> When you create a GIT source control connection to connect a workspace
 to GIT, the connection is created with a path to the repository.
 However, this path does not include anything specific about the branch.
 That means you can create a single source control connection to Azure
@@ -445,7 +445,7 @@ workspace with a matching set of workspace items.
 > When you initialize a feature workspace with an **Update from GIT**
 operation, you're often required to complete additional configuration
 steps before it's ready for development purposes. This topic will be
-revisited in the discussion of automation.
+revisited shortly in the discussion of automation.
 
 The following diagram shows a high-level view of a development process
 which is based on multiple feature workspaces where each feature
