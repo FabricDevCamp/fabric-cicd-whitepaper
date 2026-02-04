@@ -1899,14 +1899,14 @@ from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
 memory when the workflow completes.
 
-<img src="./images/Part1/media/image60.png" style="width:65%" />
+<img src="./images/Part1/media/image60.png" style="width:70%" />
 
 You can also add variables to a GitHub repository for environment
 settings that are not sensitive. The following screenshot shows an
 example of variables created for Azure pipelines in a Fabric CI/CD
 project.
 
-<img src="./images/Part1/media/image61.png" style="width:60%" />
+<img src="./images/Part1/media/image61.png" style="width:56%" />
 
 Unlike Azure pipelines, there is no need to configure permissions
 because GitHub Actions workflows automatically have access to secrets
