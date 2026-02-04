@@ -1545,7 +1545,7 @@ façade, the **fabric-cicd** library provides a significant productivity
 boost by hiding all the grungy details involved with Fabric REST API
 programming and performing dynamic updates on item definition files.
 
-While the **fabric-cicd** library is an open source project, it is
+> While the **fabric-cicd** library is an open source project, it is
 officially supported by the Fabric product team. You can have confidence
 that **fabric-cicd** will continue to evolve by adding support for new
 workspace item types add to the platform.
@@ -1595,7 +1595,7 @@ target item already exists. Keep in mind that **fabric-cicd** will
 ignore any workspace items whose type is not explicitly included in the
 **item_type_in_scope** property.
 
-<img src="./images/Part1/media/image46.png" style="width:50%" />
+<img src="./images/Part1/media/image46.png" style="width:72%" />
 
 You've just learned how to use **fabric-cicd** to push changes from a
 source folder of item definitions to a target workspace. The next thing
