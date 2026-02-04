@@ -1021,7 +1021,7 @@ environment's storage account. Automating this type of deployment
 process using an IoC-based approach is exactly what Terraform was
 designed for.
 
-<img src="./images/Part1/media/image40.png" style="width:50%" />
+<img src="./images/Part1/media/image40.png" style="width:80%" />
 
 When using Terraform, it is recommended that you create a separate
 configuration for each environment. After all, you don't want a problem
