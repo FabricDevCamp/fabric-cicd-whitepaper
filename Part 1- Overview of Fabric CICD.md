@@ -1839,7 +1839,7 @@ variables and secrets. These permissions can be configured using the
 **Pipeline permissions** dialog in the Azure Devops user interface or by
 using the Azure DevOps CLI or the Azure REST APIs.
 
-<img src="./images/Part1/media/image56.png" style="width:72%" />
+<img src="./images/Part1/media/image56.png" style="width:60%" />
 
 As you begin to develop with Azure pipelines, you should become familiar
 with monitoring pipeline runs in order to test and debug your code. It's
