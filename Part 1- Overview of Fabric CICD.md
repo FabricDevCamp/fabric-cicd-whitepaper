@@ -1335,12 +1335,12 @@ the file contents in a base64 encoded format.
     "parts": [
       {
         "path": ".platform",
-        "payload": "********************BASE64-ENCODED-FILE-CONTENT********************"
+        "payload": "********************[BASE64-ENCODED-FILE-CONTENT]********************"
         "payloadType": "InlineBase64"
       },
       {
         "path": "notebook-content.py",
-        "payload": "********************BASE64-ENCODED-FILE-CONTENT********************"
+        "payload": "********************[BASE64-ENCODED-FILE-CONTENT]********************"
         "payloadType": "InlineBase64"
       }
     ]
