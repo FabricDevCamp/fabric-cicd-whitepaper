@@ -1770,7 +1770,7 @@ the GIT repository that's created along with the project is all you
 need. However, you can always add other repositories to a project if
 it's needed.
 
-<img src="./images/Part1/media/image52.png" style="width:50%" />
+<img src="./images/Part1/media/image52.png" style="width:72%" />
 
 Azure Pipelines is the CI/CD workflow service that's built into Azure
 DevOps which provides features to integrate, test and deploy code using
@@ -1787,7 +1787,7 @@ Azure DevOps CLI or the Azure REST APIs. Once a pipeline has been
 registered, you should be able to see it in the **Pipelines** page in an
 Azure DevOps project.
 
-<img src="./images/Part1/media/image53.png" style="width:50%" />
+<img src="./images/Part1/media/image53.png" style="width:72%" />
 
 You can write the code for an Azure pipeline in a programming language
 such as PowerShell or Python. This is accomplished by referencing the
