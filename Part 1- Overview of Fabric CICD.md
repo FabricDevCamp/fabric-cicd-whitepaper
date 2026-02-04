@@ -404,6 +404,7 @@ its contents represent the single source of truth that is always ready
 for deployment to test and production environments. Remember the release branch is a 
 concept not a name. A release branch is typically given a name such as **main** or **dev**.
 
+> [!NOTE]
 > <ins>Learn more about creating and merging pull request</ins>
 > - [Create pull requests in Azure Dev Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
 > - [Creating a pull request in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
