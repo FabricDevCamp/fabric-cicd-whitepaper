@@ -234,7 +234,7 @@ discipline to enter a useful and descriptive message about what is being
 committed. If you leave the textbox empty, Fabric generates a generic
 commit message which doesn’t really indicate what was updated or why.
 
-<img src="./images/Part1/media/image10.png" style="width:50%" />
+<img src="./images/Part1/media/image10.png" style="width:35%" />
 
 You have seen that you can run a **Commit to GIT operation** to push
 workspace item changes to a GIT branch. However, you can also
