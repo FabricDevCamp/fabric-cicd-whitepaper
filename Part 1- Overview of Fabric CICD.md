@@ -1908,7 +1908,7 @@ project.
 
 <img src="./images/Part1/media/image61.png" style="width:56%" />
 
-Unlike Azure pipelines, there is no need to configure permissions
+> Unlike Azure pipelines, there is no need to configure permissions
 because GitHub Actions workflows automatically have access to secrets
 and variables in the same repository by default.
 
@@ -1926,19 +1926,19 @@ authentication credentials for each Entra Id tenant. You can start by
 creating three different environments in your GitHub repository named
 **dev**, **test** and **prod**.
 
-<img src="./images/Part1/media/image62.png" style="width:50%" />
+<img src="./images/Part1/media/image62.png" style="width:70%" />
 
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/Part1/media/image63.png" style="width:50%" />
+<img src="./images/Part1/media/image63.png" style="width:70%" />
 
 Once you have added the YAML file for a GitHub Actions workflow into the
 **.github/workflows** folder, you can view that workflow in the left
 navigation of the **Actions** page. You can also select a workflow see
 its run history.
 
-<img src="./images/Part1/media/image64.png" style="width:50%" />
+<img src="./images/Part1/media/image64.png" style="width:70%" />
 
 After selecting a workflow in the left navigation, you can drill into a
 specific workflow run and view its logs. You can also run a workflow on
@@ -1949,7 +1949,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/Part1/media/image65.png" style="width:50%" />
+<img src="./images/Part1/media/image65.png" style="width:40%" />
 
 As you begin to develop GitHub Actions workflows, you should become
 familiar with monitoring workflow runs in order to test and debug your
