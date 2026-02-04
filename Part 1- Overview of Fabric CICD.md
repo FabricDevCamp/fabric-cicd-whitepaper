@@ -587,9 +587,10 @@ Fabric notebook to connect to a SQL database. The thing you want to
 avoid is hardcoding these configuration settings into your code as
 literal strings.
 
+``` python
 database_server = 'devcamp.database.windows.net'
-
 database_name = 'ProductSalesDev'
+```
 
 The obvious problem is that these hardcoded values are specific to a
 single environment. As an alternative, you can leverage a variable
