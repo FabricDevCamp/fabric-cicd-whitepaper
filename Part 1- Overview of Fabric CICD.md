@@ -766,21 +766,21 @@ definition. For example, the file structure for a notebook item
 definition is simple. It just requires one additional definition file
 named **notebook-contents.py**.
 
-<img src="./images/Part1/media/image36.png" style="width:35%" />
+<img src="./images/Part1/media/image36.png" style="width:32%" />
 
-Note that Fabric supports working with **Notebook** item definitions
+> Note that Fabric supports working with **Notebook** item definitions
 using either the **.py** format or the **.ipynb** format.
 
 The item definition for a lakehouse will contain a different set of item
 definition files.
 
-<img src="./images/Part1/media/image37.png" style="width:35%" />
+<img src="./images/Part1/media/image37.png" style="width:30%" />
 
 Other workspace item types can have item definitions that are far more
 complex. For example, the item definition for a semantic model can
 include dozens or even hundreds of TMDL files.
 
-<img src="./images/Part1/media/image38.png" style="width:50%" />
+<img src="./images/Part1/media/image38.png" style="width:40%" />
 
 While an item definition with a large number of files is more
 complicated, it also allow for collaboration in a much more granular
