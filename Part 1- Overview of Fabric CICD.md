@@ -649,7 +649,7 @@ You can think of workspace items as the building blocks used to build a
 can be deployed to one or more workspaces to provide specific data
 analytics or AI functionality to its users.
 
-<img src="./images/Part1/media/image32.png" style="width:50%" />
+<img src="./images/Part1/media/image32.png" style="width:40%" />
 
 In Fabric, each workspace item has an underlying **workspace item type**
 which defines its capabilities and the user experience it provides in
