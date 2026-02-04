@@ -567,9 +567,7 @@ read variable values from a variable library. This makes it possible to
 avoid hardcoding configuration settings into your code that change
 across environments.
 
-<img src="./images/Part1/media/image26.png"
-style="width:3.39373in;height:1.78743in"
-alt="A diagram of a work space AI-generated content may be incorrect." />
+<img src="./images/Part1/media/image26.png" style="width:38%" />
 
 Consider the classic scenario in which you need to build a release
 process that moves changes through a sequence of workspaces each of
@@ -579,8 +577,7 @@ different settings to connect to a different database. To solve this
 problem, each workspace requires access to its own unique connection
 settings.
 
-<img src="./images/Part1/media/image27.png"
-style="width:3.07219in;height:1.22546in" />
+<img src="./images/Part1/media/image27.png" style="width:38%" />
 
 The variable library was designed to solve the problem of parameterizing
 these types of settings across workspaces. A variable library allows you
