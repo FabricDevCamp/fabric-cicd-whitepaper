@@ -1899,7 +1899,7 @@ from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
 memory when the workflow completes.
 
-<img src="./images/Part1/media/image60.png" style="width:50%" />
+<img src="./images/Part1/media/image60.png" style="width:72%" />
 
 You can also add variables to a GitHub repository for environment
 settings that are not sensitive. The following screenshot shows an
