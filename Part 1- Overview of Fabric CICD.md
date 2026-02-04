@@ -120,10 +120,9 @@ credentials using a service principal. When creating a connection to
 GitHub, you must configure the connection credentials using a personal
 access token (PAT).
 
-<img src="./images/Part1/media/image4.png"
-style="width:4.52003in;height:1.428in" />
+<img src="./images/Part1/media/image4.png"  style="width:65%" />
 
-It is a best practice to create GIT source control connections using
+> It is a best practice to create GIT source control connections using
 service principal credentials. It is also recommended to create GIT
 source control connections using the Fabric REST APIs or a tool such as
 Terraform. This best practices will be revisited in the walkthrough in
