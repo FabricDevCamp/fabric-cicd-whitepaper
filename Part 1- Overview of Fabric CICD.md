@@ -38,7 +38,7 @@ been widely adopted across the software industry. The goal of CI/CD is
 to streamline and accelerate the lifecycle of software development.
 CI/CD focuses on two different aspects of managing the application
 lifecycle which are continuous integration (CI) and continuous
-deployment (CD)**.**
+deployment (CD).
 
 **Continuous integration (CI)** is the practice of merging code changes
 into a shared repository on a regular basis. Each time developers merge
@@ -57,8 +57,7 @@ everybody’s changes together in a structured process that maintains code
 quality while also getting updates and new features into production as
 quickly as possible.
 
-<img src="./images/Part1/media/image1.png"
-style="width:1.91581in;height:0.80609in" />
+<img src="./images/Part1/media/image1.png" style="width:70%" />
 
 **Continuous deployment (CD)** is the practice of automating the
 deployment of code. Deployment is often preceded by some type of
