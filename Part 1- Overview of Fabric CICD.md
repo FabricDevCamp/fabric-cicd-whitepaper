@@ -120,7 +120,7 @@ credentials using a service principal. When creating a connection to
 GitHub, you must configure the connection credentials using a personal
 access token (PAT).
 
-<img src="./images/Part1/media/image4.png"  style="width:65%" />
+<img src="./images/Part1/media/image4.png"  style="width:80%" />
 
 > It is a best practice to create GIT source control connections using
 service principal credentials. It is also recommended to create GIT
@@ -133,7 +133,7 @@ control connection to the target Azure DevOps repository, you can then
 select an **Organization**, **Project**, **Git repository** and
 **Branch**. Optionally, you can include a **Git folder** setting.
 
-<img src="./images/Part1/media/image5.png" style="width:65%" />
+<img src="./images/Part1/media/image5.png" style="width:60%" />
 
 Specifying a **Git folder** setting allows you to avoid storing the
 folders containing workspace item definitions in the root folder of the
