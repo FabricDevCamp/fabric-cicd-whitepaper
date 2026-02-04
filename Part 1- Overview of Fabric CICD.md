@@ -1883,7 +1883,7 @@ in a language such as PowerShell or Python. The following screenshot
 shows a typical example of the file structure of a Fabric CI/CD project
 in a GitHub repository.
 
-<img src="./images/Part1/media/image59.png" style="width:50%" />
+<img src="./images/Part1/media/image59.png" style="width:45%" />
 
 As you begin to develop Git Actions workflows for a Fabric CI/CD
 project, you need a way to track environment settings such as the ids
