@@ -146,7 +146,7 @@ files. By configuring a **GIT folder** setting, you avoid the confusion
 mixing the workspace item definition files together with other types of
 project files.
 
-This examples shown in this article will use **Git folder** setting of
+> This examples shown in this article will use **Git folder** setting of
 **workspace**. However, you can use any name you’d like.
 
 Now imagine you have deployed a data analytics project to a workspace
@@ -160,8 +160,7 @@ workspace item. The Fabric workspace UI provides a **GIT status** column
 that displays **Synced** indicating all workspace items are in sync with
 the item definitions stored in the GIT repository.
 
-<img src="./images/Part1/media/image6.png"
-style="width:5.04548in;height:1.25857in" />
+<img src="./images/Part1/media/image6.png" style="width:80%" />
 
 Fabric uses a naming convention for workspace items which includes item
 display name, a period and the item type in the format of **\[Item
