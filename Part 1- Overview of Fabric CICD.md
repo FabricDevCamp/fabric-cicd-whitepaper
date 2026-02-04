@@ -245,7 +245,7 @@ workspace item. You can use an **Update from GIT** operation to
 synchronize workspace items with changes merged into the underlying GIT
 branch.
 
-<img src="./images/Part1/media/image11.png" style="width:35%" />
+<img src="./images/Part1/media/image11.png" style="width:25%" />
 
 Consider a scenario in which you have updated a report and committed
 your changes to GIT. After that, you realize that there is a problem
