@@ -200,7 +200,7 @@ sync with the item definition in GIT. The Fabric workspace UI displays a
 is a workspace item with uncommitted changes. You can also see the **Git
 status** column for the report displays **Uncommitted**.
 
-<img src="./images/Part1/media/image8.png" style="width:50%" />
+<img src="./images/Part1/media/image8.png" style="width:65%" />
 
 > If you update a report in the browser, the **Git status** for that item
 will continue to display **Synced** until you first save your changes by
@@ -214,7 +214,7 @@ pane has two tabs named **Changes** and **Updates**. The **Changes** tab
 shows the workspace items which have changes that have not yet been
 committed to GIT.
 
-<img src="./images/Part1/media/image9.png" style="width:70%" />
+<img src="./images/Part1/media/image9.png" style="width:85%" />
 
 > What happens if you made a mistake while editing the report and
 accidently saved your changes? You can click the **Undo** button to
