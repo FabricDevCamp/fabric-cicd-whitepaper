@@ -1278,15 +1278,21 @@ substitute the workspace id, lakehouse id and lakehouse display name
 into the contents of **notebook-content.py**.
 
 ``` python
-# Synapse Analytics notebook source
-# METADATA ********************
+# Fabric notebook source#
+
+METADATA ********************
+
 # META {
-# META "synapse": {
-# META "lakehouse": {
-# META "default_lakehouse": "{LAKEHOUSE_ID}",
-# META "default_lakehouse_name": "{LAKEHOUSE_NAME}",
-# META "default_lakehouse_workspace_id": "{WORKSPACE_ID}",
-# META "known_lakehouses": [{ "id": "{LAKEHOUSE_ID}" }]
+# META   "dependencies": {
+# META     "lakehouse": {
+# META       "default_lakehouse": "{LAKEHOUSE_ID}",
+# META       "default_lakehouse_name": "{LAKEHOUSE_NAME}",
+# META       "default_lakehouse_workspace_id": "{WORKSPACE_ID}",
+# META       "known_lakehouses": [
+# META         { 
+# META           "id": "{LAKEHOUSE_ID}" 
+# META         }
+# META       ]
 # META     }
 # META   }
 # META }
