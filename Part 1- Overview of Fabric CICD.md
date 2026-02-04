@@ -200,7 +200,7 @@ sync with the item definition in GIT. The Fabric workspace UI displays a
 is a workspace item with uncommitted changes. You can also see the **Git
 status** column for the report displays **Uncommitted**.
 
-<img src="./images/Part1/media/image8.png" style="width:65%" />
+<img src="./images/Part1/media/image8.png" style="width:58%" />
 
 > If you update a report in the browser, the **Git status** for that item
 will continue to display **Synced** until you first save your changes by
@@ -245,8 +245,7 @@ workspace item. You can use an **Update from GIT** operation to
 synchronize workspace items with changes merged into the underlying GIT
 branch.
 
-<img src="./images/Part1/media/image11.png"
-style="width:3.28186in;height:0.88033in" />
+<img src="./images/Part1/media/image11.png" style="width:50%" />
 
 Consider a scenario in which you have updated a report and committed
 your changes to GIT. After that, you realize that there is a problem
