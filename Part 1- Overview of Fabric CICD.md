@@ -32,7 +32,6 @@ real-world Fabric CI/CD project which enables collaboration and provides
 a structured release process.
 
 ### Quick Review of Traditional CI/CD Fundamentals
-
 CI/CD represents a set of core principles and best practices that have
 been widely adopted across the software industry. The goal of CI/CD is
 to streamline and accelerate the lifecycle of software development.
@@ -76,7 +75,6 @@ workflow is often built using a standard set of environments such as
 <img src="./images/Part1/media/image2.png"  style="width:38%" />
 
 ## Fabric CI/CD Capabilities
-
 The Fabric platform provides the following capabilities and features to
 assist with CI/CD.
 - GIT Integration
@@ -89,7 +87,6 @@ This section will drill into each of these capabilities to build your
 understanding of how they fit together into the big picture.
 
 ### GIT Integration
-
 The Fabric CI/CD infrastructure starts with its support for GIT
 integration. Imagine you’re on a team building a data analytics solution
 based on a Fabric workspace that includes a lakehouse, notebook,
