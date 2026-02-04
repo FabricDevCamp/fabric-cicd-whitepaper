@@ -79,15 +79,10 @@ workflow is often built using a standard set of environments such as
 
 The Fabric platform provides the following capabilities and features to
 assist with CI/CD.
-
 - GIT Integration
-
 - Deployment pipelines
-
 - Variable libraries
-
 - Workspace Item Types
-
 - Item Definitions
 
 This section will drill into each of these capabilities to build your
