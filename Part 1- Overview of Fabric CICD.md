@@ -547,7 +547,7 @@ Pipeline is used to implement a release process to deploy changes to the
 Deployment pipelines were designed to enhance productivity by hiding
 many of the low-level details of pushing workspace item changes across
 workspaces. Deployment Pipelines provide one out of several options you
-have for building a release process. This is an import topics that will
+have for building a release process. This is an import topic that will
 be revisited after you learn a little more about Fabric CI/CD
 fundamentals.
 
@@ -567,7 +567,7 @@ read variable values from a variable library. This makes it possible to
 avoid hardcoding configuration settings into your code that change
 across environments.
 
-<img src="./images/Part1/media/image26.png" style="width:42%" />
+<img src="./images/Part1/media/image26.png" style="width:50%" />
 
 Consider the classic scenario in which you need to build a release
 process that moves changes through a sequence of workspaces each of
