@@ -1949,7 +1949,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/Part1/media/image65.png" style="width:40%" />
+<img src="./images/Part1/media/image65.png" style="width:30%" />
 
 As you begin to develop GitHub Actions workflows, you should become
 familiar with monitoring workflow runs in order to test and debug your
