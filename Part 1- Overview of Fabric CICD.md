@@ -448,7 +448,7 @@ steps before it's ready for development purposes. This topic will be
 revisited shortly in the discussion of automation.
 
 The following diagram shows a high-level view of a development process
-with feature workspaces. Each feature workspace is connected to its own feature branch. Changes to a feature
+built using feature workspaces. Each feature workspace is connected to its own feature branch. Changes to a feature
 workspace are first committed to the underlying feature branch. After
 that, you need to create a pull request to merge the changes into the
 release branch.
