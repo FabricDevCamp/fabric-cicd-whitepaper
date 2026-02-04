@@ -1954,7 +1954,7 @@ written to log its progress in a Fabric CI/CD workflow.
 
 <img src="./images/Part1/media/image66.png" style="width:50%" />
 
-****GitHub Actions Workflows:**
+**GitHub Actions Workflows:**
 > - [Understanding GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions)
 > - [Workflows](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows)
 > - [Variables](https://docs.github.com/en/actions/concepts/workflows-and-actions/variables)
