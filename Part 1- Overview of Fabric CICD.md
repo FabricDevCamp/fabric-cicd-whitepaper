@@ -1595,7 +1595,7 @@ target item already exists. Keep in mind that **fabric-cicd** will
 ignore any workspace items whose type is not explicitly included in the
 **item_type_in_scope** property.
 
-<img src="./images/Part1/media/image46.png" style="width:72%" />
+<img src="./images/Part1/media/image46.png" style="width:85%" />
 
 You've just learned how to use **fabric-cicd** to push changes from a
 source folder of item definitions to a target workspace. The next thing
