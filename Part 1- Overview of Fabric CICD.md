@@ -454,7 +454,7 @@ workspace are first committed to the underlying feature branch. After
 that, you need to create a pull request to merge the changes into the
 release branch.
 
-<img src="./images/Part1/media/image21.png"  style="width:30%" />
+<img src="./images/Part1/media/image21.png"  style="width:60%" />
 
 Keep in mind that feature branches should be short-lived. You don't want
 a feature branch hanging around too long because that increases the risk
