@@ -277,7 +277,7 @@ further. You can create an empty workspace and initialize it using an
 **Update from GIT** operation which uses the items definitions in a GIT
 branch to create a matching set of workspace items.
 
-<img src="./images/Part1/media/image14.png" style="width:35%" />
+<img src="./images/Part1/media/image14.png" style="width:40%" />
 
 Consider a scenario in which the **prod** workspace is connected through
 GIT integration to a repository with a single branch named **main**. You
