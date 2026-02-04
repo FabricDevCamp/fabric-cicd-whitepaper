@@ -714,7 +714,7 @@ and the notebook. After you have built out the solution in the **dev**
 workspace, there are three established dependencies between these
 workspace items.
 
-<img src="./images/Part1/media/image33.png" style="width:50%" />
+<img src="./images/Part1/media/image33.png" style="width:35%" />
 
 Now think about what happens when you use Fabric GIT synchronization to
 replicate these three workspace items from the **dev** workspace to the
@@ -726,7 +726,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the **prod** workspace were
 both able to self-manage their relations.
 
-<img src="./images/Part1/media/image34.png" style="width:50%" />
+<img src="./images/Part1/media/image34.png" style="width:60%" />
 
 This example demonstrates how notebooks and pipelines support
 auto-binding behavior. Keep in mind that not all workspace item support
