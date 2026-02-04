@@ -163,8 +163,8 @@ the item definitions stored in the GIT repository.
 <img src="./images/Part1/media/image6.png" style="width:94%" />
 
 Fabric uses a naming convention for workspace item folders which includes item
-display name, a period and the item type in the format of **\[Item
-Display Name\].\[Item Type\].** You can see from the previous screenshot
+display name, a period and the item type in the format of **[Item
+Display Name].[Item Type].** You can see from the previous screenshot
 that GIT synchronization creates folders using this naming convention
 for folder names such as **sales.Lakehouse** and **Product Sales
 Summary.Report**.
@@ -606,8 +606,8 @@ can remove the hardcoded configuration values from the notebook and
 replace them with code to read the variable values at run time.
 
 ``` python
-database_server = notebookutils.variableLibrary.get("\$(/\*\*/environment_settings/database_server)")
-database_name = notebookutils.variableLibrary.get("\$(/\*\*/environment_settings/database_server)")
+database_server = notebookutils.variableLibrary.get("$(/**/environment_settings/database_server)")
+database_name = notebookutils.variableLibrary.get("$(/**/environment_settings/database_server)")
 ```
 
 You have learned that a variable library allows you to add variables.
@@ -640,7 +640,7 @@ context of that workspace. That means three different workspaces could
 each contain a variable library with an identical item definition, yet
 each workspace can be configured to use a different value set.
 
-<img src="./images/Part1/media/image31.png" style="width:80%" />
+<img src="./images/Part1/media/image31.png" style="width:72%" />
 
 ### Workspace Item Types
 
@@ -649,8 +649,7 @@ You can think of workspace items as the building blocks used to build a
 can be deployed to one or more workspaces to provide specific data
 analytics or AI functionality to its users.
 
-<img src="./images/Part1/media/image32.png"
-style="width:2.77945in;height:0.8099in" />
+<img src="./images/Part1/media/image32.png" style="width:50%" />
 
 In Fabric, each workspace item has an underlying **workspace item type**
 which defines its capabilities and the user experience it provides in
@@ -677,14 +676,9 @@ others with respect to their CI/CD capabilities.
 
 There are four primary CI/CD capabilities that are supported by some but
 not all workspace item types.
-
 - Support for reading variables from a variable library
-
-- Support with Fabric REST APIs to create and update items using item
-  definitions
-
+- Support with Fabric REST APIs to create and update items using item definitions
 - Support for calling Fabric APIs using a Service Principal identity
-
 - Support for auto-binding workspace item dependencies
 
 Whenever possible, you should use variable libraries to manage
@@ -720,8 +714,7 @@ and the notebook. After you have built out the solution in the **dev**
 workspace, there are three established dependencies between these
 workspace items.
 
-<img src="./images/Part1/media/image33.png"
-style="width:2.97734in;height:1.56154in" />
+<img src="./images/Part1/media/image33.png" style="width:50%" />
 
 Now think about what happens when you use Fabric GIT synchronization to
 replicate these three workspace items from the **dev** workspace to the
@@ -733,8 +726,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the **prod** workspace were
 both able to self-manage their relations.
 
-<img src="./images/Part1/media/image34.png"
-style="width:5.40093in;height:2.2874in" />
+<img src="./images/Part1/media/image34.png" style="width:50%" />
 
 This example demonstrates how notebooks and pipelines support
 auto-binding behavior. Keep in mind that not all workspace item support
@@ -759,8 +751,7 @@ workspace item type. Every item definition requires a file named
 **.platform** which is known as the **platform file**. The platform file
 contains metadata such as the item type and display name.
 
-<img src="./images/Part1/media/image35.png"
-style="width:2.78117in;height:0.85392in" />
+<img src="./images/Part1/media/image35.png" style="width:50%" />
 
 The platform file contains a **logicalId** value which is used by Fabric
 internally to track logical instances of workspace items as they are
@@ -775,8 +766,7 @@ definition. For example, the file structure for a notebook item
 definition is simple. It just requires one additional definition file
 named **notebook-contents.py**.
 
-<img src="./images/Part1/media/image36.png"
-style="width:1.65764in;height:0.5363in" />
+<img src="./images/Part1/media/image36.png" style="width:50%" />
 
 Note that Fabric supports working with **Notebook** item definitions
 using either the **.py** format or the **.ipynb** format.
@@ -784,15 +774,13 @@ using either the **.py** format or the **.ipynb** format.
 The item definition for a lakehouse will contain a different set of item
 definition files.
 
-<img src="./images/Part1/media/image37.png"
-style="width:1.20774in;height:0.63544in" />
+<img src="./images/Part1/media/image37.png" style="width:50%" />
 
 Other workspace item types can have item definitions that are far more
 complex. For example, the item definition for a semantic model can
 include dozens or even hundreds of TMDL files.
 
-<img src="./images/Part1/media/image38.png"
-style="width:1.62425in;height:1.93735in" />
+<img src="./images/Part1/media/image38.png" style="width:50%" />
 
 While an item definition with a large number of files is more
 complicated, it also allow for collaboration in a much more granular
@@ -808,16 +796,10 @@ files for the workspace items types you are working with in a Fabric
 CI/CD project. An easy way to get started is to walk through item
 definition files created by GIT synchronization.
 
-Fabric Item Definitions
-
-- [Item management
-  overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/item-management-overview)
-
-- [Item definition
-  overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
-
-- [GIT Repository with public item definition
-  schemas](https://github.com/microsoft/json-schemas/tree/main/fabric/item)
+**Fabric Item Definitions:**
+> - [Item management overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/item-management-overview)
+> - [Item definition overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
+> - [GIT Repository with public item definition schemas](https://github.com/microsoft/json-schemas/tree/main/fabric/item)
 
 ## Automation in Fabric CI/CD
 
@@ -853,16 +835,10 @@ calls the Fabric REST APIs. The section will conclude by introducing the
 **fabric-cicd** library and explaining how it's used to build a release
 process.
 
-Microsoft APIs used in Fabric development
-
-- [The Fabric REST
-  APIs](https://learn.microsoft.com/en-us/rest/api/fabric/articles/)
-
-- [Azure Microsoft Fabric REST
-  APIs](https://learn.microsoft.com/en-us/rest/api/microsoftfabric/fabric-capacities?view=rest-microsoftfabric-2023-11-01)
-
-- [Power BI REST
-  APIs](https://learn.microsoft.com/en-us/rest/api/power-bi/)
+**Microsoft APIs used in Fabric development**
+> - [The Fabric REST APIs](https://learn.microsoft.com/en-us/rest/api/fabric/articles/)
+> - [Azure Microsoft Fabric REST APIs](https://learn.microsoft.com/en-us/rest/api/microsoftfabric/fabric-capacities?view=rest-microsoftfabric-2023-11-01)
+> - [Power BI REST APIs](https://learn.microsoft.com/en-us/rest/api/power-bi/)
 
 ### Determining What Needs To Be Automated
 
@@ -895,7 +871,6 @@ these types of scripts, you should consider two different types of jobs.
 
 - **Post-deploy jobs** run only once after an empty workspace is first
   initialized with an **Update from GIT** operation.
-
 - **Post-sync jobs** run each time after an **Update from GIT**
   operation completes on a workspace.
 
@@ -924,8 +899,7 @@ the following diagram. Changes to items in the feature workspace are
 first committed to a feature branch and then merged into the **main**
 branch using a pull request.
 
-<img src="./images/Part1/media/image39.png"
-style="width:2.90898in;height:2.09668in" />
+<img src="./images/Part1/media/image39.png" style="width:50%" />
 
 Now it's time to think about the release process. How should you
 automate synchronizing changes from the **main** branch to the **prod**
@@ -1047,8 +1021,7 @@ environment's storage account. Automating this type of deployment
 process using an IoC-based approach is exactly what Terraform was
 designed for.
 
-<img src="./images/Part1/media/image40.png"
-style="width:5.21457in;height:1.64694in" />
+<img src="./images/Part1/media/image40.png" style="width:50%" />
 
 When using Terraform, it is recommended that you create a separate
 configuration for each environment. After all, you don't want a problem
@@ -1087,18 +1060,12 @@ demonstrate the technique of creating a Terraform module as an
 environment template for use across three configurations to create
 environments for **dev**, **test** and **prod**.
 
-Resources for Terraform
+**Resources for Terraform**
+> - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+> - [Terraform on Azure documentation](https://learn.microsoft.com/en-us/azure/developer/terraform/)
+> - [Microsoft Fabric Provider](https://registry.terraform.io/providers/microsoft/fabric/latest/docs)
 
-- [Terraform
-  Documentation](https://developer.hashicorp.com/terraform/docs)
-
-- [Terraform on Azure
-  documentation](https://learn.microsoft.com/en-us/azure/developer/terraform/)
-
-- [Microsoft Fabric
-  Provider](https://registry.terraform.io/providers/microsoft/fabric/latest/docs)
-
-Terraform and the Fabric provider also provide capability to create
+> Terraform and the Fabric provider also provide capability to create
 workspace items such as lakehouses and notebooks. However, you will find
 that working with item definitions in a Terraform configuration is
 tricky because making dynamic updates to item definition files requires
@@ -1145,17 +1112,11 @@ to create or update an workspace item using an item definition. There is
 also a complimentary **export** command used to export a workspace item
 to an item definition as a set of definition files in a local folder.
 
-Links for more information about Fabric CLI
-
-- [Fabric CLI](https://microsoft.github.io/fabric-cli/)
-
-- [CLI Modes](https://microsoft.github.io/fabric-cli/essentials/modes/)
-
-- [Fabric CLI
-  Commands](https://microsoft.github.io/fabric-cli/commands/)
-
-- [Fabric CLI Usage
-  Examples](https://microsoft.github.io/fabric-cli/examples/)
+**Links for more information about Fabric CLI**
+> - [Fabric CLI](https://microsoft.github.io/fabric-cli/)
+> - [CLI Modes](https://microsoft.github.io/fabric-cli/essentials/modes/)
+> - [Fabric CLI Commands](https://microsoft.github.io/fabric-cli/commands/)
+> - [Fabric CLI Usage Examples](https://microsoft.github.io/fabric-cli/examples/)
 
 Another important capability of Fabric CLI is its ability to integrate
 with cloud-based GIT providers such as Azure DevOps and GitHub. If
@@ -1216,14 +1177,10 @@ something you don't have to worry about when using developer tools such
 as Terraform and Fabric CLI which deal with paginated results,
 long-running operations and throttling behind the scenes.
 
-Fabric REST API Fundamentals
-
-- [Pagination](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination)
-
-- [Long running
-  operations](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation)
-
-- [Throttling](https://learn.microsoft.com/en-us/rest/api/fabric/articles/throttling)
+**Fabric REST API Fundamentals**
+> - [Pagination](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination)
+> - [Long running operations](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation)
+> - [Throttling](https://learn.microsoft.com/en-us/rest/api/fabric/articles/throttling)
 
 Microsoft offers two Software Development Kits (SDKs) for the Fabric
 REST APIs. Microsoft provides a **Microsoft Fabric .NET SDK** for C#
@@ -1243,12 +1200,9 @@ this type of code is to use the **Microsoft Authentication Library
 (MSAL)** which offers versions for several platforms and programming
 languages.
 
-Fabric REST API SDKs
-
-- [Microsoft Fabric .NET
-  SDK](https://www.nuget.org/packages/Microsoft.Fabric.Api)
-
-- Python SDK (coming soon)
+**Fabric REST API SDKs**
+> - [Microsoft Fabric .NET SDK](https://www.nuget.org/packages/Microsoft.Fabric.Api)
+> - Python SDK (link coming soon)
 
 Let's examine a scenario in which you might prefer programming the
 Fabric REST APIs as an alternative to using Fabric CLI. Imagine you need
@@ -1268,19 +1222,11 @@ file **notebook-contents.py** with the Id of the new lakehouse. This
 might lead you to automate your deployment process with Fabric CLI using
 the following steps.
 
-1.  Run a script which calls the Fabric CLI **import** command to create
-    the lakehouse
-
-2.  Examine new lakehouse in the Fabric service using a browser to
-    discover its Id
-
-3.  Open **notebook-contents.py** in a text editor and update the
-    metadata which references the default lakehouse
-
+1.  Run a script which calls the Fabric CLI **import** command to create the lakehouse
+2.  Examine new lakehouse in the Fabric service using a browser to discover its Id
+3.  Open **notebook-contents.py** in a text editor and update the metadata which references the default lakehouse
 4.  Save your changes to **notebook-contents.py**
-
-5.  Run a script which calls the Fabric CLI **import** command passing
-    the updated item definition to create the notebook
+5.  Run a script which calls the Fabric CLI **import** command passing the updated item definition to create the notebook
 
 The problem here is that the Fabric CLI **import** command depends on
 files persisted in the item definition folder. The **import** command
@@ -1304,8 +1250,7 @@ Item Definition** API allows you to pass an item definition when
 updating a workspace item. Third, the **Get Item Definition** API allows
 you to retrieve the item definition for an existing workspace item.
 
-<img src="./images/Part1/media/image41.png"
-style="width:5.48534in;height:1.61868in" />
+<img src="./images/Part1/media/image41.png" style="width:50%" />
 
 Let's walk through a scenario in which creating a workspace item
 requires dynamically updating an item definition file. Imagine you have
@@ -1322,8 +1267,7 @@ provided by the Fabric service. However, you can view this metadata by
 examining the raw file contents of **notebook-content.py** file as shown
 in the following screenshot.
 
-<img src="./images/Part1/media/image42.png"
-style="width:5.09616in;height:3.37715in" />
+<img src="./images/Part1/media/image42.png" style="width:50%" />
 
 Before calling **Create Item**, you first need to update the contents of
 **notebook-content** to include the correct workspace id and lakehouse
@@ -1333,29 +1277,20 @@ are, you can perform some type of find-and-replace operation to
 substitute the workspace id, lakehouse id and lakehouse display name
 into the contents of **notebook-content.py**.
 
-\# Synapse Analytics notebook source
-
-\# METADATA \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
-
-\# META {
-
-\# META "synapse": {
-
-\# META "lakehouse": {
-
-\# META "default_lakehouse": "{LAKEHOUSE_ID}",
-
-\# META "default_lakehouse_name": "{LAKEHOUSE_NAME}",
-
-\# META "default_lakehouse_workspace_id": "{WORKSPACE_ID}",
-
-\# META "known_lakehouses": \[{ "id": "{LAKEHOUSE_ID}" }\]
-
-\# META }
-
-\# META }
-
-\# META }
+``` python
+# Synapse Analytics notebook source
+# METADATA ********************
+# META {
+# META "synapse": {
+# META "lakehouse": {
+# META "default_lakehouse": "{LAKEHOUSE_ID}",
+# META "default_lakehouse_name": "{LAKEHOUSE_NAME}",
+# META "default_lakehouse_workspace_id": "{WORKSPACE_ID}",
+# META "known_lakehouses": [{ "id": "{LAKEHOUSE_ID}" }]
+# META     }
+# META   }
+# META }
+```
 
 Directly manipulating item definition files is a powerful technique that
 assumes you know what you are doing. If you update an item definition
@@ -1386,43 +1321,26 @@ contains a **part** element for each file in the item definition. Each
 **part** element includes a relative **path** value and a payload for
 the file contents in a base64 encoded format.
 
+``` json
 {
-
-"displayName": "Create Lakehouse Tables",
-
-"type": "Notebook",
-
-"definition": {
-
-"parts": \[
-
-{
-
-"path": ".platform",
-
-"payload":
-"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*BASE64-ENCODED-FILE-CONTENT\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
-
-"payloadType": "InlineBase64"
-
-},
-
-{
-
-"path": "notebook-content.py",
-
-"payload":
-"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*BASE64-ENCODED-FILE-CONTENT\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
-
-"payloadType": "InlineBase64"
-
+  "displayName": "Create Lakehouse Tables",
+  "type": "Notebook",
+  "definition": {
+    "parts": [
+      {
+        "path": ".platform",
+        "payload": "********************BASE64-ENCODED-FILE-CONTENT********************"
+        "payloadType": "InlineBase64"
+      },
+      {
+        "path": "notebook-content.py",
+        "payload": "********************BASE64-ENCODED-FILE-CONTENT********************"
+        "payloadType": "InlineBase64"
+      }
+    ]
+  }
 }
-
-\]
-
-}
-
-}
+```
 
 At this point, you should be able to make an observation about the
 difference between using Fabric CLI compared to programming the Fabric
@@ -1695,22 +1613,22 @@ and blocks synchronously until the job completes.
 from fabric_cicd import FabricWorkspace, publish_all_items,
 unpublish_all_orphan_items
 
-\# Initialize the FabricWorkspace object with the required properties
+# Initialize the FabricWorkspace object with the required properties
 
 target_workspace = FabricWorkspace(
 
-repository_directory = "{PATH_TO\_ FOLDER_WITH_ITEM_DEFINITIONS}",
+repository_directory = "{PATH_TO_ FOLDER_WITH_ITEM_DEFINITIONS}",
 
 workspace_id = "{TARGET_WORKSPACE_ID}",
 
 environment = "PROD",
 
-item_type_in_scope = \["Lakehouse", "Notebook", "SementicModel",
-"Report", "VariableLibrary"\],
+item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel",
+"Report", "VariableLibrary"],
 
 )
 
-\# run the deployment process
+# run the deployment process
 
 publish_all_items(target_workspace)
 
@@ -1795,19 +1713,19 @@ target environments named **TEST** and **PROD**.
 
 find_replace:
 
-\- find_value:
+- find_value:
 "https://onelake.dfs.fabric.microsoft.com/{dev-workspace-id}-{dev-lakehouse-id}"
-\# \[dev\]
+# [dev]
 
 replace_value:
 
 TEST:
 "https://onelake.dfs.fabric.microsoft.com/{test-workspace-id}-{test-lakehouse-id}"
-\# \[test\]
+# [test]
 
 PROD:
 "https://onelake.dfs.fabric.microsoft.com/{prod-workspace-id}-{prod-lakehouse-id}
-\# \[prod\]
+# [prod]
 
 By default, **fabric-cicd** processes a find-and-replace operation by
 inspecting every file in each item definition who type is include in the
@@ -1826,25 +1744,25 @@ models.
 
 find_replace:
 
-\- find_value:
+- find_value:
 "https://onelake.dfs.fabric.microsoft.com/{dev-workspace-id}-{dev-lakehouse-id}"
-\# \[dev\]
+# [dev]
 
 replace_value:
 
 TEST:
 "https://onelake.dfs.fabric.microsoft.com/{test-workspace-id}-{test-lakehouse-id}"
-\# \[test\]
+# [test]
 
 PROD:
 "https://onelake.dfs.fabric.microsoft.com/{prod-workspace-id}-{prod-lakehouse-id}
-\# \[prod\]
+# [prod]
 
 Item_type: "SemanticModel"
 
 file_path:
 
-\- "/definition/expressions.tmdl"
+- "/definition/expressions.tmdl"
 
 The second step required to get parameterization working is to
 initialize the **FabricWorkspace** object with one additional property
@@ -1863,8 +1781,8 @@ repository_directory = "{PATH_TO_FOLDER_WITH_ITEM_DEFINITION}",
 
 workspace_id = "{TEST_WORKSPACE_ID}",
 
-item_type_in_scope = \["Lakehouse", "Notebook", "SementicModel",
-"Report", "VariableLibrary"\],
+item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel",
+"Report", "VariableLibrary"],
 
 )
 
@@ -1878,8 +1796,8 @@ repository_directory = "{PATH_TO_FOLDER_WITH_ITEM_DEFINITION}",
 
 workspace_id = "{PROD_WORKSPACE_ID}",
 
-item_type_in_scope = \["Lakehouse", "Notebook", "SementicModel",
-"Report", "VariableLibrary"\],
+item_type_in_scope = ["Lakehouse", "Notebook", "SementicModel",
+"Report", "VariableLibrary"],
 
 )
 
@@ -1995,7 +1913,7 @@ persisted in the cloud using an encrypted format rather than plain text.
 Second, the value cannot be viewed in the Azure DevOps user interface
 after saving. Third, the secret value is masked in logs. If the secret
 value appears in pipeline output, Azure Pipelines replaces it with
-\*\*\* so it won't be visible in build logs.
+*** so it won't be visible in build logs.
 
 Variable groups in Azure DevOps can also be integrated Azure Key Vault.
 That means you can configure access to secrets in Azure Key Vault from
@@ -2078,7 +1996,7 @@ GitHub allows you to create secrets and variables to track these types
 of environment settings.
 
 You can create secrets in a GitHub repository by navigating to
-**Settings** and selecting the **Secrets and variables \> Actions**.
+**Settings** and selecting the **Secrets and variables > Actions**.
 When you create a secret, GitHub will encrypt its value and redact it
 from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
