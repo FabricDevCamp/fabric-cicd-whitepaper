@@ -297,7 +297,7 @@ will react by automatically creating a set of workspace items in the
 **dev1** workspace to match the set of workspace items in the **prod**
 workspace.
 
-<img src="./images/Part1/media/image15.png"  style="width:35%" />
+<img src="./images/Part1/media/image15.png"  style="width:30%" />
 
 When you initialize an empty workspace using a **Update from GIT**
 operation, the workspace usually requires additional configuration
@@ -312,7 +312,7 @@ you can save your work. After that, you can run a **Commit to GIT**
 operation to commit the changes from the report item in the **dev1**
 workspace to the report definition in the **main** branch.
 
-<img src="./images/Part1/media/image16.png"  style="width:35%" />
+<img src="./images/Part1/media/image16.png"  style="width:30%" />
 
 Once changes are committed to the **main** branch, the report item in
 **prod** workspace will show a **GIT status** of **Update required**.
@@ -321,7 +321,7 @@ GIT** operation which will synchronize changes from the report
 definition the **main** branch to the report item in the **prod**
 workspace.
 
-Instead of synchronizing these changes by hand, you can develop a
+> Instead of synchronizing these changes by hand, you can develop a
 workflow that is triggered automatically whenever changes are merged to
 **main** which automates the process of synchronizing changes to the
 **prod** workspace.
@@ -336,11 +336,10 @@ item has a merge conflict, the **Git status** column displays
 item. When you experience merge conflicts, you must take some type of
 corrective action to resolve them before you can commit your changes.
 
-<img src="./images/Part1/media/image17.png" style="width:35%" />
+<img src="./images/Part1/media/image17.png" style="width:65%" />
 
-#### Resolving merge conflicts in Fabric
-- [Resolve conflict in a Fabric
-  workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution)
+**Resolving merge conflicts in Fabric**
+- [Resolve conflict in a Fabric workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/conflict-resolution)
 
 When you have multiple workspaces connected to a single GIT branch,
 there is an increased risk of merge conflicts. You must have the
