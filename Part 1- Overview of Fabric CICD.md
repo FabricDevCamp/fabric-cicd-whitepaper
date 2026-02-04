@@ -125,7 +125,7 @@ access token (PAT).
 > It is a best practice to create GIT source control connections using
 service principal credentials. It is also recommended to create GIT
 source control connections using the Fabric REST APIs or a tool such as
-Terraform. This best practices will be revisited in the walkthrough in
+Terraform. This best practice will be revisited in the walkthrough in
 **Part 2 - Deploying a Fabric CI/CD Project**.
 
 If you select Azure DevOps as the GIT provider and create a source
@@ -133,8 +133,7 @@ control connection to the target Azure DevOps repository, you can then
 select an **Organization**, **Project**, **Git repository** and
 **Branch**. Optionally, you can include a **Git folder** setting.
 
-<img src="./images/Part1/media/image5.png"
-style="width:1.79705in;height:1.52813in" />
+<img src="./images/Part1/media/image5.png" style="width:65%" />
 
 Specifying a **Git folder** setting allows you to avoid storing the
 folders containing workspace item definitions in the root folder of the
