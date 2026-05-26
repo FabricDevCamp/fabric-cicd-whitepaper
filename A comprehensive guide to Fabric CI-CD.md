@@ -1168,7 +1168,7 @@ typed variables. The **terraform.tfvars** file is used to assign
 variable values in a scenario in which Terraform is running locally in a
 client tool such as Visual Studio Code.
 
-<img src="./images/bestpractices/media/image48.png" style="width:40%" />
+<img src="./images/bestpractices/media/image48.png" style="width:30%" />
 
 Note that the **terraform.tfvars** file often contains sensitive
 information such as a client secret to authenticate as a service
