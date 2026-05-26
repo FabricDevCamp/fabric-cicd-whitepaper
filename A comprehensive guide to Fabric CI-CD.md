@@ -1686,8 +1686,7 @@ That means you need to run a script after an **Update from GIT**
 operation completes to update each semantic model with the datasource
 path that is appropriate for its target environment.
 
-<img src="./images/bestpractices/media/image55.png"
-style="width:3.23338in;height:0.74194in" />
+<img src="./images/bestpractices/media/image55.png" style="width:50%" />
 
 A second issue with GIT synchronization is that it requires a connection
 between the target workspace and a GIT branch. When a workspace is
@@ -1697,8 +1696,7 @@ synchronization. For example, the workspace summary page displays the
 **Status** column with values such as **Synced** or **Update required**
 which you might prefer to hide from users in a production workspace.
 
-<img src="./images/bestpractices/media/image56.png"
-style="width:3.83462in;height:1.38777in" />
+<img src="./images/bestpractices/media/image56.png" style="width:50%" />
 
 The third option for building a release process is using an API-driven
 approach. Using an API-driven approach has become increasingly popular
@@ -1733,8 +1731,7 @@ of the release branches, a workflow runs automatically and implements
 the release process by using **fabric-cicd** to deploy changes to the
 target workspace.
 
-<img src="./images/bestpractices/media/image57.png"
-style="width:4.2956in;height:1.71028in" />
+<img src="./images/bestpractices/media/image57.png" style="width:50%" />
 
 This example is similar to Git synchronization example shown earlier in
 the sense that they both use the GitFlow branching strategy. However,
@@ -1756,8 +1753,7 @@ branch. The **fabric-cicd** library provides the flexibility of building
 a release process with a one-to-many mapping between a release branch
 and multiple target workspaces.
 
-<img src="./images/bestpractices/media/image58.png"
-style="width:2.01903in;height:1.57931in" />
+<img src="./images/bestpractices/media/image58.png" style="width:50%" />
 
 When building a release process, you are often required to configure a
 manual approval process in which one or more approvers need to sign off
@@ -1813,8 +1809,7 @@ target workspace to determine whether a matching items already exists.
 This check is required so **fabric-cicd** can decide whether to create a
 new item or to update an existing item.
 
-<img src="./images/bestpractices/media/image59.png"
-style="width:5.64083in;height:1.69016in" />
+<img src="./images/bestpractices/media/image59.png" style="width:50%" />
 
 **fabric-cicd** is able to automatically reestablish relationships for
 items that support auto-binding. The **fabric-cicd** library implements
@@ -1845,8 +1840,7 @@ second file named **parameter.yml** is used to configure
 parameterization to deal with environment-specific setting that have
 been committed to GIT.
 
-<img src="./images/bestpractices/media/image60.png"
-style="width:2.51886in;height:2.51886in" />
+<img src="./images/bestpractices/media/image60.png" style="width:50%" />
 
 Let's walk through a simple example of configuration-based deployment
 using **fabric-cicd**. We'll start by examining the contents of a simple
@@ -2215,8 +2209,8 @@ There is second notebook which builds the gold layer by loading tables
 from the silver lakehouse and transforming them into a star schema
 before saving them as delta tables in the gold lakehouse.
 
-<img src="./images/bestpractices/media/image61.png"
-style="width:4.30771in;height:1.89539in" />
+<img src="./images/bestpractices/media/image61.png" style="width:50%" />
+
 
 An important aspect of this data orchestration design is that it exposes
 a top-level pipeline named **Create Lakehouse Tables**. When you run
@@ -2258,8 +2252,7 @@ more scheduled jobs. By extending the item definitions for ETL items in
 a Fabric solutions with **.schedules** files, you can automate the data
 refresh strategy for a Fabric solution.
 
-<img src="./images/bestpractices/media/image62.png"
-style="width:5.26249in;height:2.33547in" />
+<img src="./images/bestpractices/media/image62.png" style="width:50%" />
 
 One final issue to consider with data orchestration is how to address
 changes to schemas over time. Think about a scenario where need to
@@ -2452,8 +2445,7 @@ Item Definition** API allows you to pass an item definition when
 updating a workspace item. Third, the **Get Item Definition** API allows
 you to retrieve the item definition for an existing item.
 
-<img src="./images/bestpractices/media/image63.png"
-style="width:4.20969in;height:1.24225in" />
+<img src="./images/bestpractices/media/image63.png" style="width:50%" />
 
 Let's walk through a scenario in which creating a workspace item
 requires dynamically updating an item definition file. Imagine you have
@@ -2470,8 +2462,7 @@ provided by the Fabric service. However, you can view this metadata by
 examining the raw file contents of **notebook-content.py** file as shown
 in the following screenshot.
 
-<img src="./images/bestpractices/media/image64.png"
-style="width:3.95667in;height:2.62203in" />
+<img src="./images/bestpractices/media/image64.png" style="width:50%" />
 
 Before calling **Create Item**, you first need to update the contents of
 **notebook-content** to include the correct workspace id and lakehouse
@@ -2760,8 +2751,7 @@ DevOps, the project is automatically created with a GIT repository of
 the same name. For example, creating a project named **Product Sales**
 will automatically create a repository named **Product Sales**.
 
-<img src="./images/bestpractices/media/image65.png"
-style="width:3.98752in;height:1.44437in" />
+<img src="./images/bestpractices/media/image65.png" style="width:50%" />
 
 In many scenarios, the GIT repository that's created along with the
 project is all you need. However, you can always add additional
@@ -2784,8 +2774,7 @@ automated using the Azure DevOps CLI or the Azure REST APIs. Once a
 pipeline has been registered, you should be able to see it in the
 **Pipelines** page in an Azure DevOps project.
 
-<img src="./images/bestpractices/media/image66.png"
-style="width:4.58844in;height:2.6375in" />
+<img src="./images/bestpractices/media/image66.png" style="width:50%" />
 
 You can write the code for an Azure pipeline in a programming language
 such as Python. This is accomplished by referencing a script with Python
@@ -2795,8 +2784,7 @@ associated Python scripts in the **src** folder. Below these two folders
 you can also see the **workspace** folder which contains the item
 definitions for a specific Fabric solution.
 
-<img src="./images/bestpractices/media/image67.png"
-style="width:3.36863in;height:3.14374in" />
+<img src="./images/bestpractices/media/image67.png" style="width:50%" />
 
 As you begin to develop Azure pipelines for a Fabric CI/CD project, you
 will find your code requires access to environment settings such as the
@@ -2812,8 +2800,7 @@ variable group, you can then add a set of named variables along with
 their values. The following screenshot shows a typical set of variables
 and secrets created for Azure pipelines in a Fabric CI/CD project.
 
-<img src="./images/bestpractices/media/image68.png"
-style="width:6.87177in;height:2.21805in" />
+<img src="./images/bestpractices/media/image68.png" style="width:50%" />
 
 When you create a variable that contains sensitive data, you can mark
 that variable as a secret. For example, your pipeline might need to
@@ -2839,8 +2826,8 @@ variables and secrets. These permissions can be configured using the
 **Pipeline permissions** dialog in the Azure Devops user interface or by
 using the Azure DevOps CLI or the Azure REST APIs.
 
-<img src="./images/bestpractices/media/image69.png"
-style="width:4.39993in;height:2.64379in" />
+<img src="./images/bestpractices/media/image69.png" style="width:50%" />
+
 
 When building a release process using an Azure pipeline, you are often
 required to configure a manual approval process. This can be tricky when
@@ -2850,8 +2837,8 @@ environments which can be configured with a manual approval process. As
 an example, you can extend an Azure DevOps project by adding two
 environments named **test** and **prod**.
 
-<img src="./images/bestpractices/media/image70.png"
-style="width:4.19506in;height:2.54419in" />
+<img src="./images/bestpractices/media/image70.png" style="width:50%" />
+
 
 Once you have configured the two environments with a manual approval
 process, you can create Azure pipelines for a release process that
@@ -2870,8 +2857,7 @@ provide diagnostic information about any errors that occur. The
 following screenshot shows how an Azure pipeline can log its progress in
 a Fabric CI/CD workflow.
 
-<img src="./images/bestpractices/media/image71.png"
-style="width:5.46064in;height:2.32178in" />
+<img src="./images/bestpractices/media/image71.png"  style="width:50%" />
 
 Azure DevOps Pipeline Resources
 
@@ -2899,8 +2885,7 @@ projects to assist with organizing repositories, the use of projects in
 GitHub is optional. When using GitHub for a Fabric CI/CD project, you
 just need to create a repository to get started.
 
-<img src="./images/bestpractices/media/image72.png"
-style="width:4.57208in;height:1.84852in" />
+<img src="./images/bestpractices/media/image72.png" style="width:50%" />
 
 GitHub Actions is the platform in GitHub that allows you to develop
 workflows for CI/CD processes. You can create workflows using GitHub
@@ -2918,8 +2903,8 @@ to reference a script written in a language such as Python. The
 following screenshot shows a typical example of the file structure of
 workflow files for a Fabric CI/CD project in a GitHub repository.
 
-<img src="./images/bestpractices/media/image73.png"
-style="width:2.68975in;height:3.55452in" />
+<img src="./images/bestpractices/media/image73.png" style="width:50%" />
+
 
 As you begin to develop GitHub Actions for a Fabric CI/CD project, you
 need a way to track environment settings such as the ids for workspaces,
@@ -2937,16 +2922,15 @@ from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
 memory when the workflow completes.
 
-<img src="./images/bestpractices/media/image74.png"
-style="width:6.4686in;height:1.85485in" />
+<img src="./images/bestpractices/media/image74.png" style="width:50%" />
+
 
 You can also add variables to a GitHub repository for environment
 settings that are not sensitive. The following screenshot shows an
 example of variables created for Azure pipelines in a Fabric CI/CD
 project.
 
-<img src="./images/bestpractices/media/image75.png"
-style="width:3.96088in;height:2.03227in" />
+<img src="./images/bestpractices/media/image75.png" style="width:50%" />
 
 While creating secrets and variables at the repository level is adequate
 for some projects, you might find you need more granularity. GitHub
@@ -2962,14 +2946,12 @@ authentication credentials for each Entra Id tenant. You can start by
 creating three different environments in your GitHub repository named
 **dev**, **test** and **prod**.
 
-<img src="./images/bestpractices/media/image76.png"
-style="width:4.45607in;height:1.43193in" />
+<img src="./images/bestpractices/media/image76.png" style="width:50%" />
 
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/bestpractices/media/image77.png"
-style="width:3.34988in;height:1.26424in" />
+<img src="./images/bestpractices/media/image77.png" style="width:50%" />
 
 In addition to tracking environment-specific variables and secrets, an
 environment can be configured with protection rules. For example, you
@@ -2988,8 +2970,7 @@ Once you have added the YAML file for a GitHub Actions into the
 left navigation of the **Actions** page. You can also select a workflow
 see its run history.
 
-<img src="./images/bestpractices/media/image78.png"
-style="width:3.9356in;height:2.46536in" />
+<img src="./images/bestpractices/media/image78.png" style="width:50%" />
 
 After selecting an action in the left navigation, you can drill into a
 specific workflow runs and view its logs. You can also run a action on
@@ -3000,8 +2981,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/bestpractices/media/image79.png"
-style="width:1.65368in;height:1.55828in" />
+<img src="./images/bestpractices/media/image79.png" style="width:50%" />
 
 As you begin to develop workflows using GitHub Actions, you should
 become familiar with monitoring workflow runs in order to test and debug
@@ -3010,8 +2990,7 @@ successful operations and to display diagnostic information about any
 errors that occur. The following screenshot shows an example of an
 GitHub Action written to log its progress in a Fabric CI/CD workflow.
 
-<img src="./images/bestpractices/media/image80.png"
-style="width:5.43497in;height:2.57219in" />
+<img src="./images/bestpractices/media/image80.png" style="width:50%" />
 
 Resources for GitHub Actions Workflows
 
