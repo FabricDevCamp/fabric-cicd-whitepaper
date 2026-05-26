@@ -1492,16 +1492,10 @@ file that is locked down and encrypted in cloud storage. Terraform
 creates the connection, configures its permissions and pass the
 connection id back to you as output.
 
-Resources for Terraform
-
-- [Terraform
-  Documentation](https://developer.hashicorp.com/terraform/docs)
-
-- [Terraform on Azure
-  documentation](https://learn.microsoft.com/en-us/azure/developer/terraform/)
-
-- [Microsoft Fabric
-  Provider](https://registry.terraform.io/providers/microsoft/fabric/latest/docs)
+> Resources for Terraform
+> - [Terraform Documentation](https://developer.hashicorp.com/terraform/docs)
+> - [Terraform on Azure documentation](https://learn.microsoft.com/en-us/azure/developer/terraform/)
+> - [Microsoft Fabric Provider](https://registry.terraform.io/providers/microsoft/fabric/latest/docs)
 
 ### Fabric CLI
 
