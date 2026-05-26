@@ -700,8 +700,7 @@ important. You've learned that a variable library is a collection of
 variables where each variable is defined with a name, a type and a
 default value.
 
-<img src="./images/bestpractices/media/image30.png"
-style="width:4.30636in;height:0.89744in" />
+<img src="./images/bestpractices/media/image30.png"  style="width:50%" />
 
 The purpose of a value set is to provide an alternate set of values for
 each of the variables in the variable library. Consider an example of a
@@ -710,8 +709,7 @@ the **dev** environment. You can extend the variable library by adding a
 value set for the **test** workspace and a second value set for the
 **prod** workspace.
 
-<img src="./images/bestpractices/media/image31.png"
-style="width:3.91385in;height:1.04442in" />
+<img src="./images/bestpractices/media/image31.png"  style="width:50%" />
 
 The item definition for a variable library includes variables and values
 sets. However the item definition does not contain anything to indicate
@@ -721,8 +719,7 @@ context of that workspace. That means three different workspaces could
 each contain a variable library with an identical item definition, yet
 each workspace can be configured to use a different value set.
 
-<img src="./images/bestpractices/media/image32.png"
-style="width:5.04083in;height:1.03104in" />
+<img src="./images/bestpractices/media/image32.png"  style="width:50%" />
 
 You can create variables in a variable library based on standard types
 including **String**, **Number**, **Integer**, **DateTime** and
@@ -760,8 +757,7 @@ Every Fabric solution is designed as a composition of workspace items
 and each item is based on a **workspace item type** which defines its
 capabilities and the user experience it provides in the Fabric service.
 
-<img src="./images/bestpractices/media/image33.png"
-style="width:4.76108in;height:1.36477in" />
+<img src="./images/bestpractices/media/image33.png"  style="width:50%" />
 
 The core abstraction of the workspace item type in Fabric is what allows
 artifacts from different Fabric workloads to behave in a similar and
@@ -780,14 +776,9 @@ others with respect to their CI/CD capabilities.
 
 There are four primary CI/CD capabilities that are supported by some but
 not all workspace item types.
-
 - Support for reading variables from a variable library
-
-- Support with Fabric REST APIs to create and update items using item
-  definitions
-
+- Support with Fabric REST APIs to create and update items using item definitions
 - Support for calling Fabric APIs using a service principal identity
-
 - Support for auto-binding workspace item dependencies
 
 Whenever possible, you should use variable libraries to manage
@@ -824,8 +815,7 @@ and the notebook. After you have built out the solution in the **dev**
 workspace, there are three established dependencies between these
 workspace items.
 
-<img src="./images/bestpractices/media/image34.png"
-style="width:2.90399in;height:1.56696in" />
+<img src="./images/bestpractices/media/image34.png" style="width:50%" />
 
 Now think about what happens when you use Fabric GIT synchronization to
 replicate these three workspace items from the **dev** workspace to a
@@ -837,8 +827,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the feature workspace were
 both able to self-manage their relations.
 
-<img src="./images/bestpractices/media/image35.png"
-style="width:4.4232in;height:1.99495in" />
+<img src="./images/bestpractices/media/image35.png" style="width:50%" />
 
 Fabric notebooks did not support auto-binding until Microsoft updated
 the **Notebook** item type with auto-binding support in March of 2026.
@@ -870,8 +859,7 @@ the item type and display name. The platform file also contains a
 instances of workspace items as they are propagated across GIT branches
 and workspaces.
 
-<img src="./images/bestpractices/media/image36.png"
-style="width:5.58545in;height:1.71494in" />
+<img src="./images/bestpractices/media/image36.png"  style="width:50%" />
 
 In addition to the platform file, each workspace item type defines its
 own unique schema for the files required and/or allowed in an item
@@ -879,24 +867,21 @@ definition. As an example, the item definition for a lakehouse contains
 files such as **alm.settings.json**, **lakehouse.metadata.json** and
 **shortcuts.metadata.json**.
 
-<img src="./images/bestpractices/media/image37.png"
-style="width:1.25059in;height:0.94498in" />
+<img src="./images/bestpractices/media/image37.png"  style="width:50%" />
 
 The minimal item definition for a notebook just requires one file named
 **notebook-contents.py** in addition to the platform file.
 
-<img src="./images/bestpractices/media/image38.png"
-style="width:1.99345in;height:0.69771in" />
+<img src="./images/bestpractices/media/image38.png"  style="width:50%" />
 
 Remember that notebooks do not support auto-binding behavior by default.
 However, you can extend the item definition for a notebook to support
 auto-binding by adding a **notebook-settings.json** file with content as
 shown in the following screenshot.
 
-<img src="./images/bestpractices/media/image39.png"
-style="width:3.99345in;height:1.13629in" />
+<img src="./images/bestpractices/media/image39.png"  style="width:50%" />
 
-Note that Fabric supports working with item definitions for notebooks
+> Note that Fabric supports working with item definitions for notebooks
 using either the **.py** format or the **.ipynb** format.
 
 While some item definitions contain a small number of files, that is not
@@ -904,8 +889,7 @@ always the case. As an example, the item definition for a semantic model
 can include dozens or even hundreds of TMDL files which are structured
 across several folders
 
-<img src="./images/bestpractices/media/image40.png"
-style="width:2.07187in;height:3.14924in" />
+<img src="./images/bestpractices/media/image40.png" style="width:50%" />
 
 While an item definition with a large number of files adds complexity,
 it also allow for collaboration in a much more granular fashion.
@@ -924,16 +908,10 @@ workspace item types you work with in a Fabric CI/CD project. An easy
 way to get started is to walk through item definition files in GIT which
 have been created using GIT synchronization.
 
-Fabric Item Definitions
-
-- [Item management
-  overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/item-management-overview)
-
-- [Item definition
-  overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
-
-- [GIT Repository with public item definition
-  schemas](https://github.com/microsoft/json-schemas/tree/main/fabric/item)
+> Fabric Item Definitions
+> - [Item management overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/item-management-overview)
+> - [Item definition overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
+> - [GIT Repository with public item definition schemas](https://github.com/microsoft/json-schemas/tree/main/fabric/item)
 
 ### The Role of the logicalId
 
