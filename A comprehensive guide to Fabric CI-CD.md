@@ -2837,7 +2837,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/bestpractices/media/image79.png" style="width:40%" />
+<img src="./images/bestpractices/media/image79.png" style="width:25%" />
 
 As you begin to develop workflows using GitHub Actions, you should
 become familiar with monitoring workflow runs in order to test and debug
@@ -2846,7 +2846,7 @@ successful operations and to display diagnostic information about any
 errors that occur. The following screenshot shows an example of an
 GitHub Action written to log its progress in a Fabric CI/CD workflow.
 
-<img src="./images/bestpractices/media/image80.png" style="width:50%" />
+<img src="./images/bestpractices/media/image80.png" style="width:80%" />
 
 Resources for GitHub Actions Workflows
 
