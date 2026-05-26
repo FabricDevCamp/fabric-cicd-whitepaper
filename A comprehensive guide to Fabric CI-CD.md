@@ -1024,8 +1024,7 @@ directly, you also have the option to boost your productivity by
 leveraging developer tools and libraries which call the Fabric REST API
 on your behalf as shown in following diagram.
 
-<img src="./images/bestpractices/media/image44.png"
-style="width:4.38499in;height:0.9517in" />
+<img src="./images/bestpractices/media/image44.png" style="width:80%" />
 
 This section will begin by examining the most common scenarios which
 require you to write automation logic. For example, you will learn what
@@ -1057,8 +1056,7 @@ flow for creating a new feature workspace which involves creating a new
 feature branch from the integration branch and then running an **Update
 from GIT** operation against a new workspace.
 
-<img src="./images/bestpractices/media/image45.png"
-style="width:4.5536in;height:0.67925in" />
+<img src="./images/bestpractices/media/image45.png" style="width:50%" />
 
 The problem is that the **Update from GIT** operation doesn't go far
 enough. For example, the **Update from GIT** operation will create a
@@ -1076,7 +1074,6 @@ consider two different types of jobs.
 
 - **Post-deploy jobs** run only once after an empty workspace is first
   initialized with an **Update from GIT** operation.
-
 - **Post-sync jobs** run each time after an **Update from GIT**
   operation completes on a workspace.
 
@@ -1106,8 +1103,7 @@ feature workspace which are committed to GIT in the feature branch.
 After that, a pull request is created and approved to merge the changes
 into the integration branch.
 
-<img src="./images/bestpractices/media/image46.png"
-style="width:7.01348in;height:0.79811in" />
+<img src="./images/bestpractices/media/image46.png" style="width:50%" />
 
 How do you synchronize the **dev** workspace with changes merged into
 the integration branch? You can start by developing a workflow that is
@@ -1161,8 +1157,7 @@ the **Fabric provider for Terraform** in 2025 making it possible to set
 up the infrastructure for a Fabric CI/CD project using an IaC-based
 provisioning process.
 
-<img src="./images/bestpractices/media/image47.png"
-style="width:5.28699in;height:3.21527in" />
+<img src="./images/bestpractices/media/image47.png" style="width:50%" />
 
 A Terraform configuration is defined using a set if files containing
 HashiCorp Configuration Language (HCL). Let's walk through a simple
@@ -1173,8 +1168,7 @@ typed variables. The **terraform.tfvars** file is used to assign
 variable values in a scenario in which Terraform is running locally in a
 client tool such as Visual Studio Code.
 
-<img src="./images/bestpractices/media/image48.png"
-style="width:2.53316in;height:1.62255in" />
+<img src="./images/bestpractices/media/image48.png" style="width:50%" />
 
 Note that the **terraform.tfvars** file often contains sensitive
 information such as a client secret to authenticate as a service
@@ -1193,35 +1187,24 @@ provider which authenticate as a service principal by using variable
 values to set the arguments **tenant_id**, **client_id** and
 **client_secret**.
 
+``` hcl
 terraform {
-
-required_version = "\>= 1.8, \< 2.0"
-
-required_providers {
-
-fabric = {
-
-source = "microsoft/fabric"
-
-version = "1.8.0"
-
+  required_version = "\>= 1.8, \< 2.0"
+  required_providers {
+    fabric = {
+      source = "microsoft/fabric"
+      version = "1.8.0"
+    }
+  }
 }
 
-}
-
-}
-
-\# SPN authentication for Fabric Provider
-
+# configure Fabric Provider to authenticate as SPN
 provider "fabric" {
-
-tenant_id = var.tenant_id
-
-client_id = var.client_id
-
-client_secret = var.client_secret
-
+  tenant_id = var.tenant_id
+  client_id = var.client_id
+  client_secret = var.client_secret
 }
+```
 
 Once a Terraform configuration contains what's required to initialize
 the provider, the next step is to run the **terraform init** command.
