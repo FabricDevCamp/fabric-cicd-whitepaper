@@ -598,7 +598,7 @@ Once you have made changes to one or more item definition files, you
 must commit your changes locally. After that you must push your changes
 back to the remote feature branch in the origin GIT repository.
 
-<img src="./images/bestpractices/media/image23.png"  style="width:45%" />
+<img src="./images/bestpractices/media/image23.png"  style="width:40%" />
 
 Keep in mind that editing to item definition files for a semantic models
 is relatively easy. That's because the item definitions for semantic
@@ -625,7 +625,7 @@ content to come
 
 content to come
 
-<img src="./images/bestpractices/media/image26.png"  style="width:70%" />
+<img src="./images/bestpractices/media/image26.png"  style="width:85%" />
 
 ### Variable Libraries
 
