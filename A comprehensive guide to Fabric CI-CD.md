@@ -156,7 +156,7 @@ multiple environments and get an instance of the Fabric solution running
 in each one. You also need to build the CI/CD processes to propagate
 solution updates from one environment to the next.
 
-<img src="./images/bestpractices/media/image5.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image5.png"  style="width:80%" />
 
 One essential aspect of planning a Fabric CI/CD project involves
 defining the requirements for the project's environments. The way to
@@ -172,7 +172,7 @@ workspaces from all environments to a single shared capacity, it's
 considered a best practice to isolate environments by creating a
 separate Fabric capacity for each one as shown in the following diagram.
 
-<img src="./images/bestpractices/media/image6.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image6.png"  style="width:80%" />
 
 The Fabric CI/CD project examples in in this guidance use three
 environments named **dev**, **test** and **prod**. However, the
