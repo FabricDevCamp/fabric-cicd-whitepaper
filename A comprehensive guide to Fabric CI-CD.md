@@ -2386,7 +2386,7 @@ Item Definition** API allows you to pass an item definition when
 updating a workspace item. Third, the **Get Item Definition** API allows
 you to retrieve the item definition for an existing item.
 
-<img src="./images/bestpractices/media/image63.png" style="width:70%" />
+<img src="./images/bestpractices/media/image63.png" style="width:60%" />
 
 Let's walk through a scenario in which creating a workspace item
 requires dynamically updating an item definition file. Imagine you have
@@ -2413,36 +2413,22 @@ are, you can perform some type of find-and-replace operation to
 substitute the workspace id, lakehouse id and lakehouse display name
 into the contents of **notebook-content.py**.
 
-\# Fabric notebook source
+``` python
+# Fabric notebook source
 
-\# METADATA \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+# METADATA ********************
 
-\# META {
-
-\# META "dependencies": {  
-\# META "lakehouse": {
-
-\# META "default_lakehouse": "{LAKEHOUSE_ID}",
-
-\# META "default_lakehouse_name": "{LAKEHOUSE_NAME}",
-
-\# META "default_lakehouse_workspace_id": "{WORKSPACE_ID}",
-
-\# META "known_lakehouses": \[
-
-\# META {
-
-\# META "id": "{LAKEHOUSE_ID}"
-
-\# META }
-
-\# META \]
-
-\# META }
-
-\# META }
-
-\# META }
+# META {
+# META   "dependencies": {
+# META     "lakehouse": {
+# META       "default_lakehouse": "{LAKEHOUSE_ID}",
+# META       "default_lakehouse_name": "{LAKEHOUSE_NAME}",
+# META       "default_lakehouse_workspace_id": "{WORKSPACE_ID}",
+# META       "known_lakehouses": []
+# META     }
+# META   }
+# META }
+```
 
 Directly manipulating item definition files is a powerful technique that
 assumes you know what you are doing. If you update an item definition
