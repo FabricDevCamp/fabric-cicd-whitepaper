@@ -2703,7 +2703,7 @@ environments which can be configured with a manual approval process. As
 an example, you can extend an Azure DevOps project by adding two
 environments named **test** and **prod**.
 
-<img src="./images/bestpractices/media/image70.png" style="width:45%" />
+<img src="./images/bestpractices/media/image70.png" style="width:48%" />
 
 
 Once you have configured the two environments with a manual approval
@@ -2723,7 +2723,7 @@ provide diagnostic information about any errors that occur. The
 following screenshot shows how an Azure pipeline can log its progress in
 a Fabric CI/CD workflow.
 
-<img src="./images/bestpractices/media/image71.png"  style="width:90%" />
+<img src="./images/bestpractices/media/image71.png"  style="width:96%" />
 
 > Azure DevOps Pipeline Resources
 > - [Azure Pipelines documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
