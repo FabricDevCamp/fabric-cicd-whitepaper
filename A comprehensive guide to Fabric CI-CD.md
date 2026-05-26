@@ -2075,11 +2075,11 @@ value set to true.
 find_replace:
   - find_value: 'Sql\.Database\(\s*"([^"]*datawarehouse\.fabric\.microsoft\.com[^"]*)"\s*,'
     replace_value:
-      test: \$items.Lakehouse.sales.\$sqlendpoint
-      prod: \$items.Lakehouse.sales.\$sqlendpoint
+      test: $items.Lakehouse.sales.\$sqlendpoint
+      prod: $items.Lakehouse.sales.\$sqlendpoint
     is_regex: "true"
-    item_type: \["SemanticModel"\]
-    file_path: "\*\*/expressions.tmdl"
+    item_type: ["SemanticModel"]
+    file_path: "**/expressions.tmdl"
 ```
 
 In addition to demonstrating the use of a regular expression with a
@@ -2102,8 +2102,8 @@ find_replace:
     replace_value:
       _ALL_: $items.Lakehouse.sales.\$sqlendpoint
     is_regex: "true"
-    item_type: \["SemanticModel"\]
-    file_path: "\*\*/expressions.tmdl"
+    item_type: ["SemanticModel"]
+    file_path: "**/expressions.tmdl"
 ```
 
 This example demonstrates the power of configuring parameterization
