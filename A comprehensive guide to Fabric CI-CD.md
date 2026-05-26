@@ -98,7 +98,7 @@ solution can be designed to run inside a single workspace. The following
 screenshot shows a simple example of a Fabric solution with five
 workspace items designed to run within a single workspace.
 
-<img src="./images/bestpractices/media/image3.png"  style="width:40%" />
+<img src="./images/bestpractices/media/image3.png"  style="width:32%" />
 
 When building a Fabric solution with a large number of items, you can
 partition items using workspace folders. Workspace folders can assist
