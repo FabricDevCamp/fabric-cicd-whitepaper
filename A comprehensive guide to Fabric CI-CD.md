@@ -1273,7 +1273,7 @@ workspace.
 
 <img src="./images/bestpractices/media/image50.png" style="width:65%" />
 
-By default, Terraform creates the **terraform.tfstate** file locally in
+> By default, Terraform creates the **terraform.tfstate** file locally in
 the root folder of the current configuration. Running Terraform with a
 local state file keeps things simple when you're first learning to use
 Terraform and when you are developing and testing configurations. In
