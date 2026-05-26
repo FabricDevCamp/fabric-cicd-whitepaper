@@ -719,7 +719,7 @@ context of that workspace. That means three different workspaces could
 each contain a variable library with an identical item definition, yet
 each workspace can be configured to use a different value set.
 
-<img src="./images/bestpractices/media/image32.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image32.png"  style="width:70%" />
 
 You can create variables in a variable library based on standard types
 including **String**, **Number**, **Integer**, **DateTime** and
