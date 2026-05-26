@@ -592,13 +592,13 @@ view and edit item definition files. The following screenshot shows an
 example of updating the contents of **sales.tmdl** to change the format
 string for a measure in the **Sales** table.
 
-<img src="./images/bestpractices/media/image22.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image22.png"  style="width:72%" />
 
 Once you have made changes to one or more item definition files, you
 must commit your changes locally. After that you must push your changes
 back to the remote feature branch in the origin GIT repository.
 
-<img src="./images/bestpractices/media/image23.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image23.png"  style="width:45%" />
 
 Keep in mind that editing to item definition files for a semantic models
 is relatively easy. That's because the item definitions for semantic
@@ -617,15 +617,15 @@ to other workspace items..
 It is also possible to build a development process which used Power BI
 Desktop as a client tool. This works for reports and for semantic models
 
-<img src="./images/bestpractices/media/image24.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image24.png"  style="width:80%" />
 
 content to come
 
-<img src="./images/bestpractices/media/image25.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image25.png"  style="width:70%" />
 
 content to come
 
-<img src="./images/bestpractices/media/image26.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image26.png"  style="width:70%" />
 
 ### Variable Libraries
 
