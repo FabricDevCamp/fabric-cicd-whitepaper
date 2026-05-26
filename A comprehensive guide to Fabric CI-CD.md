@@ -1753,7 +1753,7 @@ branch. The **fabric-cicd** library provides the flexibility of building
 a release process with a one-to-many mapping between a release branch
 and multiple target workspaces.
 
-<img src="./images/bestpractices/media/image58.png" style="width:50%" />
+<img src="./images/bestpractices/media/image58.png" style="width:40%" />
 
 When building a release process, you are often required to configure a
 manual approval process in which one or more approvers need to sign off
