@@ -2218,7 +2218,7 @@ more scheduled jobs. By extending the item definitions for ETL items in
 a Fabric solutions with **.schedules** files, you can automate the data
 refresh strategy for a Fabric solution.
 
-<img src="./images/bestpractices/media/image62.png" style="width:70%" />
+<img src="./images/bestpractices/media/image62.png" style="width:80%" />
 
 One final issue to consider with data orchestration is how to address
 changes to schemas over time. Think about a scenario where need to
