@@ -268,7 +268,7 @@ Fabric workspace List view displays a **GIT status** column that
 displays **Synced** to indicate all workspace items are in sync with the
 underlying item definitions stored in GIT.
 
-<img src="./images/bestpractices/media/image9.png"  style="width:65%" />
+<img src="./images/bestpractices/media/image9.png"  style="width:50%" />
 
 Fabric GIT integration also makes it possible to synchronize changes in
 the other direction. Think about a scenario in which all the items in a
@@ -277,7 +277,7 @@ an item definition are merged into the branch from another branch. You
 can run an **Update from GIT** operation to synchronize changes from
 item definitions in GIT to the items in the workspace.
 
-<img src="./images/bestpractices/media/image10.png"  style="width:35%" />
+<img src="./images/bestpractices/media/image10.png"  style="width:45%" />
 
 When you run an **Update from GIT** operation, Fabric checks to see
 whether a target items already exists for each item definition by
