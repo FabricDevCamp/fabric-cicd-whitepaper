@@ -156,7 +156,7 @@ multiple environments and get an instance of the Fabric solution running
 in each one. You also need to build the CI/CD processes to propagate
 solution updates from one environment to the next.
 
-<img src="./images/bestpractices/media/image5.png"  style="width:80%" />
+<img src="./images/bestpractices/media/image5.png"  style="width:85%" />
 
 One essential aspect of planning a Fabric CI/CD project involves
 defining the requirements for the project's environments. The way to
