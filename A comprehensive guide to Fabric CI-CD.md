@@ -405,8 +405,7 @@ workspace to the integration branch and run a **Commit to GIT**
 operation. The **Commit to GIT** operation creates an item definition in
 the integration branch for each item in the dev workspace.
 
-<img src="./images/bestpractices/media/image14.png"
-style="width:3.33224in;height:0.73641in" />
+<img src="./images/bestpractices/media/image14.png"  style="width:40%" />
 
 When you run a **Commit to GIT** operation to create item definitions in
 the integration branch, this should be considered a one-time operation.
@@ -426,8 +425,7 @@ it to the feature branch and run an **Update from GIT** operation. This
 flow will automatically populate the feature workspace with a matching
 set of workspace items.
 
-<img src="./images/bestpractices/media/image15.png"
-style="width:4.87866in;height:0.74219in" />
+<img src="./images/bestpractices/media/image15.png"  style="width:50%" />
 
 When you initialize a feature workspace with an **Update from GIT**
 operation, you're often required to complete additional configuration
@@ -440,8 +438,7 @@ following diagram shows a development process built using feature
 branches and feature workspaces. This is an approach which can scale to
 accommodate a larger number of developers or development teams.
 
-<img src="./images/bestpractices/media/image16.png"
-style="width:4.27167in;height:1.65606in" />
+<img src="./images/bestpractices/media/image16.png" style="width:50%" />
 
 Keep in mind that feature branches should be short-lived. You don't want
 a feature branch hanging around too long because that increases the risk
@@ -480,16 +477,14 @@ in the **dev** workspace to the **Branches** panel of the **Source
 control** pane, you can find a set of branching commands which include
 **Branch out to workspace**.
 
-<img src="./images/bestpractices/media/image17.png"
-style="width:2.95321in;height:2.37504in" />
+<img src="./images/bestpractices/media/image17.png" style="width:50%" />
 
 When you run the **Branch out to workspace** command, Fabric prompts you
 with a dialog to enter a new branch name. The **Branch out to
 workspace** dialog also allows you to choose between creating a new
 feature workspace or connecting to an existing feature workspace.
 
-<img src="./images/bestpractices/media/image18.png"
-style="width:2.30183in;height:2.34933in" />
+<img src="./images/bestpractices/media/image18.png" style="width:50%" />
 
 The **Branch out to workspace** dialog provides an option to **Select
 items individually** to enable a capability known as selective
@@ -515,16 +510,14 @@ integration branch named **main** and the name of the shared **dev**
 workspace. Each child node displays the name of each feature workspace
 along with its underlying GIT branch name.
 
-<img src="./images/bestpractices/media/image19.png"
-style="width:2.74796in;height:2.0269in" />
+<img src="./images/bestpractices/media/image19.png"  style="width:50%" />
 
 Within each branched workspace, Fabric also provides a workspace
 breadcrumb menu that allows you to visualize that this feature workspace
 is related to the shared dev workspace connected to the integration
 branch.
 
-<img src="./images/bestpractices/media/image20.png"
-style="width:4.19749in;height:0.40343in" />
+<img src="./images/bestpractices/media/image20.png"  style="width:50%" />
 
 An important consideration when working with the **Branch out to
 workspace** command involves the permissions required in the GIT
@@ -533,15 +526,11 @@ have permissions to create new branches in the GIT repository. You also
 need permissions in Fabric to create new workspaces and to assign
 workspaces to a Fabric capacity.
 
-More info on branching workspaces in Fabric
-
-- [Development process using branched
+> More info on branching workspaces in Fabric
+> - [Development process using branched
   workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/branched-workspace)
-
-- [Required Git permissions for popular
-  actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-git-permissions-for-popular-actions)
-
-- [Required Fabric permissions for popular
+> - [Required Git permissions for popular actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-git-permissions-for-popular-actions)
+> - [Required Fabric permissions for popular
   actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-fabric-permissions-for-popular-actions)
 
 Microsoft is currently working to enhance branched workspace
@@ -568,16 +557,10 @@ current branch to a new branch without having to discard any changes in
 the current branch. This command is used to resolve merge conflict
 scenarios.
 
-More info on branching workspaces in Fabric
-
-- [Development process using branched
-  workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/branched-workspace)
-
-- [Required Git permissions for popular
-  actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-git-permissions-for-popular-actions)
-
-- [Required Fabric permissions for popular
-  actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-fabric-permissions-for-popular-actions)
+> More info on branching workspaces in Fabric
+> - [Development process using branched workspace](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/branched-workspace)
+> - [Required Git permissions for popular actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-git-permissions-for-popular-actions)
+> - [Required Fabric permissions for popular actions](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/git-integration-process?tabs=Azure%2Cazure-devops#required-fabric-permissions-for-popular-actions)
 
 ### Client Tools
 
