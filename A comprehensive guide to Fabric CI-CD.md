@@ -2759,7 +2759,7 @@ to reference a script written in a language such as Python. The
 following screenshot shows a typical example of the file structure of
 workflow files for a Fabric CI/CD project in a GitHub repository.
 
-<img src="./images/bestpractices/media/image73.png" style="width:50%" />
+<img src="./images/bestpractices/media/image73.png" style="width:40%" />
 
 
 As you begin to develop GitHub Actions for a Fabric CI/CD project, you
