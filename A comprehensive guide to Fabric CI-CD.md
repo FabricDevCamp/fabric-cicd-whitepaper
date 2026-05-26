@@ -1897,7 +1897,9 @@ Now let's walk through writing the Python code required to start a
 (PyPI).** That means you can install **fabric-cicd** using the **pip
 install** command.
 
+```
 pip install fabric-cicd
+```
 
 The **fabric-cicd** library is commonly used to build release processes
 in workflows that run in Azure DevOps or in GitHub. Fortunately, the
