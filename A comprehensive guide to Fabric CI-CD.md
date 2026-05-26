@@ -2507,37 +2507,18 @@ like to update the metadata for an existing notebook to switch its
 default lakehouse from one lakehouse to another. You can accomplish this
 using the following steps.
 
-- Call **Get Item Definition** to retrieve JSON response with the
-  current item definition
+- Call **Get Item Definition** to retrieve JSON response with the current item definition
+- Extract the **notebook-content.py** file content and convert it from base64 to plain text
+- Perform a find-and-replace operation on **notebook-content.py** to update the workspace id and lakehouse id
+- Convert the updated file contents for **notebook-content.py** back into the base64 encoded format
+- Update the JSON element for the item definition with the base64 encoded content for **notebook-content.py**.
+- Call **Update Item Definition** passing the JSON with the updated item definition.
 
-- Extract the **notebook-content.py** file content and convert it from
-  base64 to plain text
-
-- Perform a find-and-replace operation on **notebook-content.py** to
-  update the workspace id and lakehouse id
-
-- Convert the updated file contents for **notebook-content.py** back
-  into the base64 encoded format
-
-- Update the JSON element for the item definition with the base64
-  encoded content for **notebook-content.py**.
-
-- Call **Update Item Definition** passing the JSON with the updated item
-  definition.
-
-Resources for working with item definitions
-
-- [Fabric item definitions
-  overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
-
-- [Create Item
-  API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/create-item?tabs=HTTP)
-
-- [Get Item Definition
-  API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/get-item-definition?tabs=HTTP)
-
-- [Update Item Definition
-  API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/update-item-definition?tabs=HTTP)
+> Resources for working with item definitions
+> - [Fabric item definitions overview](https://learn.microsoft.com/en-us/rest/api/fabric/articles/item-management/definitions/item-definition-overview)
+> - [Create Item API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/create-item?tabs=HTTP)
+> - [Get Item Definition API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/get-item-definition?tabs=HTTP)
+> - [Update Item Definition API](https://learn.microsoft.com/en-us/rest/api/fabric/core/items/update-item-definition?tabs=HTTP)
 
 When you begin to program the Fabric REST APIs, you might notice that it
 provides item-generic APIs as well as item-specific APIs. You've already
@@ -2560,67 +2541,51 @@ experiment, let's compare the results of calling **Get Item** versus
 **Get Lakehouse**. A call to **Get Item** results in an HTTP GET request
 to a URL which targets the **items** endpoint for a specific workspace.
 
+```
 https://api.fabric.microsoft.com/v1/workspaces/{workspaceId}/items/{itemId}
+```
 
 The response from **Get Item** returns a JSON element which contains
 properties common to all types of workspace items.
 
+``` json
 {
-
-"displayName": "sales",
-
-"description": "Contain for sales data",
-
-"type": "Lakehouse",
-
-"workspaceId": "{LAKEHOUSE_ID}",
-
-"id": "{WORKSPACE_ID}"
-
+  "displayName": "sales",
+  "description": "Contain for sales data",
+  "type": "Lakehouse",
+  "workspaceId": "{LAKEHOUSE_ID}",
+  "id": "{WORKSPACE_ID}"
 }
+```
 
 Now let's compare this to a call to **Get Lakehouse** which uses an URL
 targeting the **lakehouses** endpoint for a workspace.
 
+```
 https://api.fabric.microsoft.com/v1/workspaces/{workspaceId}/lakehouses/{lakehouseId}
+```
 
 The response from **Get Lakehouse** includes a **properties** element
 with additional properties that are specific to lakehouses.
 
+``` json
 {
-
-"displayName": "sales",
-
-"description": "Contain for sales data",
-
-"type": "Lakehouse",
-
-"workspaceId": "{LAKEHOUSE_ID}",
-
-"id": "{WORKSPACE_ID}"
-
-"properties": {
-
-"oneLakeTablesPath":
-"https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Tables",
-
-"oneLakeFilesPath":
-"https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Files",
-
-"sqlEndpointProperties": {
-
-"connectionString":
-"{SQL_ENDPOINT_UNIQUE_PATH}.datawarehouse.fabric.microsoft.com",
-
-"id": "{LAKEHOUSE_ID}",
-
-"provisioningStatus": "Success"
-
+  "displayName": "sales",
+  "description": "Contain for sales data",
+  "type": "Lakehouse",
+  "workspaceId": "{LAKEHOUSE_ID}",
+  "id": "{WORKSPACE_ID}"
+  "properties": {
+    "oneLakeTablesPath": "https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Tables",
+    "oneLakeFilesPath": "https://onelake.dfs.fabric.microsoft.com/{workspaceId}-{ItemId}/Files",
+    "sqlEndpointProperties": {
+      "connectionString": "{SQL_ENDPOINT_UNIQUE_PATH}.datawarehouse.fabric.microsoft.com",
+      "id": "{LAKEHOUSE_ID}",
+      "provisioningStatus": "Success"
+    }
+  }
 }
-
-}
-
-}
+```
 
 There is a common scenario in which you need to create a lakehouse along
 with a semantic model which connects to that lakehouse using the OneLake
