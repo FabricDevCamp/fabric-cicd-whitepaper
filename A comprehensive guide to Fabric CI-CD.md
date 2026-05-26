@@ -2807,7 +2807,7 @@ creating three different environments in your GitHub repository named
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/bestpractices/media/image77.png" style="width:60%" />
+<img src="./images/bestpractices/media/image77.png" style="width:50%" />
 
 In addition to tracking environment-specific variables and secrets, an
 environment can be configured with protection rules. For example, you
@@ -2826,7 +2826,7 @@ Once you have added the YAML file for a GitHub Actions into the
 left navigation of the **Actions** page. You can also select a workflow
 see its run history.
 
-<img src="./images/bestpractices/media/image78.png" style="width:50%" />
+<img src="./images/bestpractices/media/image78.png" style="width:70%" />
 
 After selecting an action in the left navigation, you can drill into a
 specific workflow runs and view its logs. You can also run a action on
@@ -2837,7 +2837,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/bestpractices/media/image79.png" style="width:50%" />
+<img src="./images/bestpractices/media/image79.png" style="width:40%" />
 
 As you begin to develop workflows using GitHub Actions, you should
 become familiar with monitoring workflow runs in order to test and debug
