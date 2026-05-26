@@ -1840,7 +1840,7 @@ second file named **parameter.yml** is used to configure
 parameterization to deal with environment-specific setting that have
 been committed to GIT.
 
-<img src="./images/bestpractices/media/image60.png" style="width:50%" />
+<img src="./images/bestpractices/media/image60.png" style="width:40%" />
 
 Let's walk through a simple example of configuration-based deployment
 using **fabric-cicd**. We'll start by examining the contents of a simple
@@ -1851,31 +1851,24 @@ top-level key named **core** which has child keys named
 subkeys named **test** and **prod** which define target environments for
 a deployment job.
 
+``` yaml
 core:
+  workspace_id:
+    test: "400c3329-53b6-415d-a663-d7f1ec73c171"
+    prod: "c1932962-8236-4375-ad3b-0f3a14dc4c13"
 
-workspace_id:
+  repository_directory: ","
 
-test: "400c3329-53b6-415d-a663-d7f1ec73c171"
+  item_types_in_scope:
+    - VariableLibrary
+    - Lakehouse
+    - Notebook
+    - DataPipeline
+    - SemanticModel
+    - Report
 
-prod: "c1932962-8236-4375-ad3b-0f3a14dc4c13"
-
-repository_directory: ","
-
-item_types_in_scope:
-
-\- VariableLibrary
-
-\- Lakehouse
-
-\- Notebook
-
-\- DataPipeline
-
-\- SemanticModel
-
-\- Report
-
-parameter: "parameter.yml"
+  parameter: "parameter.yml"
+```
 
 Targets environments are an important concept when using
 **fabric-cicd**. The configuration shown in this example defines two
