@@ -967,8 +967,7 @@ assigned to a Fabric workspace associated with an environment. The
 following screenshot shows the user interface of a Deployment Pipeline
 which makes it possible to deploy item-level changes across workspaces.
 
-<img src="./images/bestpractices/media/image43.png"
-style="width:6.05099in;height:3.36502in" />
+<img src="./images/bestpractices/media/image43.png"  style="width:80%" />
 
 Deployment Pipelines are designed to enhance productivity by hiding
 low-level details associated with propagating changes through a sequence
