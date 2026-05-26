@@ -1024,7 +1024,7 @@ directly, you also have the option to boost your productivity by
 leveraging developer tools and libraries which call the Fabric REST API
 on your behalf as shown in following diagram.
 
-<img src="./images/bestpractices/media/image44.png" style="width:80%" />
+<img src="./images/bestpractices/media/image44.png" style="width:70%" />
 
 This section will begin by examining the most common scenarios which
 require you to write automation logic. For example, you will learn what
