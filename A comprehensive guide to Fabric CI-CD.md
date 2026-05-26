@@ -2723,24 +2723,14 @@ provide diagnostic information about any errors that occur. The
 following screenshot shows how an Azure pipeline can log its progress in
 a Fabric CI/CD workflow.
 
-<img src="./images/bestpractices/media/image71.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image71.png"  style="width:90%" />
 
-Azure DevOps Pipeline Resources
-
-- [Azure Pipelines
-  documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
-
-- [Key
-  concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
-
-- [YAML pipeline
-  editor](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/yaml-pipeline-editor?view=azure-devops)
-
-- [Manage variable
-  groups](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml)
-
-- [Use Azure Key Vault secrets in Azure
-  Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=managedidentity%2Cyaml)
+> Azure DevOps Pipeline Resources
+> - [Azure Pipelines documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/?view=azure-devops)
+> - [Key concepts](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/key-pipelines-concepts?view=azure-devops)
+> - [YAML pipeline editor](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/yaml-pipeline-editor?view=azure-devops)
+> - [Manage variable groups](https://learn.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups?view=azure-devops&tabs=azure-pipelines-ui%2Cyaml)
+> - [Use Azure Key Vault secrets in Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/release/azure-key-vault?view=azure-devops&tabs=managedidentity%2Cyaml)
 
 ### Developing GitHub Workflow Actions
 
