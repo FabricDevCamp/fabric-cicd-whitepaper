@@ -2000,21 +2000,16 @@ key by adding filtering keys such as **item_type**, **item_name** and
 **expressions.tmdl** found in the item definition for a single semantic
 model identified by its display name.
 
+``` yaml
 find_replace:
-
-\- find_value: "https://storage4dev.dfs.core.windows.net/productsales/"
-
-replace_value:
-
-test: " https://storage4test.dfs.core.windows.net/productsales/"
-
-prod: " https://storage4prod.dfs.core.windows.net/productsales/"
-
-item_type: "SemanticModel"
-
-item_name: "Product Sales Imported Model"
-
-file_path: "/definition/expressions.tmdl"
+  - find_value: "https://storage4dev.dfs.core.windows.net/productsales/"
+    replace_value:
+      test: " https://storage4test.dfs.core.windows.net/productsales/"
+      prod: " https://storage4prod.dfs.core.windows.net/productsales/"
+    item_type: "SemanticModel"
+    item_name: "Product Sales Imported Model"
+    file_path: "/definition/expressions.tmdl"
+```
 
 The parameterization support in **fabric-cicd** goes beyond adding
 simple find-and-replace operations. **fabric-cicd** also supports
