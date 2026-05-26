@@ -1609,7 +1609,7 @@ to complete the full CI/CD lifecycle. The question now becomes how to
 deploy a Fabric solution to workspaces in environments for testing and
 production.
 
-<img src="./images/bestpractices/media/image52.png" style="width:80%" />
+<img src="./images/bestpractices/media/image52.png" style="width:70%" />
 
 The first and easiest option for building a release process is using a
 Deployment Pipeline. Deployment Pipelines offer a low-code approach that
@@ -1631,8 +1631,7 @@ the **dev** workspace and then use **Commit to GIT** operations to
 commit changes to GIT where they can be used to revert to earlier item
 versions when necessary.
 
-<img src="./images/bestpractices/media/image53.png"
-style="width:3.22238in;height:1.43306in" />
+<img src="./images/bestpractices/media/image53.png" style="width:70%" />
 
 If you decide to build the release process using a Deployment Pipeline,
 you still have the ability to design a scalable development process
@@ -1675,8 +1674,7 @@ dedicated release branches. You can then use an **Update from GIT**
 operation to deploy changes from a release branch to its target
 workspace.
 
-<img src="./images/bestpractices/media/image54.png"
-style="width:4.99357in;height:1.68764in" />
+<img src="./images/bestpractices/media/image54.png" style="width:70%" />
 
 There are two important issues to consider when deciding whether to
 build a release process using GIT synchronization. First, there are
