@@ -2296,20 +2296,12 @@ something you don't have to worry about when using developer tools such
 as Terraform and Fabric CLI which deal with paginated results,
 long-running operations and throttling behind the scenes.
 
-Fabric REST API Fundamentals
-
-- [The Fabric REST
-  APIs](https://learn.microsoft.com/en-us/rest/api/fabric/articles/)
-
-- [Fabric GIT
-  APIs](https://learn.microsoft.com/en-us/rest/api/fabric/core/git/connect?tabs=HTTP)
-
-- [Pagination](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination)
-
-- [Long running
-  operations](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation)
-
-- [Throttling](https://learn.microsoft.com/en-us/rest/api/fabric/articles/throttling)
+> Fabric REST API Fundamentals
+> - [The Fabric REST APIs](https://learn.microsoft.com/en-us/rest/api/fabric/articles/)
+> - [Fabric GIT APIs](https://learn.microsoft.com/en-us/rest/api/fabric/core/git/connect?tabs=HTTP)
+> - [Pagination](https://learn.microsoft.com/en-us/rest/api/fabric/articles/pagination)
+> - [Long running operations](https://learn.microsoft.com/en-us/rest/api/fabric/articles/long-running-operation)
+> - [Throttling](https://learn.microsoft.com/en-us/rest/api/fabric/articles/throttling)
 
 Microsoft offers two Software Development Kits (SDKs) for the Fabric
 REST APIs. Microsoft provides a **Microsoft Fabric .NET SDK** for C#
@@ -2330,57 +2322,40 @@ listing creates a workspace by calling **create_workspace**. After that,
 the code calls **list_workspaces** and uses the result to enumerate
 through the existing set of workspaces.
 
+``` python
 """Hello World for Fabric REST API Pythn SDK"""
 
 import os
-
 from azure.identity import ClientSecretCredential
-
 from microsoft_fabric_api import FabricClient
 
 credential = ClientSecretCredential(
-
-tenant_id = os.getenv("AZURE_TENANT_ID"),
-
-client_id = os.getenv("AZURE_CLIENT_ID"),
-
-client_secret = os.getenv("AZURE_CLIENT_SECRET")
-
+  tenant_id = os.getenv("AZURE_TENANT_ID"),
+  client_id = os.getenv("AZURE_CLIENT_ID"),
+  client_secret = os.getenv("AZURE_CLIENT_SECRET")
 )
 
 fabric_client = FabricClient(credential)
 
-\# create request body for creating new workspace
-
+# create request body for creating new workspace
 create_workspace_request = {
-
-"displayName": "Hello Python SDK",
-
-"description": "This isn't so hard",
-
-"capacityId": os.getenv("FABRIC_CAPACITY_ID")
-
+  "displayName": "Hello Python SDK",
+  "description": "This isn't so hard",
+  "capacityId": os.getenv("FABRIC_CAPACITY_ID")
 }
 
-\# call Create Workspace API
+# call Create Workspace API
+workspace = fabric_client.core.workspaces.create_workspace(create_workspace_request)
 
-workspace =
-fabric_client.core.workspaces.create_workspace(create_workspace_request)
-
-\# enumerate workspaces by calling List Workspaces API
-
+# enumerate workspaces by calling List Workspaces API
 workspaces = fabric_client.core.workspaces.list_workspaces()
-
 for workspace in workspaces:
+  print(f'{workspace.display_name} - \[{workspace.id}\]')
+```
 
-print(f'{workspace.display_name} - \[{workspace.id}\]')
-
-Fabric REST API SDKs
-
-- [Microsoft Fabric .NET
-  SDK](https://www.nuget.org/packages/Microsoft.Fabric.Api)
-
-- Python SDK (coming soon)
+> Fabric REST API SDKs
+> - [Microsoft Fabric .NET SDK](https://www.nuget.org/packages/Microsoft.Fabric.Api)
+> - [Microsoft Fabric Python SDK](https://pypi.org/project/microsoft-fabric-api/)
 
 Let's examine a Fabric REST API programming scenario in which you need
 to deploy a Fabric solution to a target workspace which involves
