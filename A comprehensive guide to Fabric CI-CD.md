@@ -315,7 +315,7 @@ definitions files for workspace items together with other project files.
 The following screenshot shows the effect of configuring the **Git
 folder** setting with a value of **/workspace**.
 
-<img src="./images/bestpractices/media/image11.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image11.png" style="width:50%" />
 
 > The [**Git -
 Connect**](https://learn.microsoft.com/en-us/rest/api/fabric/core/git/connect?tabs=HTTP#azuredevopsdetails)
@@ -346,8 +346,7 @@ setting of **/workspace/presentation**. This design is essential for
 Fabric solutions with multiple workspaces because it effectively creates
 a single source of truth in GIT for the solution as a whole.
 
-<img src="./images/bestpractices/media/image12.png"
-style="width:2.17833in;height:2.21603in" />
+<img src="./images/bestpractices/media/image12.png"  style="width:80%" />
 
 ### Feature Workspaces
 
