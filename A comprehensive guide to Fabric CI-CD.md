@@ -867,19 +867,19 @@ definition. As an example, the item definition for a lakehouse contains
 files such as **alm.settings.json**, **lakehouse.metadata.json** and
 **shortcuts.metadata.json**.
 
-<img src="./images/bestpractices/media/image37.png"  style="width:30%" />
+<img src="./images/bestpractices/media/image37.png"  style="width:25%" />
 
 The minimal item definition for a notebook just requires one file named
 **notebook-contents.py** in addition to the platform file.
 
-<img src="./images/bestpractices/media/image38.png"  style="width:30%" />
+<img src="./images/bestpractices/media/image38.png"  style="width:35%" />
 
 Remember that notebooks do not support auto-binding behavior by default.
 However, you can extend the item definition for a notebook to support
 auto-binding by adding a **notebook-settings.json** file with content as
 shown in the following screenshot.
 
-<img src="./images/bestpractices/media/image39.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image39.png"  style="width:60%" />
 
 > Note that Fabric supports working with item definitions for notebooks
 using either the **.py** format or the **.ipynb** format.
