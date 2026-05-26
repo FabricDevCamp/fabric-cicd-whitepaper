@@ -879,7 +879,7 @@ However, you can extend the item definition for a notebook to support
 auto-binding by adding a **notebook-settings.json** file with content as
 shown in the following screenshot.
 
-<img src="./images/bestpractices/media/image39.png"  style="width:60%" />
+<img src="./images/bestpractices/media/image39.png"  style="width:75%" />
 
 > Note that Fabric supports working with item definitions for notebooks
 using either the **.py** format or the **.ipynb** format.
@@ -889,7 +889,7 @@ always the case. As an example, the item definition for a semantic model
 can include dozens or even hundreds of TMDL files which are structured
 across several folders
 
-<img src="./images/bestpractices/media/image40.png" style="width:50%" />
+<img src="./images/bestpractices/media/image40.png" style="width:40%" />
 
 While an item definition with a large number of files adds complexity,
 it also allow for collaboration in a much more granular fashion.
