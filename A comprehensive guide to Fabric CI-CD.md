@@ -2778,7 +2778,7 @@ from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
 memory when the workflow completes.
 
-<img src="./images/bestpractices/media/image74.png" style="width:50%" />
+<img src="./images/bestpractices/media/image74.png" style="width:75%" />
 
 
 You can also add variables to a GitHub repository for environment
@@ -2786,7 +2786,7 @@ settings that are not sensitive. The following screenshot shows an
 example of variables created for Azure pipelines in a Fabric CI/CD
 project.
 
-<img src="./images/bestpractices/media/image75.png" style="width:50%" />
+<img src="./images/bestpractices/media/image75.png" style="width:60%" />
 
 While creating secrets and variables at the repository level is adequate
 for some projects, you might find you need more granularity. GitHub
