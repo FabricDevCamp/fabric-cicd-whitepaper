@@ -2028,8 +2028,9 @@ call to the PowerQuery function name **SQL.Database**. The
 for the SQL endpoint server path and second parameter references a
 lakehouse.
 
-Sql.Database(\<SQL Endpoint Connect String\>,
-"12341234-1234-1234-1234-123412341234")
+```
+Sql.Database(\<SQL Endpoint Connect String\>, "12341234-1234-1234-1234-123412341234")
+```
 
 Let's start by looking at the second parameter passed to
 **SQL.Database** which is used to identify the target lakehouse. For
@@ -2041,7 +2042,9 @@ lakehouse name instead of the lakehouse id. That's because the lakehouse
 name will be the same across all environments eliminating the need for
 parametization.
 
+```
 Sql.Database(\<SQL Endpoint Connect String\>, "sales")
+```
 
 Now let's turn our attention to the first parameter passed to
 **Sql.Database**. This parameter is used to pass the SQL endpoint
@@ -2050,36 +2053,34 @@ However, the first part of the SQL endpoint connection string is always
 unique to a specific workspace which means. Therefore, dealing with the
 SQL endpoint connection string requires parameterization.
 
+```
 Sql.Database(4zzdkw4hunvuhp4ttpl5hvkkzm-6pexp5fkuvjedkrx773mxow6z4.datawarehouse.fabric.microsoft.com,
+```
 
 **fabric-cicd** supports parameterization using regular expressions to
 identity capture zones used in **find_replace** operations. The
 following regular expression demonstrates defining a capture zone for
 the SQL endpoint connection string.
 
+```
 Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,
+```
 
 Once you have created the regular expression with a capture zone to
 replace the SQL endpoint connection string, you can use it in a
 **find_replace** operation as long as you add an **is_regex** key with a
 value set to true.
 
+``` yaml
 find_replace:
-
-\- find_value:
-'Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,'
-
-replace_value:
-
-test: \$items.Lakehouse.sales.\$sqlendpoint
-
-prod: \$items.Lakehouse.sales.\$sqlendpoint
-
-is_regex: "true"
-
-item_type: \["SemanticModel"\]
-
-file_path: "\*\*/expressions.tmdl"
+  - find_value: 'Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,'
+    replace_value:
+      test: \$items.Lakehouse.sales.\$sqlendpoint
+      prod: \$items.Lakehouse.sales.\$sqlendpoint
+    is_regex: "true"
+    item_type: \["SemanticModel"\]
+    file_path: "\*\*/expressions.tmdl"
+```
 
 In addition to demonstrating the use of a regular expression with a
 capture zone, this example also uses a dynamic variable for the
@@ -2095,20 +2096,15 @@ this in which all environment keys have the same value, you can use the
 **\_ALL\_** key instead of adding multiple environment keys with
 redundant values.
 
+``` yaml
 find_replace:
-
-\- find_value:
-'Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,'
-
-replace_value:
-
-\_ALL\_: \$items.Lakehouse.sales.\$sqlendpoint
-
-is_regex: "true"
-
-item_type: \["SemanticModel"\]
-
-file_path: "\*\*/expressions.tmdl"
+  - find_value: 'Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,'
+    replace_value:
+      _ALL_: $items.Lakehouse.sales.\$sqlendpoint
+    is_regex: "true"
+    item_type: \["SemanticModel"\]
+    file_path: "\*\*/expressions.tmdl"
+```
 
 This example demonstrates the power of configuring parameterization
 using regular expressions, capture zones and dynamic variables. Keep in
@@ -2117,17 +2113,11 @@ workspace item. You can also use a dynamic **\$workspace** variable
 which provides the **\$id** property and the **\$name** in cases in
 which you need to obtain the id or name of the current workspace.
 
-Resource for learning more about fabric-cicd
-
-- [Home page](https://microsoft.github.io/fabric-cicd/0.1.7/)
-
-- [Code
-  Samples](https://microsoft.github.io/fabric-cicd/0.1.7/code_sample/)
-
-- [Code
-  Reference](https://microsoft.github.io/fabric-cicd/0.1.7/code_reference/)
-
-- [Parameterization](https://microsoft.github.io/fabric-cicd/0.1.33/how_to/parameterization/)
+> Resource for learning more about fabric-cicd
+> - [Home page](https://microsoft.github.io/fabric-cicd/0.1.7/)
+> - [Code Samples](https://microsoft.github.io/fabric-cicd/0.1.7/code_sample/)
+> - [Code Reference](https://microsoft.github.io/fabric-cicd/0.1.7/code_reference/)
+> - [Parameterization](https://microsoft.github.io/fabric-cicd/0.1.33/how_to/parameterization/)
 
 ### Data orchestration
 
