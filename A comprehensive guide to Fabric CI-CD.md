@@ -98,7 +98,7 @@ solution can be designed to run inside a single workspace. The following
 screenshot shows a simple example of a Fabric solution with five
 workspace items designed to run within a single workspace.
 
-<img src="./images/bestpractices/media/image3.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image3.png"  style="width:40%" />
 
 When building a Fabric solution with a large number of items, you can
 partition items using workspace folders. Workspace folders can assist
@@ -126,7 +126,7 @@ users then can access anything inside. The best way to enforce the
 security requirement is to design the Fabric solution with a staging
 workspace and a presentation workspace.
 
-<img src="./images/bestpractices/media/image4.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image4.png"  style="width:60%" />
 
 The staging workspace is designed to include all the items used to run
 ETL jobs and to store staging data. The presentation workspace is
