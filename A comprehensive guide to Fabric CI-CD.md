@@ -64,7 +64,7 @@ everybody’s changes together in a structured development process that
 maintains code quality while also getting updates and new features into
 production as quickly as possible.
 
-<img src="./images/bestpractices/media/image1.png" style="width:30%" />
+<img src="./images/bestpractices/media/image1.png" style="width:40%" />
 
 **Continuous deployment (CD)** is the practice of automating the
 deployment of code. Deployment is often preceded by some type of manual
@@ -81,7 +81,7 @@ production. The release process in a CI/CD lifecycle is often built to
 promote changes through a standard set of environments such as **dev**,
 **test** and **prod**.
 
-<img src="./images/bestpractices/media/image2.png"  style="width:30%" />
+<img src="./images/bestpractices/media/image2.png"  style="width:50%" />
 
 ### Fabric solutions
 
