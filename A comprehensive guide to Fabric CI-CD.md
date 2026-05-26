@@ -517,7 +517,7 @@ breadcrumb menu that allows you to visualize that this feature workspace
 is related to the shared dev workspace connected to the integration
 branch.
 
-<img src="./images/bestpractices/media/image20.png"  style="width:80%" />
+<img src="./images/bestpractices/media/image20.png"  style="width:60%" />
 
 An important consideration when working with the **Branch out to
 workspace** command involves the permissions required in the GIT
