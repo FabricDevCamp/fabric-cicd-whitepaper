@@ -2175,7 +2175,7 @@ There is second notebook which builds the gold layer by loading tables
 from the silver lakehouse and transforming them into a star schema
 before saving them as delta tables in the gold lakehouse.
 
-<img src="./images/bestpractices/media/image61.png" style="width:70%" />
+<img src="./images/bestpractices/media/image61.png" style="width:80%" />
 
 
 An important aspect of this data orchestration design is that it exposes
