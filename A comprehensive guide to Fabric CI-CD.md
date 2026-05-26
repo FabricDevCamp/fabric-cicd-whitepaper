@@ -510,14 +510,14 @@ integration branch named **main** and the name of the shared **dev**
 workspace. Each child node displays the name of each feature workspace
 along with its underlying GIT branch name.
 
-<img src="./images/bestpractices/media/image19.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image19.png"  style="width:38%" />
 
 Within each branched workspace, Fabric also provides a workspace
 breadcrumb menu that allows you to visualize that this feature workspace
 is related to the shared dev workspace connected to the integration
 branch.
 
-<img src="./images/bestpractices/media/image20.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image20.png"  style="width:80%" />
 
 An important consideration when working with the **Branch out to
 workspace** command involves the permissions required in the GIT
