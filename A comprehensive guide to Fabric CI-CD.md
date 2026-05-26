@@ -1456,7 +1456,7 @@ resources required by three environments. Each environment contains the
 same set of resource types yet parameterization can give each
 environment its own unique resource settings.
 
-<img src="./images/bestpractices/media/image51.png" style="width:65%" />
+<img src="./images/bestpractices/media/image51.png" style="width:80%" />
 
 When using Terraform, it's recommended that you create a separate
 configuration for each environment. After all, you don't want a problem
