@@ -1731,7 +1731,7 @@ of the release branches, a workflow runs automatically and implements
 the release process by using **fabric-cicd** to deploy changes to the
 target workspace.
 
-<img src="./images/bestpractices/media/image57.png" style="width:50%" />
+<img src="./images/bestpractices/media/image57.png" style="width:60%" />
 
 This example is similar to Git synchronization example shown earlier in
 the sense that they both use the GitFlow branching strategy. However,
