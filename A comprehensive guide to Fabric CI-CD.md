@@ -2640,7 +2640,7 @@ automated using the Azure DevOps CLI or the Azure REST APIs. Once a
 pipeline has been registered, you should be able to see it in the
 **Pipelines** page in an Azure DevOps project.
 
-<img src="./images/bestpractices/media/image66.png" style="width:50%" />
+<img src="./images/bestpractices/media/image66.png" style="width:66%" />
 
 You can write the code for an Azure pipeline in a programming language
 such as Python. This is accomplished by referencing a script with Python
