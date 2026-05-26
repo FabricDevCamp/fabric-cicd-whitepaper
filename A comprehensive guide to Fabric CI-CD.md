@@ -757,7 +757,7 @@ Every Fabric solution is designed as a composition of workspace items
 and each item is based on a **workspace item type** which defines its
 capabilities and the user experience it provides in the Fabric service.
 
-<img src="./images/bestpractices/media/image33.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image33.png"  style="width:40%" />
 
 The core abstraction of the workspace item type in Fabric is what allows
 artifacts from different Fabric workloads to behave in a similar and
