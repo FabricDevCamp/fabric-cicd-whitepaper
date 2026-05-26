@@ -245,8 +245,7 @@ GitHub Enterprise. When creating a connection using **GitHub - Source
 control** connector, you must you must configure the connection
 credentials using a personal access token (PAT).
 
-<img src="./images/bestpractices/media/image7.png"
-style="width:3.66485in;height:1.15782in" />
+<img src="./images/bestpractices/media/image7.png"  style="width:80%" />
 
 An essential aspect of Fabric GIT integration is its ability to
 dynamically generate item definitions from workspace items. When you
@@ -255,8 +254,7 @@ connect a workspace to a branch in a GIT repository, Fabric runs a
 item and persists the item definition to the target GIT branch as a
 folder containing item definition files.
 
-<img src="./images/bestpractices/media/image8.png"
-style="width:4.89109in;height:1.4388in" />
+<img src="./images/bestpractices/media/image8.png"  style="width:80%" />
 
 Fabric uses a naming convention for item definition folders which
 includes the item display name, a period and the item type in the format
@@ -270,8 +268,7 @@ Fabric workspace List view displays a **GIT status** column that
 displays **Synced** to indicate all workspace items are in sync with the
 underlying item definitions stored in GIT.
 
-<img src="./images/bestpractices/media/image9.png"
-style="width:2.31872in;height:1.22652in" />
+<img src="./images/bestpractices/media/image9.png"  style="width:80%" />
 
 Fabric GIT integration also makes it possible to synchronize changes in
 the other direction. Think about a scenario in which all the items in a
@@ -280,8 +277,7 @@ an item definition are merged into the branch from another branch. You
 can run an **Update from GIT** operation to synchronize changes from
 item definitions in GIT to the items in the workspace.
 
-<img src="./images/bestpractices/media/image10.png"
-style="width:3.32484in;height:0.76679in" />
+<img src="./images/bestpractices/media/image10.png"  style="width:35%" />
 
 When you run an **Update from GIT** operation, Fabric checks to see
 whether a target items already exists for each item definition by
