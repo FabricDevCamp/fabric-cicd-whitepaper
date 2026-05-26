@@ -346,10 +346,9 @@ setting of **/workspace/presentation**. This design is essential for
 Fabric solutions with multiple workspaces because it effectively creates
 a single source of truth in GIT for the solution as a whole.
 
-<img src="./images/bestpractices/media/image12.png"  style="width:80%" />
+<img src="./images/bestpractices/media/image12.png"  style="width:60%" />
 
 ### Feature Workspaces
-
 The use of features branches has become widely adopted in software
 development. A development process based on feature branches allows
 developers to work and commit changes in isolation. You can also
