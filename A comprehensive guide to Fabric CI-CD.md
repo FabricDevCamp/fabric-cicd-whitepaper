@@ -1157,7 +1157,7 @@ the **Fabric provider for Terraform** in 2025 making it possible to set
 up the infrastructure for a Fabric CI/CD project using an IaC-based
 provisioning process.
 
-<img src="./images/bestpractices/media/image47.png" style="width:50%" />
+<img src="./images/bestpractices/media/image47.png" style="width:70%" />
 
 A Terraform configuration is defined using a set if files containing
 HashiCorp Configuration Language (HCL). Let's walk through a simple
@@ -1168,7 +1168,7 @@ typed variables. The **terraform.tfvars** file is used to assign
 variable values in a scenario in which Terraform is running locally in a
 client tool such as Visual Studio Code.
 
-<img src="./images/bestpractices/media/image48.png" style="width:50%" />
+<img src="./images/bestpractices/media/image48.png" style="width:40%" />
 
 Note that the **terraform.tfvars** file often contains sensitive
 information such as a client secret to authenticate as a service
