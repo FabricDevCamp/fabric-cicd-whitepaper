@@ -2802,7 +2802,7 @@ authentication credentials for each Entra Id tenant. You can start by
 creating three different environments in your GitHub repository named
 **dev**, **test** and **prod**.
 
-<img src="./images/bestpractices/media/image76.png" style="width:50%" />
+<img src="./images/bestpractices/media/image76.png" style="width:70%" />
 
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
