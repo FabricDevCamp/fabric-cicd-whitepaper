@@ -2650,7 +2650,7 @@ associated Python scripts in the **src** folder. Below these two folders
 you can also see the **workspace** folder which contains the item
 definitions for a specific Fabric solution.
 
-<img src="./images/bestpractices/media/image67.png" style="width:50%" />
+<img src="./images/bestpractices/media/image67.png" style="width:60%" />
 
 As you begin to develop Azure pipelines for a Fabric CI/CD project, you
 will find your code requires access to environment settings such as the
