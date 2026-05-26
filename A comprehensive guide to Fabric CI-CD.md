@@ -368,8 +368,7 @@ for a given scenario. When the approval process for a pull request
 completes, the changes are automatically merged to the shared branch
 which is known as the integration branch.
 
-<img src="./images/bestpractices/media/image13.png"
-style="width:3.11629in;height:0.77299in" />
+<img src="./images/bestpractices/media/image13.png"  style="width:50%" />
 
 The **integration branch** is an essential concept in continuous
 integration. The integration branch is the shared branch where the
@@ -380,13 +379,9 @@ production environments. Remember that the integration branch is a
 concept not a name. An integration branch typically has a name such as
 **main** or **dev**.
 
-Creating and managing pull requests
-
-- [Create pull requests in Azure Dev
-  Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
-
-- [Creating a pull request in
-  GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
+> Creating and managing pull requests
+- [Create pull requests in Azure Dev Ops](https://learn.microsoft.com/en-us/azure/devops/repos/git/pull-requests?view=azure-devops&tabs=browser)
+- [Creating a pull request in GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 
 For developers migrating to Fabric with experience in traditional CI/CD,
 some aspects of Fabric CI/CD will be familiar while other aspects will
