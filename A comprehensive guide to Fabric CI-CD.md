@@ -2073,7 +2073,7 @@ value set to true.
 
 ``` yaml
 find_replace:
-  - find_value: 'Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,'
+  - find_value: 'Sql\.Database\(\s*"([^"]*datawarehouse\.fabric\.microsoft\.com[^"]*)"\s*,'
     replace_value:
       test: \$items.Lakehouse.sales.\$sqlendpoint
       prod: \$items.Lakehouse.sales.\$sqlendpoint
@@ -2098,7 +2098,7 @@ redundant values.
 
 ``` yaml
 find_replace:
-  - find_value: 'Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,'
+  - find_value: 'Sql\.Database\(\s*"([^"]*datawarehouse\.fabric\.microsoft\.com[^"]*)"\s*,'
     replace_value:
       _ALL_: $items.Lakehouse.sales.\$sqlendpoint
     is_regex: "true"
