@@ -1594,13 +1594,9 @@ Links Labs from a non-Azure environment, you must maintain code which
 uses Semantic Link Labs in a Fabric notebook and then automate running
 the notebook.
 
-Semantic Link Lab Resources
-
-- [Semantic Link Labs Code
-  Examples](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples)
-
-- [Semantic Link Labs
-  FAQ](https://github.com/microsoft/semantic-link-labs/wiki/Frequently-Asked-Questions-(FAQ))
+> Semantic Link Lab Resources
+> - [Semantic Link Labs Code Examples](https://github.com/microsoft/semantic-link-labs/wiki/Code-Examples)
+> - [Semantic Link Labs FAQ](https://github.com/microsoft/semantic-link-labs/wiki/Frequently-Asked-Questions-(FAQ))
 
 ### Building a release process
 
@@ -1613,8 +1609,7 @@ to complete the full CI/CD lifecycle. The question now becomes how to
 deploy a Fabric solution to workspaces in environments for testing and
 production.
 
-<img src="./images/bestpractices/media/image52.png"
-style="width:3.10145in;height:1.22565in" />
+<img src="./images/bestpractices/media/image52.png" style="width:80%" />
 
 The first and easiest option for building a release process is using a
 Deployment Pipeline. Deployment Pipelines offer a low-code approach that
