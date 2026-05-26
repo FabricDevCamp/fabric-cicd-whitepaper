@@ -1373,45 +1373,32 @@ First, you create an Azure resource group using an
 **azurerm_resource_group** resource. Next, you can create a capacity in
 that resource group using a **azurerm_fabric_capacity** resource.
 
+``` hcl
 data "azurerm_client_config" "current" {}
 
 locals {
-
   spn_object_id = data.azurerm_client_config.current.object_id
-
 }
 
 resource "azurerm_resource_group" "main" {
-
   name     = var.resource_group_name
-
   location = var.capacity_location
-
 }
 
 resource "azurerm_fabric_capacity" "main" {
-
   name                = var.capacity_name
-
   resource_group_name = azurerm_resource_group.main.name
-
   location            = azurerm_resource_group.main.location
-
-  administration_members = \[
-
+  administration_members = [
     local.spn_object_id,
-
-    var.admin_user_upn \]
-
+    var.admin_user_upn 
+  ]
   sku {
-
     name = var.capacity_sku_size
-
     tier = "Fabric"
-
   }
-
 }
+```
 
 In addition to **resource** blocks used to create resources, Terraform
 also supports adding **data** blocks for scenarios in which you just
