@@ -827,7 +827,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the feature workspace were
 both able to self-manage their relations.
 
-<img src="./images/bestpractices/media/image35.png" style="width:60%" />
+<img src="./images/bestpractices/media/image35.png" style="width:70%" />
 
 Fabric notebooks did not support auto-binding until Microsoft updated
 the **Notebook** item type with auto-binding support in March of 2026.
