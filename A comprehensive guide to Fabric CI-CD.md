@@ -2415,9 +2415,7 @@ into the contents of **notebook-content.py**.
 
 ``` python
 # Fabric notebook source
-
 # METADATA ********************
-
 # META {
 # META   "dependencies": {
 # META     "lakehouse": {
