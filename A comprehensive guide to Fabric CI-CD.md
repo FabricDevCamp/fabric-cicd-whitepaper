@@ -815,7 +815,7 @@ and the notebook. After you have built out the solution in the **dev**
 workspace, there are three established dependencies between these
 workspace items.
 
-<img src="./images/bestpractices/media/image34.png" style="width:30%" />
+<img src="./images/bestpractices/media/image34.png" style="width:35%" />
 
 Now think about what happens when you use Fabric GIT synchronization to
 replicate these three workspace items from the **dev** workspace to a
@@ -859,7 +859,7 @@ the item type and display name. The platform file also contains a
 instances of workspace items as they are propagated across GIT branches
 and workspaces.
 
-<img src="./images/bestpractices/media/image36.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image36.png"  style="width:70%" />
 
 In addition to the platform file, each workspace item type defines its
 own unique schema for the files required and/or allowed in an item
@@ -867,12 +867,12 @@ definition. As an example, the item definition for a lakehouse contains
 files such as **alm.settings.json**, **lakehouse.metadata.json** and
 **shortcuts.metadata.json**.
 
-<img src="./images/bestpractices/media/image37.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image37.png"  style="width:30%" />
 
 The minimal item definition for a notebook just requires one file named
 **notebook-contents.py** in addition to the platform file.
 
-<img src="./images/bestpractices/media/image38.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image38.png"  style="width:30%" />
 
 Remember that notebooks do not support auto-binding behavior by default.
 However, you can extend the item definition for a notebook to support
