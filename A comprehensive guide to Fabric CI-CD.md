@@ -1212,8 +1212,7 @@ Running **terraform init** downloads the executable code for the
 provider along with extra security configuration used to verify nobody
 has tampered with the downloaded provider code.
 
-<img src="./images/bestpractices/media/image49.png"
-style="width:3.36855in;height:1.53612in" />
+<img src="./images/bestpractices/media/image49.png" style="width:50%" />
 
 After initialing the Fabric provider, the next step is create resources
 by adding **resource** blocks to **main.tf**. Each **resource** block
@@ -1223,45 +1222,30 @@ creating workspaces and the **fabric_workspace_role_assignment**
 resource type for configuring access by adding workspace role
 assignments.
 
+``` hcl
 resource "fabric_workspace" "workspace_main" {
-
   display_name = var.workspace_name
-
   capacity_id = var.capacity_id
-
 }
 
 resource "fabric_workspace_role_assignment" "admin_group" {
-
-workspace_id = fabric_workspace.workspace_main.id
-
-principal = {
-
+  workspace_id = fabric_workspace.workspace_main.id
+  principal = {
     id   = var.admin_group
-
-type = "Group"
-
-}
-
-role = "Admin"
-
+    type = "Group"
+  }
+  role = "Admin"
 }
 
 resource "fabric_workspace_role_assignment" "dev_group" {
-
-workspace_id = fabric_workspace.workspace_main.id
-
-principal = {
-
+  workspace_id = fabric_workspace.workspace_main.id
+  principal = {
     id   = var.dev_group
-
-type = "Group"
-
+    type = "Group"
+  }
+  role = "Member"
 }
-
-role = "Member"
-
-}
+```
 
 When creating a **fabric_workspace** resource, you need to specify
 argument values for **display_name** and **capacity_id**. You should
@@ -1307,29 +1291,25 @@ have been created by the configuration. Here is an example of two
 **output** blocks used to provide values for the workspace id and DFS
 endpoint.
 
+``` hcl
 output "workspace_id" {
-
-description = "Id of Fabric workspace"
-
-value = fabric_workspace.workspace_main.id
-
+  description = "Id of Fabric workspace"
+  value = fabric_workspace.workspace_main.id
 }
 
 output "workspace_dfs_endpoint" {
-
-description = "DFS endpoint for Fabric workspace"
-
-value = fabric_workspace.workspace_main.onelake_endpoints.dfs_endpoint
-
+  description = "DFS endpoint for Fabric workspace"
+  value = fabric_workspace.workspace_main.onelake_endpoints.dfs_endpoint
 }
+```
 
 When you run the **terraform apply** command, output values are written
 to the console after all provisioning has completed.
 
-workspace_dfs_endpoint =
-"https://eastus-onelake.dfs.fabric.microsoft.com"
-
+``` console
+workspace_dfs_endpoint = "https://eastus-onelake.dfs.fabric.microsoft.com"
 workspace_id = "ad26468c-9f9f-4a5a-87b9-ab5e79a78ea4"
+```
 
 Let's take a step back and discuss the importance of the Terraform state
 file. By tracking the state of resources in the current deployment,
