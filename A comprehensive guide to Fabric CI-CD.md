@@ -1056,7 +1056,7 @@ flow for creating a new feature workspace which involves creating a new
 feature branch from the integration branch and then running an **Update
 from GIT** operation against a new workspace.
 
-<img src="./images/bestpractices/media/image45.png" style="width:50%" />
+<img src="./images/bestpractices/media/image45.png" style="width:70%" />
 
 The problem is that the **Update from GIT** operation doesn't go far
 enough. For example, the **Update from GIT** operation will create a
