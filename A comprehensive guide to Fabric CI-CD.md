@@ -368,7 +368,7 @@ for a given scenario. When the approval process for a pull request
 completes, the changes are automatically merged to the shared branch
 which is known as the integration branch.
 
-<img src="./images/bestpractices/media/image13.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image13.png"  style="width:40%" />
 
 The **integration branch** is an essential concept in continuous
 integration. The integration branch is the shared branch where the
