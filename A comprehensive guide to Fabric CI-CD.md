@@ -1915,43 +1915,32 @@ by calling the **deploy_with_config** function and passing parameter
 values for **token_credential**, **config_file_path** and
 **environment**.
 
+``` python
 from azure.identity import ClientSecretCredential
-
 from fabric_cicd import deploy_with_config
 
-\# create credentials to authenticate as service principal
+# create credentials to authenticate as service principal
 
 spn_credential = ClientSecretCredential(
-
- tenant_id = os.getenv('AZURE_TENANT_ID'),
-
+  tenant_id = os.getenv('AZURE_TENANT_ID'),
   client_id = os.getenv('AZURE_CLIENT_ID'),
-
   client_secret = os.getenv('AZURE_CLIENT_SECRET')
-
-\# deploy to test workspace
-
-deploy_with_config(
-
-token_credential = spn_credential,
-
-config_file_path = './workspace/deploy.yml',
-
-environment = 'test'
-
 )
 
-\# deploy to prod workspace
-
+# deploy to test workspace
 deploy_with_config(
-
-token_credential = spn_credential,
-
-config_file_path = './workspace/deploy.yml',
-
-environment = 'prod'
-
+  token_credential = spn_credential,
+  config_file_path = './workspace/deploy.yml',
+  environment = 'test'
 )
+
+# deploy to prod workspace
+deploy_with_config(
+  token_credential = spn_credential,
+  config_file_path = './workspace/deploy.yml',
+  environment = 'prod'
+)
+```
 
 When calling **deploy_with_config**, you must pass an **environment**
 value which maps to target environment defined in **deploy.yml**. The
