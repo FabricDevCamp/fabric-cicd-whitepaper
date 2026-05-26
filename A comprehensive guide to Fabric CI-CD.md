@@ -1920,7 +1920,6 @@ from azure.identity import ClientSecretCredential
 from fabric_cicd import deploy_with_config
 
 # create credentials to authenticate as service principal
-
 spn_credential = ClientSecretCredential(
   tenant_id = os.getenv('AZURE_TENANT_ID'),
   client_id = os.getenv('AZURE_CLIENT_ID'),
@@ -1977,15 +1976,13 @@ from the **dev** workspace that you want to replace. The
 environment. In this example, the configuration defines two target
 environments named **test** and **prod**.
 
+``` yaml
 find_replace:
-
-\- find_value: "https://storage4dev.dfs.core.windows.net/productsales/"
-
-replace_value:
-
-test: " https://storage4test.dfs.core.windows.net/productsales/"
-
-prod: " https://storage4prod.dfs.core.windows.net/productsales/"
+  - find_value: "https://storage4dev.dfs.core.windows.net/productsales/"
+    replace_value:
+      test: " https://storage4test.dfs.core.windows.net/productsales/"
+      prod: " https://storage4prod.dfs.core.windows.net/productsales/"
+```
 
 By default, **fabric-cicd** processes a **find_replace** operation by
 inspecting every file in every item definition whose type is include in
