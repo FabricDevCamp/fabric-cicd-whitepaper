@@ -2692,7 +2692,7 @@ variables and secrets. These permissions can be configured using the
 **Pipeline permissions** dialog in the Azure Devops user interface or by
 using the Azure DevOps CLI or the Azure REST APIs.
 
-<img src="./images/bestpractices/media/image69.png" style="width:50%" />
+<img src="./images/bestpractices/media/image69.png" style="width:70%" />
 
 
 When building a release process using an Azure pipeline, you are often
