@@ -64,8 +64,7 @@ everybody’s changes together in a structured development process that
 maintains code quality while also getting updates and new features into
 production as quickly as possible.
 
-<img src="./images/bestpractices/media/image1.png"
-style="width:3.02954in;height:1.28273in" />
+<img src="./images/bestpractices/media/image1.png" style="width:50%" />
 
 **Continuous deployment (CD)** is the practice of automating the
 deployment of code. Deployment is often preceded by some type of manual
