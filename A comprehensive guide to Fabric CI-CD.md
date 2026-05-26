@@ -700,7 +700,7 @@ important. You've learned that a variable library is a collection of
 variables where each variable is defined with a name, a type and a
 default value.
 
-<img src="./images/bestpractices/media/image30.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image30.png"  style="width:40%" />
 
 The purpose of a value set is to provide an alternate set of values for
 each of the variables in the variable library. Consider an example of a
@@ -709,7 +709,7 @@ the **dev** environment. You can extend the variable library by adding a
 value set for the **test** workspace and a second value set for the
 **prod** workspace.
 
-<img src="./images/bestpractices/media/image31.png"  style="width:70%" />
+<img src="./images/bestpractices/media/image31.png"  style="width:60%" />
 
 The item definition for a variable library includes variables and values
 sets. However the item definition does not contain anything to indicate
