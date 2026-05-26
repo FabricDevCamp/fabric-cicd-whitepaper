@@ -1103,7 +1103,7 @@ feature workspace which are committed to GIT in the feature branch.
 After that, a pull request is created and approved to merge the changes
 into the integration branch.
 
-<img src="./images/bestpractices/media/image46.png" style="width:70%" />
+<img src="./images/bestpractices/media/image46.png" style="width:80%" />
 
 How do you synchronize the **dev** workspace with changes merged into
 the integration branch? You can start by developing a workflow that is
