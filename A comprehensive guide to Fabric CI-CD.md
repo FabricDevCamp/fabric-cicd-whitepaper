@@ -2807,7 +2807,7 @@ creating three different environments in your GitHub repository named
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
 
-<img src="./images/bestpractices/media/image77.png" style="width:50%" />
+<img src="./images/bestpractices/media/image77.png" style="width:70%" />
 
 In addition to tracking environment-specific variables and secrets, an
 environment can be configured with protection rules. For example, you
