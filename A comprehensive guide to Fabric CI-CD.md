@@ -315,10 +315,9 @@ definitions files for workspace items together with other project files.
 The following screenshot shows the effect of configuring the **Git
 folder** setting with a value of **/workspace**.
 
-<img src="./images/bestpractices/media/image11.png"
-style="width:3.57443in;height:2.04749in" />
+<img src="./images/bestpractices/media/image11.png"  style="width:45%" />
 
-The [**Git -
+> The [**Git -
 Connect**](https://learn.microsoft.com/en-us/rest/api/fabric/core/git/connect?tabs=HTTP#azuredevopsdetails)
 API provides the **directoryName** parameter which you can use to
 configure the **Git folder** setting.
