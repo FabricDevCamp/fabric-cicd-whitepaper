@@ -2692,7 +2692,7 @@ variables and secrets. These permissions can be configured using the
 **Pipeline permissions** dialog in the Azure Devops user interface or by
 using the Azure DevOps CLI or the Azure REST APIs.
 
-<img src="./images/bestpractices/media/image69.png" style="width:60%" />
+<img src="./images/bestpractices/media/image69.png" style="width:50%" />
 
 
 When building a release process using an Azure pipeline, you are often
@@ -2703,7 +2703,7 @@ environments which can be configured with a manual approval process. As
 an example, you can extend an Azure DevOps project by adding two
 environments named **test** and **prod**.
 
-<img src="./images/bestpractices/media/image70.png" style="width:50%" />
+<img src="./images/bestpractices/media/image70.png" style="width:45%" />
 
 
 Once you have configured the two environments with a manual approval
