@@ -2640,7 +2640,7 @@ automated using the Azure DevOps CLI or the Azure REST APIs. Once a
 pipeline has been registered, you should be able to see it in the
 **Pipelines** page in an Azure DevOps project.
 
-<img src="./images/bestpractices/media/image66.png" style="width:66%" />
+<img src="./images/bestpractices/media/image66.png" style="width:60%" />
 
 You can write the code for an Azure pipeline in a programming language
 such as Python. This is accomplished by referencing a script with Python
@@ -2650,7 +2650,7 @@ associated Python scripts in the **src** folder. Below these two folders
 you can also see the **workspace** folder which contains the item
 definitions for a specific Fabric solution.
 
-<img src="./images/bestpractices/media/image67.png" style="width:60%" />
+<img src="./images/bestpractices/media/image67.png" style="width:55%" />
 
 As you begin to develop Azure pipelines for a Fabric CI/CD project, you
 will find your code requires access to environment settings such as the
@@ -2778,7 +2778,7 @@ from logs. A GitHub Actions workflow decrypts a secret at runtime,
 injects it into your workflow and then immediately discards it from
 memory when the workflow completes.
 
-<img src="./images/bestpractices/media/image74.png" style="width:70%" />
+<img src="./images/bestpractices/media/image74.png" style="width:75%" />
 
 
 You can also add variables to a GitHub repository for environment
