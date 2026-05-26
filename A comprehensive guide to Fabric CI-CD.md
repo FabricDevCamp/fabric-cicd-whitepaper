@@ -1631,7 +1631,7 @@ the **dev** workspace and then use **Commit to GIT** operations to
 commit changes to GIT where they can be used to revert to earlier item
 versions when necessary.
 
-<img src="./images/bestpractices/media/image53.png" style="width:70%" />
+<img src="./images/bestpractices/media/image53.png" style="width:50%" />
 
 If you decide to build the release process using a Deployment Pipeline,
 you still have the ability to design a scalable development process
