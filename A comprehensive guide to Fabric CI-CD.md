@@ -1271,8 +1271,7 @@ following screenshot shows an example of the state tracked for a
 state used to track the OneLake endpoints that Fabric creates for a
 workspace.
 
-<img src="./images/bestpractices/media/image50.png"
-style="width:4.05828in;height:1.86305in" />
+<img src="./images/bestpractices/media/image50.png" style="width:65%" />
 
 By default, Terraform creates the **terraform.tfstate** file locally in
 the root folder of the current configuration. Running Terraform with a
