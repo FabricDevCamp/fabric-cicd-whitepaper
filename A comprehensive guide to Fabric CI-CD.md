@@ -1212,7 +1212,7 @@ Running **terraform init** downloads the executable code for the
 provider along with extra security configuration used to verify nobody
 has tampered with the downloaded provider code.
 
-<img src="./images/bestpractices/media/image49.png" style="width:50%" />
+<img src="./images/bestpractices/media/image49.png" style="width:65%" />
 
 After initialing the Fabric provider, the next step is create resources
 by adding **resource** blocks to **main.tf**. Each **resource** block
