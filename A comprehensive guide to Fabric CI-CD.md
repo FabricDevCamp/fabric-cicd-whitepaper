@@ -1686,7 +1686,7 @@ That means you need to run a script after an **Update from GIT**
 operation completes to update each semantic model with the datasource
 path that is appropriate for its target environment.
 
-<img src="./images/bestpractices/media/image55.png" style="width:50%" />
+<img src="./images/bestpractices/media/image55.png" style="width:60%" />
 
 A second issue with GIT synchronization is that it requires a connection
 between the target workspace and a GIT branch. When a workspace is
