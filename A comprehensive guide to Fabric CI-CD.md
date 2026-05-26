@@ -2457,54 +2457,30 @@ contains a **part** element for each file in the item definition. Each
 **part** element includes a relative **path** value and a payload for
 the file contents in a base64 encoded format.
 
+``` json
 {
-
-"displayName": "Create Lakehouse Tables",
-
-"type": "Notebook",
-
-"definition": {
-
-"parts": \[
-
-{
-
-"path": ".platform",
-
-"payload":
-"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*BASE64-ENCODED-FILE-CONTENT\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
-
-"payloadType": "InlineBase64"
-
-},
-
-{
-
-"path": "notebook-content.py",
-
-"payload":
-"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*BASE64-ENCODED-FILE-CONTENT\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
-
-"payloadType": "InlineBase64"
-
-},
-
-{
-
-"path": "notebook-settings.json",
-
-"payload":
-"\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*BASE64-ENCODED-FILE-CONTENT\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*"
-
-"payloadType": "InlineBase64"
-
+  "displayName": "Create Lakehouse Tables",
+  "type": "Notebook",
+  "definition": {
+  "parts": [
+    {
+      "path": ".platform",
+      "payload": "******************** BASE64-ENCODED-FILE-CONTENT ********************"
+      "payloadType": "InlineBase64"
+    },
+    {
+      "path": "notebook-content.py",
+      "payload": "******************** BASE64-ENCODED-FILE-CONTENT ********************"
+      "payloadType": "InlineBase64"
+    },
+    {
+      "path": "notebook-settings.json",
+      "payload": "******************** BASE64-ENCODED-FILE-CONTENT ********************"
+      "payloadType": "InlineBase64"
+    }
+  ]
 }
-
-\]
-
-}
-
-}
+```
 
 At this point, you should be able to make an observation about the
 difference between Fabric REST API programming and using Fabric
