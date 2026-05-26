@@ -2386,7 +2386,7 @@ Item Definition** API allows you to pass an item definition when
 updating a workspace item. Third, the **Get Item Definition** API allows
 you to retrieve the item definition for an existing item.
 
-<img src="./images/bestpractices/media/image63.png" style="width:50%" />
+<img src="./images/bestpractices/media/image63.png" style="width:70%" />
 
 Let's walk through a scenario in which creating a workspace item
 requires dynamically updating an item definition file. Imagine you have
@@ -2403,7 +2403,7 @@ provided by the Fabric service. However, you can view this metadata by
 examining the raw file contents of **notebook-content.py** file as shown
 in the following screenshot.
 
-<img src="./images/bestpractices/media/image64.png" style="width:50%" />
+<img src="./images/bestpractices/media/image64.png" style="width:60%" />
 
 Before calling **Create Item**, you first need to update the contents of
 **notebook-content** to include the correct workspace id and lakehouse
