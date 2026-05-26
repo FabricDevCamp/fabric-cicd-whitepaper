@@ -2029,7 +2029,7 @@ for the SQL endpoint server path and second parameter references a
 lakehouse.
 
 ```
-Sql.Database(\<SQL Endpoint Connect String\>, "12341234-1234-1234-1234-123412341234")
+Sql.Database(<SQL Endpoint Connect String>, "12341234-1234-1234-1234-123412341234")
 ```
 
 Let's start by looking at the second parameter passed to
@@ -2043,7 +2043,7 @@ name will be the same across all environments eliminating the need for
 parametization.
 
 ```
-Sql.Database(\<SQL Endpoint Connect String\>, "sales")
+Sql.Database(<SQL Endpoint Connect String>, "sales")
 ```
 
 Now let's turn our attention to the first parameter passed to
@@ -2063,7 +2063,7 @@ following regular expression demonstrates defining a capture zone for
 the SQL endpoint connection string.
 
 ```
-Sql\\Database\\\s\*"(\[^"\]\*datawarehouse\\fabric\\microsoft\\com\[^"\]\*)"\s\*,
+'Sql\.Database\(\s*"([^"]*datawarehouse\.fabric\.microsoft\.com[^"]*)"\s*,'
 ```
 
 Once you have created the regular expression with a capture zone to
@@ -2175,7 +2175,7 @@ There is second notebook which builds the gold layer by loading tables
 from the silver lakehouse and transforming them into a star schema
 before saving them as delta tables in the gold lakehouse.
 
-<img src="./images/bestpractices/media/image61.png" style="width:50%" />
+<img src="./images/bestpractices/media/image61.png" style="width:70%" />
 
 
 An important aspect of this data orchestration design is that it exposes
