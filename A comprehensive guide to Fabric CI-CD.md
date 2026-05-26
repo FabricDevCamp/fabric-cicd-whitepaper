@@ -98,8 +98,7 @@ solution can be designed to run inside a single workspace. The following
 screenshot shows a simple example of a Fabric solution with five
 workspace items designed to run within a single workspace.
 
-<img src="./images/bestpractices/media/image3.png"
-style="width:2.20514in;height:1.73266in" />
+<img src="./images/bestpractices/media/image3.png"  style="width:50%" />
 
 When building a Fabric solution with a large number of items, you can
 partition items using workspace folders. Workspace folders can assist
@@ -127,8 +126,7 @@ users then can access anything inside. The best way to enforce the
 security requirement is to design the Fabric solution with a staging
 workspace and a presentation workspace.
 
-<img src="./images/bestpractices/media/image4.png"
-style="width:3.83922in;height:1.83749in" />
+<img src="./images/bestpractices/media/image4.png"  style="width:50%" />
 
 The staging workspace is designed to include all the items used to run
 ETL jobs and to store staging data. The presentation workspace is
@@ -158,8 +156,7 @@ multiple environments and get an instance of the Fabric solution running
 in each one. You also need to build the CI/CD processes to propagate
 solution updates from one environment to the next.
 
-<img src="./images/bestpractices/media/image5.png"
-style="width:4.79018in;height:1.24545in" />
+<img src="./images/bestpractices/media/image5.png"  style="width:50%" />
 
 One essential aspect of planning a Fabric CI/CD project involves
 defining the requirements for the project's environments. The way to
@@ -175,8 +172,7 @@ workspaces from all environments to a single shared capacity, it's
 considered a best practice to isolate environments by creating a
 separate Fabric capacity for each one as shown in the following diagram.
 
-<img src="./images/bestpractices/media/image6.png"
-style="width:6.1649in;height:1.05717in" />
+<img src="./images/bestpractices/media/image6.png"  style="width:50%" />
 
 The Fabric CI/CD project examples in in this guidance use three
 environments named **dev**, **test** and **prod**. However, the
@@ -203,15 +199,10 @@ The Fabric platform provides the following capabilities to assist with
 building CI/CD processes.
 
 - GIT Integration
-
 - Branched workspaces
-
 - Variable libraries
-
 - Workspace Item Types
-
 - Item Definitions
-
 - Deployment Pipelines
 
 This section will drill into each of these Fabric CI/CD capabilities
