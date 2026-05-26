@@ -574,8 +574,7 @@ feature branch from integration branch. Once you have created a feature
 branch, you can then download a working copy of the files in the feature
 branch using the **git clone** command.
 
-<img src="./images/bestpractices/media/image21.png"
-style="width:4.17031in;height:0.89448in" />
+<img src="./images/bestpractices/media/image21.png" style="width:50%" />
 
 The **git clone** command creates a local folder with a working copy of
 the files in the feature branch. You can open this folder and examine
@@ -593,15 +592,13 @@ view and edit item definition files. The following screenshot shows an
 example of updating the contents of **sales.tmdl** to change the format
 string for a measure in the **Sales** table.
 
-<img src="./images/bestpractices/media/image22.png"
-style="width:3.33028in;height:1.51435in" />
+<img src="./images/bestpractices/media/image22.png"  style="width:50%" />
 
 Once you have made changes to one or more item definition files, you
 must commit your changes locally. After that you must push your changes
 back to the remote feature branch in the origin GIT repository.
 
-<img src="./images/bestpractices/media/image23.png"
-style="width:3.08283in;height:1.40897in" />
+<img src="./images/bestpractices/media/image23.png"  style="width:50%" />
 
 Keep in mind that editing to item definition files for a semantic models
 is relatively easy. That's because the item definitions for semantic
@@ -620,18 +617,15 @@ to other workspace items..
 It is also possible to build a development process which used Power BI
 Desktop as a client tool. This works for reports and for semantic models
 
-<img src="./images/bestpractices/media/image24.png"
-style="width:4.47608in;height:1.69014in" />
+<img src="./images/bestpractices/media/image24.png"  style="width:50%" />
 
-Sssssss
+content to come
 
-<img src="./images/bestpractices/media/image25.png"
-style="width:4.33089in;height:1.92765in" />
+<img src="./images/bestpractices/media/image25.png"  style="width:50%" />
 
-xxx
+content to come
 
-<img src="./images/bestpractices/media/image26.png"
-style="width:6.31975in;height:2.74675in" />
+<img src="./images/bestpractices/media/image26.png"  style="width:50%" />
 
 ### Variable Libraries
 
@@ -649,9 +643,7 @@ such as notebooks, pipelines, copy jobs and dataflows can be defined to
 read variable values from a variable library. This makes it possible to
 avoid hardcoding configuration settings that change across environments.
 
-<img src="./images/bestpractices/media/image27.png"
-style="width:3.39373in;height:1.78743in"
-alt="A diagram of a work space AI-generated content may be incorrect." />
+<img src="./images/bestpractices/media/image27.png"  style="width:50%" />
 
 Consider the classic scenario in which you need to build a release
 process that moves workspace item updates through a sequence of
@@ -661,8 +653,7 @@ configured with different settings to connect to a different database or
 to some other type of datasource. To solve this problem, items in each
 workspace requires access to their own unique connection settings.
 
-<img src="./images/bestpractices/media/image28.png"
-style="width:3.07219in;height:1.22546in" />
+<img src="./images/bestpractices/media/image28.png"  style="width:50%" />
 
 The variable library was designed to solve the problem of parameterizing
 these types of settings across workspaces. A variable library allows you
@@ -672,9 +663,10 @@ Fabric notebook to connect to a SQL database. The thing you want to
 avoid is hardcoding these configuration settings into your code as
 literal strings.
 
+``` python
 database_server = 'devcamp.database.windows.net'
-
 database_name = 'ProductSalesDev'
+```
 
 The obvious problem is that these hardcoded settings are specific to a
 single environment. As an alternative, you can leverage a variable
