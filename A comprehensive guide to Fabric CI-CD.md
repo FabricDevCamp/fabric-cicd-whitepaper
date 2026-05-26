@@ -477,14 +477,14 @@ in the **dev** workspace to the **Branches** panel of the **Source
 control** pane, you can find a set of branching commands which include
 **Branch out to workspace**.
 
-<img src="./images/bestpractices/media/image17.png" style="width:50%" />
+<img src="./images/bestpractices/media/image17.png" style="width:38%" />
 
 When you run the **Branch out to workspace** command, Fabric prompts you
 with a dialog to enter a new branch name. The **Branch out to
 workspace** dialog also allows you to choose between creating a new
 feature workspace or connecting to an existing feature workspace.
 
-<img src="./images/bestpractices/media/image18.png" style="width:50%" />
+<img src="./images/bestpractices/media/image18.png" style="width:38%" />
 
 The **Branch out to workspace** dialog provides an option to **Select
 items individually** to enable a capability known as selective
