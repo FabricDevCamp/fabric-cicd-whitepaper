@@ -1305,7 +1305,7 @@ output "workspace_dfs_endpoint" {
 When you run the **terraform apply** command, output values are written
 to the console after all provisioning has completed.
 
-``` console
+``` hcl
 workspace_dfs_endpoint = "https://eastus-onelake.dfs.fabric.microsoft.com"
 workspace_id = "ad26468c-9f9f-4a5a-87b9-ab5e79a78ea4"
 ```
@@ -1348,37 +1348,25 @@ capacity. Keep in mind you must use a service principal that has that
 has the appropriate permissions with that subscription to create a
 Fabric capacity.
 
+``` hcl
 terraform {
-
-required_version = "\>= 1.8, \< 2.0"
-
-required_providers {
-
-azurerm = {
-
-source = "hashicorp/azurerm"
-
-version = "4.63.0"
-
-}
-
-}
-
+  required_version = "\>= 1.8, \< 2.0"
+  required_providers {
+    azurerm = {
+      source = "hashicorp/azurerm"
+      version = "4.63.0"
+    }
+  }
 }
 
 provider "azurerm" {
-
-features {}
-
-tenant_id = var.tenant_id
-
-client_id = var.client_id
-
-client_secret = var.client_secret
-
-subscription_id = var.subscription_id
-
+  features {}
+  tenant_id = var.tenant_id
+  client_id = var.client_id
+  client_secret = var.client_secret
+  subscription_id = var.subscription_id
 }
+```
 
 The following listing demonstrates how to create a Fabric capacity.
 First, you create an Azure resource group using an
