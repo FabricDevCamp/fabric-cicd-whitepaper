@@ -1544,20 +1544,12 @@ Fabric Extension for Azure DevOps** which adds the FabricCLITask@0 task
 which automatically provisions the Fabric CLI into the pipeline agent
 without requiring manual installation.
 
-Links for more information about Fabric CLI
-
-- [Fabric CLI](https://microsoft.github.io/fabric-cli/)
-
-- [CLI Modes](https://microsoft.github.io/fabric-cli/essentials/modes/)
-
-- [Fabric CLI
-  Commands](https://microsoft.github.io/fabric-cli/commands/)
-
-- [Fabric CLI Usage
-  Examples](https://microsoft.github.io/fabric-cli/examples/)
-
-- [Microsoft Fabric Extension for Azure
-  DevOps](https://marketplace.visualstudio.com/items?itemName=ms-fabric-api.fabric-automation-tools)
+> Links for more information about Fabric CLI
+> - [Fabric CLI](https://microsoft.github.io/fabric-cli/)
+> - [CLI Modes](https://microsoft.github.io/fabric-cli/essentials/modes/)
+> - [Fabric CLI Commands](https://microsoft.github.io/fabric-cli/commands/)
+> - [Fabric CLI Usage Examples](https://microsoft.github.io/fabric-cli/examples/)
+> - [Microsoft Fabric Extension for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms-fabric-api.fabric-automation-tools)
 
 ### Semantic Link Labs
 
