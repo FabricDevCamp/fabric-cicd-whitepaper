@@ -1809,7 +1809,7 @@ target workspace to determine whether a matching items already exists.
 This check is required so **fabric-cicd** can decide whether to create a
 new item or to update an existing item.
 
-<img src="./images/bestpractices/media/image59.png" style="width:50%" />
+<img src="./images/bestpractices/media/image59.png" style="width:80%" />
 
 **fabric-cicd** is able to automatically reestablish relationships for
 items that support auto-binding. The **fabric-cicd** library implements
