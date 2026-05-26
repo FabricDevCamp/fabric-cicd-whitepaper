@@ -815,7 +815,7 @@ and the notebook. After you have built out the solution in the **dev**
 workspace, there are three established dependencies between these
 workspace items.
 
-<img src="./images/bestpractices/media/image34.png" style="width:50%" />
+<img src="./images/bestpractices/media/image34.png" style="width:30%" />
 
 Now think about what happens when you use Fabric GIT synchronization to
 replicate these three workspace items from the **dev** workspace to a
@@ -827,7 +827,7 @@ related items in the same workspace. You can see from the following
 diagram that the notebook and pipeline in the feature workspace were
 both able to self-manage their relations.
 
-<img src="./images/bestpractices/media/image35.png" style="width:50%" />
+<img src="./images/bestpractices/media/image35.png" style="width:60%" />
 
 Fabric notebooks did not support auto-binding until Microsoft updated
 the **Notebook** item type with auto-binding support in March of 2026.
