@@ -2802,7 +2802,7 @@ authentication credentials for each Entra Id tenant. You can start by
 creating three different environments in your GitHub repository named
 **dev**, **test** and **prod**.
 
-<img src="./images/bestpractices/media/image76.png" style="width:70%" />
+<img src="./images/bestpractices/media/image76.png" style="width:64%" />
 
 After that, you can configure each environment with the authentication
 credentials specific to its Entra Id tenant.
@@ -2837,7 +2837,7 @@ workflow's YAML file. The following screenshot shows an example of a
 workflow with input parameters that prompt the user with a textbox and
 two checkboxes.
 
-<img src="./images/bestpractices/media/image79.png" style="width:25%" />
+<img src="./images/bestpractices/media/image79.png" style="width:28%" />
 
 As you begin to develop workflows using GitHub Actions, you should
 become familiar with monitoring workflow runs in order to test and debug
