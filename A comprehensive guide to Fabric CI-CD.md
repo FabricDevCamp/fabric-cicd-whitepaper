@@ -315,7 +315,7 @@ definitions files for workspace items together with other project files.
 The following screenshot shows the effect of configuring the **Git
 folder** setting with a value of **/workspace**.
 
-<img src="./images/bestpractices/media/image11.png"  style="width:75%" />
+<img src="./images/bestpractices/media/image11.png"  style="width:50%" />
 
 > The [**Git -
 Connect**](https://learn.microsoft.com/en-us/rest/api/fabric/core/git/connect?tabs=HTTP#azuredevopsdetails)
