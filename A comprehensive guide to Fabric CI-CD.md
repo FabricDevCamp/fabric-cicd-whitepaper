@@ -1434,23 +1434,18 @@ GUID-based id. The following listing demonstrates using the **id** of a
 **fabric_capacity** datasource to assign the **capacity_id** property of
 a **fabric_workspace** resource.
 
+``` hcl
 data "fabric_capacity" "main" {
-
-display_name = var.capacity_name
-
-depends_on = \[ azurerm_fabric_capacity.main \]
-
+  display_name = var.capacity_name
+  depends_on = [ azurerm_fabric_capacity.main ]
 }
 
 resource "fabric_workspace" "main" {
-
-display_name = var.workspace_name
-
-capacity_id = data.fabric_capacity.main.id
-
-depends_on = \[ data.fabric_capacity.main \]
-
+  display_name = var.workspace_name
+  capacity_id = data.fabric_capacity.main.id
+  depends_on = [ data.fabric_capacity.main ]
 }
+```
 
 A Terraform configuration for building Fabric environments typically
 includes workspace and capacities. However, you can also provision other
@@ -1461,8 +1456,7 @@ resources required by three environments. Each environment contains the
 same set of resource types yet parameterization can give each
 environment its own unique resource settings.
 
-<img src="./images/bestpractices/media/image51.png"
-style="width:5.77557in;height:1.73534in" />
+<img src="./images/bestpractices/media/image51.png" style="width:65%" />
 
 When using Terraform, it's recommended that you create a separate
 configuration for each environment. After all, you don't want a problem
@@ -1472,25 +1466,13 @@ configurations for these environments using a provisioning flow to
 create resources in the following sequence.
 
 - **azurerm_fabric_capacity**: create Fabric capacity
-
 - **fabric_workspace**: create workspace assigned to capacity
-
-- **fabric_workspace_role_assignment**: add workspace role assignments
-  for access control
-
+- **fabric_workspace_role_assignment**: add workspace role assignments for access control
 - **azurerm_storage_account**: create Azure storage account
-
-- **azurerm_storage_container**: create container in Azure storage
-  account for environment-specific data files
-
-- **azurerm_storage_account_blob_container_sas**: create SAS token as
-  credential to access storage container
-
-- **fabric_connection**: create Fabric connection used to access data
-  files in storage account
-
-- **fabric_connection_role_assignment**: add connection role assignment
-  to configure connection permissions
+- **azurerm_storage_container**: create container for environment-specific data files
+- **azurerm_storage_account_blob_container_sas**: create SAS token to access storage container
+- **fabric_connection**: create Fabric connection to container using SaS token as credential
+- **fabric_connection_role_assignment**: add connection role assignment to configure connection permissions
 
 This example demonstrates how Terraform simplifies the setup process for
 building out the environments for a Fabric CI/CD project. This example
