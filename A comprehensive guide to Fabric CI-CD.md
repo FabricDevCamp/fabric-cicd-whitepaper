@@ -709,7 +709,7 @@ the **dev** environment. You can extend the variable library by adding a
 value set for the **test** workspace and a second value set for the
 **prod** workspace.
 
-<img src="./images/bestpractices/media/image31.png"  style="width:50%" />
+<img src="./images/bestpractices/media/image31.png"  style="width:70%" />
 
 The item definition for a variable library includes variables and values
 sets. However the item definition does not contain anything to indicate
