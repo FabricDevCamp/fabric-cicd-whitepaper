@@ -126,7 +126,7 @@ users then can access anything inside. The best way to enforce the
 security requirement is to design the Fabric solution with a staging
 workspace and a presentation workspace.
 
-<img src="./images/bestpractices/media/image4.png"  style="width:80%" />
+<img src="./images/bestpractices/media/image4.png"  style="width:70%" />
 
 The staging workspace is designed to include all the items used to run
 ETL jobs and to store staging data. The presentation workspace is
