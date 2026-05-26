@@ -929,7 +929,7 @@ item. This is where the **logicalId** comes in. While each lakehouse
 instance has it own unique **id**, all three lakehouses share the same
 **logicalid**.
 
-<img src="./images/bestpractices/media/image41.png"  style="width:60%" />
+<img src="./images/bestpractices/media/image41.png"  style="width:80%" />
 
 The role of the **logicalId** is important because it allows Fabric to
 avoid persisting workspace-specific item ids into GIT. This level of
@@ -938,7 +938,7 @@ auto-binding. As an example, examine the following code snippet from the
 item definition for a pipeline that has a dependency on a lakehouse in
 the same workspace.
 
-<img src="./images/bestpractices/media/image42.png" style="width:50%" />
+<img src="./images/bestpractices/media/image42.png" style="width:42%" />
 
 You should notice that the **workspaceId** does not have value that
 references an actual workspace id. Instead, the **workspaceId** has an
