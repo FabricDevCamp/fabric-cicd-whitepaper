@@ -17,7 +17,7 @@ with authoring and updating Power BI reports that are built on top of
 those semantic models. Once you understand how CI/CD works in Fabric,
 you will be able to enable collaboration allowing all these people to
 continually update their part of a Fabric project without stepping on
-anyone else’s work.
+anyone else's work.
 
 This guidance is intended for technical professions who plan to build
 end-to-end solutions on the Fabric platform. This audience includes data
@@ -59,8 +59,8 @@ Continuous integration is popular because it allows a team of developers
 to work on the same application at the same time. CI/CD solves the
 challenging problem of integrating the work of multiple developers into
 a shared codebase in an ongoing basis. Once you have designed and
-implemented a GIT branching strategy, you’ll be able to merge
-everybody’s changes together in a structured development process that
+implemented a GIT branching strategy, you'll be able to merge
+everybody's changes together in a structured development process that
 maintains code quality while also getting updates and new features into
 production as quickly as possible.
 
@@ -150,7 +150,7 @@ This is the moment that a Fabric CI/CD project begins.
 
 A Fabric CI/CD project involves applying the concepts of CI/CD to a
 Fabric solution. While the term Application Lifecycle Management (ALM)
-is widely used, it’s probably better to think about Fabric CI/CD as
+is widely used, it's probably better to think about Fabric CI/CD as
 Solution Lifecycle Management (SLM). For example, you need to stand up
 multiple environments and get an instance of the Fabric solution running
 in each one. You also need to build the CI/CD processes to propagate
@@ -174,10 +174,9 @@ separate Fabric capacity for each one as shown in the following diagram.
 
 <img src="./images/bestpractices/media/image6.png"  style="width:80%" />
 
-The Fabric CI/CD project examples in in this guidance use three
-environments named **dev**, **test** and **prod**. However, the
-environments you plan in your project can use other popular environment
-names such as **qa**, **uat** or **ppe**.
+> [!TIP]
+> The Fabric CI/CD project examples in in this guidance use three environments named **dev**, **test** and **prod**. However, the
+> environments you plan in your project can use other popular environment names such as **qa**, **uat** or **ppe**.
 
 When planning the environments for a Fabric CI/CD project, you might
 decide to include other types of Azure resources as well. For example,
@@ -198,12 +197,12 @@ environment-specific datasources.
 The Fabric platform provides the following capabilities to assist with
 building CI/CD processes.
 
-- GIT Integration
-- Branched workspaces
-- Variable libraries
-- Workspace Item Types
-- Item Definitions
-- Deployment Pipelines
+* GIT Integration
+* Branched workspaces
+* Variable libraries
+* Workspace Item Types
+* Item Definitions
+* Deployment Pipelines
 
 This section will drill into each of these Fabric CI/CD capabilities
 along with a few other related topics. The goal is for you to build your
@@ -213,21 +212,22 @@ learn about Fabric automation and workflow development.
 ### GIT Synchronization
 
 The Fabric CI/CD infrastructure starts with its support for GIT
-integration. Imagine you’re on a team building a data analytics solution
+integration. Imagine you're on a team building a data analytics solution
 based on a Fabric workspace that includes a lakehouse, notebook,
 semantic model and report. Fabric makes it possible to maintain the
 source code for all four workspace items as a single source of truth in
 a GIT repository. Any updates made to workspace items can be versioned,
 tracked and compared to other versions.
 
+> [!NOTE]
 > Fabric's list of supported GIT providers includes **Azure DevOps**,
-**GitHub** and **GitHub Enterprise**. Microsoft is currently planning to
-add other popular GIT providers in the future. You can find the most
-up-to-date information about Fabric's support for GIT providers and
-their limitations by reading [**Supported Git
-providers**](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration?tabs=azure-devops#supported-git-providers).
-
-Fabric’s support for GIT integration is enabled at workspace scope. More
+> **GitHub** and **GitHub Enterprise**. Microsoft is currently planning to
+> add other popular GIT providers in the future. You can find the most
+> up-to-date information about Fabric's support for GIT providers and
+> their limitations by reading [**Supported Git
+> providers**](https://learn.microsoft.com/en-us/fabric/cicd/git-integration/intro-to-git-integration?ta> bs=azure-devops#supported-git-providers).
+ 
+Fabric's support for GIT integration is enabled at workspace scope. More
 specifically, you enable GIT integration by connecting a workspace to a
 branch in a GIT repository. There are two steps required to connect a
 workspace to a branch in GIT. The first step is to create a Fabric
@@ -463,7 +463,7 @@ analytics teams who will be continually updating reports.
 
 ### Branched Workspaces
 
-Fabric offers branched workspaces to assist with creating and managing
+Fabric offers *branched workspaces* to assist with creating and managing
 feature workspaces. Fabric support for branched workspaces offers a
 streamlined user experience which simplifies creating feature workspaces
 and switching between feature branches. Building out the development
@@ -633,7 +633,7 @@ An essential aspect of the CI/CD lifecycle involves promoting changes
 through a sequence of environments. The canonical example is a Fabric
 solution lifecycle which moves changes through environments such as
 **dev**, **test** and **prod**. When you need to test and validate code
-for a project across multiple environments, it’s essential to find an
+for a project across multiple environments, it's essential to find an
 effective parameterization strategy for environment-specific settings.
 
 The Fabric platform provides the **variable library** to assist with
@@ -1011,7 +1011,7 @@ Rolling out a Fabric project with end-to-end CI/CD support requires a
 significant number of steps. Your ability to automate the setup process
 is essential. The alternative approach, known as ClickOps, involves
 completing setup tasks by hand using a browser. Relying on ClickOps is
-bad because it’s prone to human error causing unnecessary delays and the
+bad because it's prone to human error causing unnecessary delays and the
 need to troubleshoot configuration errors. This is especially true when
 considering how to create a fast and reliable plan for disaster
 recovery.
@@ -1257,7 +1257,7 @@ makes it possible to create references using the syntax
 Once you have created a Terraform configuration with a set of resources,
 you can run the **terraform** **plan** command to review a planned lists
 of the steps required to deploy the configuration. However, running the
-**plan** command doesn’t actually do anything. It just shows you the
+**plan** command doesn't actually do anything. It just shows you the
 list of steps that need to be completed. When you're ready to deploy,
 you run the Terraform **apply** command to run the job that creates the
 resources needed to match your configuration.
@@ -2529,7 +2529,7 @@ This begs the question should you use item-generic APIs or item-specific
 APIs.
 
 With respect to creating, updating and deleting workspace items, it
-doesn’t really matter whether you use the item-generic APIs or
+doesn't really matter whether you use the item-generic APIs or
 item-specific APIs because the result will be the same. For this reason,
 many developers prefer using item-generic APIs to create and update
 workspace items because it allows them to write generic code which can
